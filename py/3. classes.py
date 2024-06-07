@@ -1,7 +1,7 @@
 import json
 from files import Files
 
-semesterFiles = Files("winter")
+semesterFiles = Files()
 outFile = semesterFiles.outFile
 ratingsFile = semesterFiles.ratings
 professorsFile = semesterFiles.professors

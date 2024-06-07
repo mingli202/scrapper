@@ -2,45 +2,46 @@ import json
 from bs4 import BeautifulSoup
 import requests
 from files import Files
-import asyncio
-import time
-from concurrent.futures import ThreadPoolExecutor
 import re
 
-semesterFiles = Files("winter")
+semesterFiles = Files()
 outFile = semesterFiles.outFile
 professorsFile = semesterFiles.professors
 ratingsFile = semesterFiles.ratings
 
-with open(outFile, "r") as file:
-    arr = json.loads(file.read())
 
-professors = set()
+def writeProfs():
+    with open(outFile, "r") as file:
+        arr = json.loads(file.read())
 
+    professors = set()
 
-for index, i in enumerate(arr):
-    print(index)
-    try:
-        professors.add(i["lecture"]["prof"].replace(
-            "\u00e9", "e").replace("\u00e8", "e"))
+    for index, i in enumerate(arr):
+        print(index)
 
-        if "prof" in i["lab"]:
-            professors.add(i["lab"]["prof"].replace(
+        try:
+            professors.add(i["lecture"]["prof"].replace(
                 "\u00e9", "e").replace("\u00e8", "e"))
-    except:
-        print(f"error id: {i['count']}")
-        exit()
 
-professors.remove("")
+            if "prof" in i["lab"]:
+                professors.add(i["lab"]["prof"].replace(
+                    "\u00e9", "e").replace("\u00e8", "e"))
+        except:
+            print(f"error id: {i['count']}")
+            exit()
 
-with open(professorsFile, "w") as file:
-    file.write(json.dumps(list(professors)))
+    professors.remove("")
+
+    with open(professorsFile, "w") as file:
+        file.write(json.dumps(list(professors)))
+
 
 ratings = []
 
 # professors = ["Lin, Grace Cheng-Ying"]
 # professors = ["Trepanier, Michele"]
 # JAC_ID = 12050
+
 
 def stripAccent(s: str):
     s = s.replace("\u00e9", "e")  # * removes é
@@ -76,12 +77,16 @@ def algo(name: str):
     return allCombinasion
 
 
+# known problems:
+# teacher has multiple page
+# the first name and last name is off my little
+# found raint 0 but still foundn't
 def getRating(i: str):
-    # pArr = algo(i)
+    pArr = algo(i)
 
     fname = i.split(",")[1]
     lname = i.split(",")[0]
-    pArr = [lname]
+    # pArr = [lname]
 
     print(pArr)
 
@@ -90,8 +95,7 @@ def getRating(i: str):
     nRating = 0
     takeAgain = 0
     difficulty = 0
-    name = ""
-    status = ""
+    status = "foundn't"
 
     # try for every combinasion of their names
     while len(pArr) != 0:
@@ -101,7 +105,6 @@ def getRating(i: str):
         url = f"https://www.ratemyprofessors.com/search/professors/12050?q={p}"
 
         r = requests.get(url)
-
 
         if r.status_code != 200:
             pArr.append(comb)
@@ -113,13 +116,14 @@ def getRating(i: str):
 
             legacyId = re.findall(r'"legacyId":(\d+)', r.text)
 
-            for id in legacyId: 
-                url = f"https://www.ratemyprofessors.com/ShowRatings.jsp?tid={id}"
+            for id in legacyId:
+                url = f"https://www.ratemyprofessors.com/ShowRatings.jsp?tid={
+                    id}"
                 r = requests.get(url)
 
                 soup = BeautifulSoup(r.text, "html.parser")
 
-                isJohnAbbott = False;
+                isJohnAbbott = False
                 for anchor in soup.find_all("a"):
                     if anchor.get("href") == "/school/12050":
                         isJohnAbbott = True
@@ -127,27 +131,37 @@ def getRating(i: str):
                 if not isJohnAbbott:
                     raise
 
-                firstName = stripAccent(soup.find("div", class_="NameTitle__Name-dowf0z-0 cfjPUG").span.text.strip())
-                lastName = stripAccent(soup.find("span", class_="NameTitle__LastNameWrapper-dowf0z-2 glXOHH").text.strip())
+                firstName = stripAccent(
+                    soup.find("div", class_="NameTitle__Name-dowf0z-0 cfjPUG").span.text.strip())
+                lastName = stripAccent(soup.find(
+                    "span", class_="NameTitle__LastNameWrapper-dowf0z-2 glXOHH").text.strip())
 
                 if len(legacyId) > 1 and lastName != lname and firstName != fname:
                     continue
 
-                avg = soup.find("div", class_="RatingValue__Numerator-qw8sqy-2 liyUjw").text
-                if avg != "N/A":
-                    avg = float(avg)
+                try:
+                    avg = float(soup.find(
+                        "div", class_="RatingValue__Numerator-qw8sqy-2 liyUjw").text)
+                finally:
+                    pass
 
-                nRating = soup.find("div", class_="RatingValue__NumRatings-qw8sqy-0 jMkisx").div.a.text.replace("ratings", "")
-                if nRating != "N/A":
-                    nRating = float(nRating)
+                try:
+                    nRating = float(soup.find(
+                        "div", class_="RatingValue__NumRatings-qw8sqy-0 jMkisx").div.a.text.replace("ratings", ""))
+                finally:
+                    pass
 
-                takeAgain = soup.find_all("div", class_="FeedbackItem__FeedbackNumber-uof32n-1 kkESWs")[0].text.replace("%", "")
-                if takeAgain != "N/A":
-                    takeAgain = float(takeAgain)
+                try:
+                    takeAgain = float(soup.find_all(
+                        "div", class_="FeedbackItem__FeedbackNumber-uof32n-1 kkESWs")[0].text.replace("%", ""))
+                finally:
+                    pass
 
-                difficulty = soup.find_all("div", class_="FeedbackItem__FeedbackNumber-uof32n-1 kkESWs")[1].text
-                if difficulty != "N/A":
-                    difficulty = float(difficulty)
+                try:
+                    difficulty = float(soup.find_all(
+                        "div", class_="FeedbackItem__FeedbackNumber-uof32n-1 kkESWs")[1].text)
+                finally:
+                    pass
 
                 status = "found"
 
@@ -166,7 +180,7 @@ def getRating(i: str):
         You add one 5/5 and one 0/5 to the rating to obtain the score.
         If there are more raters, the 0/5 will have a lesser impact.
 
-        e.g. 
+        e.g.
           Gregory, Muclair has 5/5 rating but only 2 raters. His score is 75.0
           Kazuo Takei, Luiz has 4.6/5 rating with 11 raters. His score is 85.5
 
@@ -187,20 +201,22 @@ def getRating(i: str):
     })
 
 
-async def main():
+def main():
     # bgTasks = set()
+    with open(professorsFile, "r") as file:
+        professors = json.loads(file.read())
 
-    # for i in professors:
-    #     task = asyncio.create_task(getRating(i))
-    #     bgTasks.add(task)
-    #     task.add_done_callback(bgTasks.discard)
+    for i in professors:
+        getRating(i)
 
-    with ThreadPoolExecutor(1000) as exec:
-        exec.map(getRating, professors)
+    # with ThreadPoolExecutor(1000) as exec:
+    #     exec.map(getRating, professors)
 
     with open(ratingsFile, "w") as file:
         print(ratingsFile)
         file.write(json.dumps(ratings, indent=2))
 
+
 if __name__ == "__main__":
-    asyncio.run(main())
+    # writeProfs()
+    main()

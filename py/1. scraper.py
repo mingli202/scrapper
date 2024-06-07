@@ -1,16 +1,50 @@
 import json
 import re
 from files import Files
+import os
 
 
-semesterFiles = Files("fall")
+semesterFiles = Files()
 pdfName = semesterFiles.pdfName
 rawFile = semesterFiles.rawFile
 outFile = semesterFiles.outFile
 organized = semesterFiles.organized
 
+programs = ["Courses", "Arts, Literature & Communication"]
+sectionReg = r"^\d{5}\s{2,}[A-Z]+\s{2,}\d{3}-\w{3}-\w{2}\s{2,}(?:\w|\s|[\(\)<>&\+])+\s{2,}[MTWRF]{1,5}\s{2,}\d{4}-\d{4}$"
+
+
+class Class:
+    def __init__(self):
+        self.cl = {
+            "program": "",
+            "course": "",
+            "code": "",
+            "section": "",
+            "disc": "",
+            "lecture": {},
+            "lab": {},
+            "more": ""
+        }
+
+
+def readRawArray():
+    with open(rawFile, "r") as file:
+        raw = json.loads(file.read())
+
+    cl = Class()
+    sections = []
+
+    for i, row in enumerate(raw):
+        sectionLine = re.match(sectionReg, row)
+
+        if sectionLine:
+            print(i, row, sep=": ")
+
 
 def writeToA():
+    if os.path.exists(rawFile):
+        return
 
     with open(pdfName, "rb") as file:
         lines = file.read()
@@ -268,5 +302,6 @@ def writeToOut():
 
 if __name__ == "__main__":
     writeToA()
-    # writeToOut()
+    writeToOut()
+    # readRawArray()
     # pass

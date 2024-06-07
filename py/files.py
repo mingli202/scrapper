@@ -2,7 +2,8 @@ import os
 
 
 class Files:
-    def __init__(self, semester) -> None:
+    def __init__(self) -> None:
+        semester = "fall"
         curPath = os.path.dirname(__file__)
         curPath = curPath[0:-2]
         semesterDir = curPath + semester + "/" + semester

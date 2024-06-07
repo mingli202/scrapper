@@ -98,22 +98,19 @@ example = {
 
 handleViewData(example)
 
-semesterFiles = Files("winter")
+semesterFiles = Files()
 filename = semesterFiles.classesFile
 
 with open(filename, "r") as file:
     data = json.loads(file.read())
 
-with open(filename, "r") as file:
+    polished = {}
+    for index, course in enumerate(data):
+        polished.update({
+            index: handleViewData(course)
+        })
 
-    # polished = {}
-    # for index, course in enumerate(data):
-    #     polished.update({
-    #         index: handleViewData(course)
-    #     })
-
-    polished = [x for x in json.loads(file.read()).values()]
-    # polished = list(map(handleViewData, data))
+    # polished = [x for x in json.loads(file.read()).values()]
 
 with open(filename, "w") as file:
     file.write(json.dumps(polished, indent=2))

@@ -2,7 +2,7 @@ from files import Files
 import json
 import re
 
-semesterFiles = Files("fall")
+semesterFiles = Files()
 rawFile = semesterFiles.rawFile
 
 
@@ -33,10 +33,7 @@ class Test:
     def doublelines(self, row: str):
         n = len(row) - len(row.lstrip())
 
-        if n == 47 and not re.match(r".+\s{2,}", row):
-            return True
-
-        elif re.search(self.timeReg, row) and n == 47:
+        if n == 47:
             return True
 
         return False
@@ -86,8 +83,6 @@ def main():
             test.timeDuplicate,
         ]):
             print(i, row, sep=": ")
-        # if (re.search(r"[MTWRF]{1,5}\s+\d{4}-\d{4}", row)):
-        #     print(i, row, sep=": ")
 
 
 if __name__ == "__main__":
