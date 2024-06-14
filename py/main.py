@@ -1,9 +1,10 @@
-from .files import Files
+from files import Files
+from pdf_parser.parser import Parser
 
 
 def main():
     files = Files()
-    scraper = Scraper(files)
+    scraper = Parser(files)
 
     scraper.run()
 
