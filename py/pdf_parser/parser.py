@@ -1,6 +1,8 @@
 import json
 import os
 import re
+from models import Section
+
 
 from files import Files
 
@@ -31,7 +33,8 @@ class Parser:
         arr: list[str] = [
             line.replace("\u0000", "")
             for line in arr
-            if line.find("SCHEDULE OF CLASSES - FALL 2024") == -1
+            # TODO: Change for next semester
+            if line.find("SCHEDULE OF CLASSES - WINTER 2025") == -1
             and len(line) != 0
             and not re.match(r"^SECTION", line)
             and not re.match(r"^John Abbott", line)
@@ -63,8 +66,23 @@ class Parser:
         return p
 
     def parse(self):
+        if os.path.exists(self.files.outFile):
+            print("out_file already exists")
+            return
+
+        def updateSection(section: Section, sections: list[dict]):
+            if section.section != "":
+                sections.append(section.model_dump())
+
+                section.code = ""
+                section.section = ""
+                section.lecture = {}
+                section.lab = {}
+                section.more = ""
+                section.count += 1
+
         cl = Section()
-        sections = []
+        sections: list[dict] = []
         programs = [
             "Courses",
             "Arts, Literature & Communication",
@@ -91,7 +109,7 @@ class Parser:
             # program line
             if any(text.find(x) != -1 for x in programs) and space >= 30:
                 if text != cl.program:
-                    cl.updateSection(sections)
+                    updateSection(cl, sections)
                     cl.course = ""
 
                 cl.program = text
@@ -99,7 +117,7 @@ class Parser:
             # course line
             elif text.isupper() and space == 0:
                 if text != cl.course:
-                    cl.updateSection(sections)
+                    updateSection(cl, sections)
 
                 cl.course = text
 
@@ -109,7 +127,7 @@ class Parser:
 
             # section line
             elif re.match(r"^\d{5}", row):
-                cl.updateSection(sections)
+                updateSection(cl, sections)
 
                 section, _, code, *title, day, time = a
                 cl.section = section
@@ -119,7 +137,7 @@ class Parser:
 
             # lecture line
             elif re.match("^Lecture", text):
-                if re.match(r"[MTWRF]{1,5} *\d{4}-\d{4}", text):
+                if re.search(r"[MTWRF]{1,5}\s+\d{4}-\d{4}", text):
                     _, *prof, day, time = a
                     cl.lecture[day] = time
                 else:
@@ -135,7 +153,7 @@ class Parser:
                 cl.lab[day] = time
 
             elif re.match("^Laboratory", text):
-                if re.match(r"[MTWRF]{1,5} *\d{4}-\d{4}", text):
+                if re.search(r"[MTWRF]{1,5}\s+\d{4}-\d{4}", text):
                     _, *prof, day, time = a
                     cl.lab[day] = time
                 else:
@@ -144,7 +162,7 @@ class Parser:
                 cl.lab["prof"] = " ".join(prof)
 
             # random floating time
-            elif m := re.match(r"([MTWRF]{1,5}) *(\d{4}-\d{4})", text):
+            elif m := re.search(r"([MTWRF]{1,5})\s+(\d{4}-\d{4})", text):
                 if cl.lab:
                     cl.lab[m.group(1)] = m.group(2)
                 else:
@@ -161,37 +179,7 @@ class Parser:
                 print("no match", text)
                 exit()
 
-        cl.updateSection(sections)
+        updateSection(cl, sections)
 
         with open(self.files.outFile, "w") as file:
             file.write(json.dumps(sections, indent=2))
-
-
-class Section:
-    program = ""
-    course = ""
-    count = 0
-
-    def __init__(self):
-        self.code = ""
-        self.section = ""
-        self.lecture = {}
-        self.lab = {}
-        self.more = ""
-
-    def updateSection(self, sections):
-        if self.section != "":
-            sections.append(
-                dict(
-                    program=self.program,
-                    course=self.course,
-                    code=self.code,
-                    section=self.section,
-                    lecture=self.lecture,
-                    lab=self.lab,
-                    more=self.more,
-                    count=self.count,
-                )
-            )
-            self.count += 1
-            self.__init__()
