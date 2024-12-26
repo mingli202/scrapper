@@ -5,6 +5,7 @@ from files import Files
 
 from models import Rating
 from web_scraper.scraper import Scraper
+import json
 
 
 class Test(unittest.TestCase):
@@ -58,11 +59,15 @@ class Test(unittest.TestCase):
         self.assertEqual(len(pids), 2)  # department had a space
 
     def test_missing_rating(self):
-        rating: Rating = self.scraper.get_rating("Voinea, Sorin")
+        rating, _ = self.scraper.get_rating(
+            "Voinea, Sorin", self.scraper.get_saved_pids()
+        )
         self.assertEqual(Rating(prof="Voinea, Sorin"), rating)
 
     def test_valid_rating(self):
-        rating: Rating = self.scraper.get_rating("Trepanier, Michele")
+        rating = self.scraper.get_rating(
+            "Trepanier, Michele", self.scraper.get_saved_pids()
+        )[0]
         self.assertEqual(
             Rating(
                 prof="Trepanier, Michele",
@@ -77,7 +82,9 @@ class Test(unittest.TestCase):
         )
 
     def test_duplicate_rating(self):
-        rating: Rating = self.scraper.get_rating("Young, Ryan")
+        rating: Rating = self.scraper.get_rating(
+            "Young, Ryan", self.scraper.get_saved_pids()
+        )[0]
         self.assertEqual(
             Rating(
                 prof="Young, Ryan",
@@ -91,7 +98,9 @@ class Test(unittest.TestCase):
             rating,
         )
 
-        rating: Rating = self.scraper.get_rating("Young, Thomas")
+        rating: Rating = self.scraper.get_rating(
+            "Young, Thomas", self.scraper.get_saved_pids()
+        )[0]
         self.assertEqual(
             Rating(
                 prof="Young, Thomas",
@@ -105,11 +114,50 @@ class Test(unittest.TestCase):
             rating,
         )
 
+    # NOTE: belongs to Concordia
     def test_Klochko_Yuliya(self):
-        # NOTE: belong to Concordia
-        rating: Rating = self.scraper.get_rating("Klochko, Yuliya")
+        rating: Rating = self.scraper.get_rating(
+            "Klochko, Yuliya", self.scraper.get_saved_pids()
+        )[0]
         self.assertEqual(
-            Rating(),
+            Rating(prof="Klochko, Yuliya"),
+            rating,
+        )
+
+    def get_ratings(self) -> list[Rating]:
+        with open(self.files.ratings, "r") as file:
+            return [Rating(**r) for r in from_json(file.read())]
+
+    # NOTE: manually check foundn't
+    # WARN: checked! remove this for next semester
+    def test_accuracy_of_not_found(self):
+        return
+        odd: list[str] = []
+        ratings: list[Rating] = self.get_ratings()
+
+        for rating in ratings:
+            if rating.status == "foundn't":
+                odd.append(rating.prof)
+
+        if len(odd) > 0:
+            print(json.dumps(odd, indent=2))
+
+        self.assertEqual(len(odd), 0)
+
+    def test_special_cases(self):
+        rating: Rating = self.scraper.get_rating(
+            "Lo Vasco, Frank", self.scraper.get_saved_pids()
+        )[0]
+        self.assertEqual(
+            Rating(
+                prof="Lo Vasco, Frank",
+                avg=3.3,
+                takeAgain=54,
+                difficulty=4.1,
+                nRating=43,
+                status="found",
+                score=65.3,
+            ),
             rating,
         )
 
