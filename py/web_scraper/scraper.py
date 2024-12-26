@@ -71,7 +71,6 @@ class Scraper:
                 classes: list[Section] = [Section(**d) for d in from_json(file.read())]
 
                 for cl in classes:
-                    print(cl.count)
                     lecture_prof = cl.lecture.get("prof")
                     lab_prof = cl.lecture.get("prof")
 
@@ -82,7 +81,7 @@ class Scraper:
                         profs.add(lab_prof)
 
             with open(self.files.professors, "w") as file:
-                file.write(json.dumps(list(profs)))
+                file.write(json.dumps(list(profs), indent=2))
 
         professors: list[str] = []
         with open(self.files.professors, "r") as file:
