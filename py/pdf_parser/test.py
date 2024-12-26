@@ -37,10 +37,6 @@ class Test:
             self.cl["title"] = title
             self.cl[day] = time
 
-        # WARN: remove this line of code for winter 2025
-        elif self.cl.get("code") == "105-003-RE":
-            return False
-
         else:
             dayTime = re.search(r"([MTWRF])\s*(\d{4}-\d{4})", row)
             if dayTime:

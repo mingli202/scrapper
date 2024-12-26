@@ -15,3 +15,4 @@ class Files:
         self.organized = semesterDir + "-organized.json"
         self.professors = semesterDir + "-professors.json"
         self.ratings = semesterDir + "-ratings.json"
+        self.pids = semesterDir + "-pids.json"
