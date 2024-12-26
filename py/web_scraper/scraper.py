@@ -2,6 +2,7 @@ import json
 import os
 import re
 from concurrent.futures import ThreadPoolExecutor
+import unittest
 
 import requests
 from files import Files
@@ -16,6 +17,17 @@ class Scraper:
         self.files = files
 
     def run(self):
+        if os.path.exists(self.files.ratings):
+            print("Rating files already exists")
+
+            if not unittest.main(
+                exit=False, module="web_scraper.test"
+            ).result.wasSuccessful():
+                print("scraper test unsuccessful")
+                exit(1)
+
+            return
+
         professors = self.get_professors()
 
         ratings: list[Rating] = []
@@ -37,6 +49,12 @@ class Scraper:
 
         with open(self.files.pids, "w") as file:
             file.write(json.dumps(new_pids, indent=2))
+
+        if not unittest.main(
+            exit=False, module="web_scraper.test"
+        ).result.wasSuccessful():
+            print("scraper test unsuccessful")
+            exit(1)
 
     def get_saved_pids(self) -> dict[str, str]:
         if not os.path.exists(self.files.pids):

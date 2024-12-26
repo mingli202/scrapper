@@ -1,9 +1,57 @@
 import re
+import unittest
+
+from pydantic_core import from_json
+
+from files import Files
 
 
-class Test:
-    def __init__(self):
+class ParserTest(unittest.TestCase):
+    def setUp(self):
         self.cl = {}
+        self.files = Files()
+
+    def test_brokenDisc(self):
+        raw: list[str] = []
+        with open(self.files.rawFile, "r") as file:
+            raw = from_json(file.read())
+
+        is_valid = True
+        for i, row in enumerate(raw):
+            if self.brokenDisc(row):
+                print(i, row, sep=": ")
+                is_valid = False
+
+        if not is_valid:
+            raise
+
+    def test_time_doublelines(self):
+        raw: list[str] = []
+        with open(self.files.rawFile, "r") as file:
+            raw = from_json(file.read())
+
+        is_valid = True
+        for i, row in enumerate(raw):
+            if self.doublelines(row):
+                print(i, row, sep=": ")
+                is_valid = False
+
+        if not is_valid:
+            raise
+
+    def test_time_duplicate(self):
+        raw: list[str] = []
+        with open(self.files.rawFile, "r") as file:
+            raw = from_json(file.read())
+
+        is_valid = True
+        for i, row in enumerate(raw):
+            if self.timeDuplicate(row):
+                print(i, row, sep=": ")
+                is_valid = False
+
+        if not is_valid:
+            raise
 
     def brokenDisc(self, row: str):
         if re.search(r"(?<!\s)Lecture", row):
@@ -49,3 +97,7 @@ class Test:
                     self.cl[day] = time
 
         return False
+
+
+if __name__ == "__main__":
+    unittest.main()

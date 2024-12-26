@@ -5,8 +5,7 @@ from models import Section
 
 
 from files import Files
-
-from .test import Test
+import unittest
 
 
 class Parser:
@@ -15,9 +14,13 @@ class Parser:
 
     def run(self):
         self.writeToRaw()
-        if not self.testRawFile():
-            print("Tests failed")
+
+        if not unittest.main(
+            module="pdf_parser.test", exit=False
+        ).result.wasSuccessful():
+            print("parser test unsuccessful")
             exit(1)
+
         self.parse()
 
     def writeToRaw(self):
@@ -42,28 +45,6 @@ class Parser:
 
         with open(self.files.rawFile, "w") as file:
             file.write(json.dumps(arr, indent=2))
-
-    def testRawFile(self):
-        raw: list[str] = []
-        test = Test()
-
-        with open(self.files.rawFile, "r") as file:
-            raw = json.loads(file.read())
-
-        p = True
-        for i, row in enumerate(raw):
-            if any(
-                f(row)
-                for f in [
-                    test.brokenDisc,
-                    test.doublelines,
-                    test.timeDuplicate,
-                ]
-            ):
-                print(i, row, sep=": ")
-                p = False
-
-        return p
 
     def parse(self):
         if os.path.exists(self.files.outFile):

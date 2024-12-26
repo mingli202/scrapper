@@ -8,7 +8,7 @@ from web_scraper.scraper import Scraper
 import json
 
 
-class Test(unittest.TestCase):
+class ScraperTest(unittest.TestCase):
     def setUp(self) -> None:
         self.files = Files()
         self.scraper = Scraper(self.files)
