@@ -13,9 +13,10 @@ class Section(BaseModel):
 
 
 class Rating(BaseModel):
-    score: int = 0
+    score: float = 0
     avg: float = 0
     nRating: int = 0
-    takeAgain: float = 0
+    takeAgain: int = 0
     difficulty: float = 0
     status: str = "foundn't"
+    prof: str = ""
