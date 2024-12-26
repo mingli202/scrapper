@@ -6,7 +6,7 @@ from pydantic_core import from_json
 from files import Files
 
 
-class ParserTest(unittest.TestCase):
+class RawFileTest(unittest.TestCase):
     def setUp(self):
         self.cl = {}
         self.files = Files()
@@ -97,7 +97,3 @@ class ParserTest(unittest.TestCase):
                     self.cl[day] = time
 
         return False
-
-
-if __name__ == "__main__":
-    unittest.main()

@@ -16,12 +16,18 @@ class Parser:
         self.writeToRaw()
 
         if not unittest.main(
-            module="pdf_parser.test", exit=False
+            module="pdf_parser.raw_file_test", exit=False
         ).result.wasSuccessful():
             print("parser test unsuccessful")
             exit(1)
 
         self.parse()
+
+        if not unittest.main(
+            module="pdf_parser.out_file_test", exit=False
+        ).result.wasSuccessful():
+            print("parser test unsuccessful")
+            exit(1)
 
     def writeToRaw(self):
         if os.path.exists(self.files.rawFile):
@@ -80,9 +86,7 @@ class Parser:
         with open(self.files.rawFile, "r") as file:
             raw = json.loads(file.read())
 
-        for i, row in enumerate(raw):
-            print(i)
-
+        for row in raw:
             space = len(row) - len(row.lstrip())
             text = row.strip()
             a = [k for k in row.split(" ") if k != ""]
