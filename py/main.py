@@ -1,5 +1,6 @@
 from files import Files
 from pdf_parser.parser import Parser
+import util
 from web_scraper.scraper import Scraper
 
 
@@ -10,6 +11,9 @@ def main():
 
     scraper.run()
     ratings.run()
+
+    util.addRating(files)
+    util.addViewData(files)
 
 
 if __name__ == "__main__":
