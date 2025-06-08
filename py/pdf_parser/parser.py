@@ -1,7 +1,9 @@
 import json
 import os
 import re
+from typing import Callable
 from models import Section
+import inspect
 
 
 from files import Files
@@ -345,14 +347,27 @@ class TestParse(unittest.TestCase):
         self.parser.sections = []
         self.parser.currentClass = Section()
 
-    def get_row_data(self, row: str) -> tuple[int, str, list[str], str]:
+    def get_row_data(self, row: str) -> tuple[int, str, list[str]]:
         space = len(row) - len(row.lstrip())
         text = row.strip()
         a = [k for k in row.split(" ") if k != ""]
 
-        return space, text, a, row
+        return space, text, a
+
+    def t(self, func: Callable) -> Callable:
+        sig = inspect.signature(func)
+
+        def f(row: str):
+            space, text, a = self.get_row_data(row)
+            variable_dict = {"space": space, "text": text, "a": a, "row": row}
+            function_params = {k: variable_dict[k] for k in sig.parameters.keys()}
+            func(**function_params)
+
+        return f
 
     def test_program_line(self):
+        t = self.t(self.parser.parse_program_line)
+
         for s in [
             "                                                    Science Courses",
             "                                      Social Science / Commerce Courses",
@@ -367,41 +382,169 @@ class TestParse(unittest.TestCase):
             "                                                  Physical Education",
             "                                              Complementary Courses",
         ]:
-            space, text, _, _ = self.get_row_data(s)
-            self.parser.parse_program_line(text, space)
+            t(s)
             self.assertEqual(self.parser.currentClass, Section(program=s.strip()))
 
-        space, text, _, _ = self.get_row_data("this should not work")
-        self.parser.parse_program_line(text, space)
+        t("this should not work")
         self.assertEqual(
             self.parser.currentClass, Section(program="Complementary Courses")
         )
 
     def test_course_line(self):
-        space, text, _, _ = self.get_row_data("ENGLISH")
-        self.parser.parse_course_line(text, space)
+        t = self.t(self.parser.parse_course_line)
+
+        t("ENGLISH")
         self.assertEqual(
             self.parser.currentClass, Section(course="ENGLISH"), "should set"
         )
 
-        space, text, _, _ = self.get_row_data("HUMANITIES                      ")
-        self.parser.parse_course_line(text, space)
+        t("HUMANITIES                      ")
         self.assertEqual(
             self.parser.currentClass, Section(course="HUMANITIES"), "should replace"
         )
 
-        space, text, _, _ = self.get_row_data("asdfoweur023984")
-        self.parser.parse_course_line(text, space)
+        t("asdfoweur023984")
         self.assertEqual(
             self.parser.currentClass, Section(course="HUMANITIES"), "should not work"
         )
 
-        space, text, _, _ = self.get_row_data("  FRENCH")
-        self.parser.parse_course_line(text, space)
+        t("  FRENCH")
         self.assertEqual(
             self.parser.currentClass, Section(course="HUMANITIES"), "should not work"
         )
 
+    def test_section_line(self):
+        t = self.t(self.parser.parse_section_line)
+
+        self.assertEqual(
+            self.parser.currentClass,
+            Section(course="", section="", code="", lecture={}),
+        )
+
+        t(
+            "00001        HISA        520-AH3-AB            Art History III - Understanding Contemporary Art        W              1300-1600"
+        )
+        self.assertEqual(
+            self.parser.currentClass,
+            Section(
+                course="",
+                section="00001",
+                code="520-AH3-AB",
+                lecture={
+                    "title": "Art History III - Understanding Contemporary Art",
+                    "W": "1300-1600",
+                },
+            ),
+            "should have these values",
+        )
+
+        t(
+            "00001        CRIMINOLOGY    310-518-AB            Fieldwork I - Practical                                 MW             0830-1800"
+        )
+        self.assertEqual(
+            self.parser.currentClass,
+            Section(
+                count=1,
+                course="",
+                section="00001",
+                code="310-518-AB",
+                lecture={
+                    "title": "Fieldwork I - Practical",
+                    "MW": "0830-1800",
+                },
+            ),
+            "should replace with these new values",
+        )
+
+        self.assertEqual(self.parser.sections.__len__(), 1)
+
+    def test_lecture_line(self):
+        t = self.t(self.parser.parse_lecture_line)
+
+        t("                         Laboratory            MacLean, Roger")
+        self.assertEqual(self.parser.currentClass, Section())
+
+        t("                         Lecture")
+        self.assertEqual(self.parser.currentClass, Section(lecture={"prof": ""}))
+
+        t("                         Lecture               Dukanic, Filip")
+        self.assertEqual(
+            self.parser.currentClass, Section(lecture={"prof": "Dukanic, Filip"})
+        )
+
+        t(
+            "                         Lecture               Lucier, Jason                                           W              1330-1430"
+        )
+        self.assertEqual(
+            self.parser.currentClass,
+            Section(lecture={"prof": "Lucier, Jason", "W": "1330-1430"}),
+        )
+
+    def test_lab_line(self):
+        t = self.t(self.parser.parse_lab_line)
+
+        t(
+            "             DENT        111-316-AB            Periodontal Instrumentation                             R             0830-1030"
+        )
+        self.assertEqual(
+            self.parser.currentClass,
+            Section(
+                code="111-316-AB",
+                lab={"title": "Periodontal Instrumentation", "R": "0830-1030"},
+            ),
+        )
+
+    def test_laboratory_line(self):
+        t = self.t(self.parser.parse_laboratory_line)
+
+        t("                         Laboratory")
+        self.assertEqual(self.parser.currentClass, Section(lab={"prof": ""}))
+
+        t("                         Laboratory            MacLean, Roger")
+        self.assertEqual(
+            self.parser.currentClass, Section(lab={"prof": "MacLean, Roger"})
+        )
+
+        t(
+            "                         Laboratory            Hasko, Anila                                            F              1030-1230"
+        )
+        self.assertEqual(
+            self.parser.currentClass,
+            Section(lab={"prof": "Hasko, Anila", "F": "1030-1230"}),
+        )
+
+    def test_random_floating_time(self):
+        t = self.t(self.parser.parse_random_floating_line)
+
+        t(
+            "                                                                                                       R              1600-1800"
+        )
+        self.assertEqual(self.parser.currentClass, Section(lecture={"R": "1600-1800"}))
+
+
+section_edge_case = [
+    "00001        THEA        561-A5R-AB            Production Lab 3                                        M             1430-1730",
+    "                         Lecture               Fauquembergue, Kevin                                    W             1100-1200",
+    "                         ADDITIONAL FEE:       $60.00                                                  W             1800-2000",
+    "                                                                                                       F              1430-1830",
+]
+
+blended_section_case = [
+    "00001        INFO        393-JEB-AB            Information Sources & Services III (Blended)            TR             1330-1530",
+    "                         Lecture               Maude, Melissa",
+    "                         BLENDED LEARNING. This course will be delivered in blended learning format, involving a percentage of ",
+    "                         technology-mediated asynchronous lectures, labs and/or other activities and a percentage in person on ",
+    "                         campus lectures. A computer, reliable internet connection, webcam, and microphone are required to ",
+    "                         complete your asynchronous activities.",
+]
+
+no_teacher_case = [
+    "00002        BIOL        101-1P1-AB            Introduction to Biology                                 W              1300-1500",
+    "                         Lecture",
+    "                         *** Not open, may open during registration ***",
+    "             BIOL        101-1P1-AB            Introduction to Biology                                 R              1200-1400",
+    "                         Laboratory",
+]
 
 if __name__ == "__main__":
     unittest.main()
