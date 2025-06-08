@@ -48,7 +48,7 @@ class Parser:
             line.replace("\u0000", "")
             for line in arr
             # TODO: Change for next semester
-            if line.find("SCHEDULE OF CLASSES - WINTER 2025") == -1
+            if line.find("SCHEDULE OF CLASSES - FALL 2025") == -1
             and len(line) != 0
             and not re.match(r"^SECTION", line)
             and not re.match(r"^John Abbott", line)
