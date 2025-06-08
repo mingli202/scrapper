@@ -57,6 +57,17 @@ class Parser:
         with open(self.files.rawFile, "w") as file:
             file.write(json.dumps(arr, indent=2))
 
+    def updateSection(self, section: Section):
+        if section.section != "":
+            self.sections.append(section.model_dump())
+
+            section.code = ""
+            section.section = ""
+            section.lecture = {}
+            section.lab = {}
+            section.more = ""
+            section.count += 1
+
     def parse(self):
         if os.path.exists(self.files.outFile):
             print("out_file already exists")
