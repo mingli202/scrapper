@@ -110,27 +110,7 @@ class Parser:
             a = [k for k in row.split(" ") if k != ""]
 
             if self.parse_improvement:
-                if self.parse_program_line(text, space):
-                    pass
-                elif self.parse_course_line(text, space):
-                    pass
-                elif self.parse_code_header(space):
-                    continue
-                elif self.parse_section_line(row, a):
-                    pass
-                elif self.parse_lecture_line(text, a):
-                    pass
-                elif self.parse_lab_line(space, a):
-                    pass
-                elif self.parse_laboratory_line(text, a):
-                    pass
-                elif self.parse_random_floating_line(text):
-                    pass
-                elif self.parse_course_line(text, space):
-                    pass
-                else:
-                    print("no match", text)
-                    exit()
+                self.parse_row(row)
 
             # program line
             if any(text.find(x) != -1 for x in programs) and space >= 30:
@@ -209,6 +189,34 @@ class Parser:
 
         with open(self.files.outFile, "w") as file:
             file.write(json.dumps(sections, indent=2))
+
+    def parse_row(self, row: str):
+        space = len(row) - len(row.lstrip())
+        text = row.strip()
+        a = [k for k in row.split(" ") if k != ""]
+
+        if self.parse_program_line(text, space):
+            pass
+        elif self.parse_course_line(text, space):
+            pass
+        elif self.parse_code_header(space):
+            pass
+        elif self.parse_section_line(row, a):
+            pass
+        elif self.parse_lecture_line(text, a):
+            pass
+        elif self.parse_lab_line(space, a):
+            pass
+        elif self.parse_laboratory_line(text, a):
+            pass
+        elif self.parse_random_floating_line(text):
+            pass
+        elif self.parse_course_line(text, space):
+            pass
+        else:
+            print("no match", text)
+            exit()
+        pass
 
     def parse_program_line(self, text: str, space: int) -> bool:
         cl = self.currentClass
@@ -520,6 +528,74 @@ class TestParse(unittest.TestCase):
             "                                                                                                       R              1600-1800"
         )
         self.assertEqual(self.parser.currentClass, Section(lecture={"R": "1600-1800"}))
+
+    def test_implementation_1(self):
+        rows = [
+            "                                                    Science Courses",
+            "BIOLOGY",
+            " 101-SN1-AB Co-requisite: 202-SN2-RE or 202-SF2-AB",
+            "00001        BIOL        101-SN1-RE            Cellular Biology                                        W              1200-1400",
+            "                         Lecture               Daoust, Simon",
+            "             BIOL        101-SN1-RE            Cellular Biology                                        T              0830-1030",
+            "                         Laboratory            Daoust, Simon",
+        ]
+
+        for row in rows:
+            self.parser.parse_row(row)
+
+        self.assertEqual(self.parser.sections.__len__(), 0)
+        self.assertEqual(
+            self.parser.currentClass,
+            Section(
+                program="Science Courses",
+                course="BIOLOGY",
+                count=0,
+                section="00001",
+                code="101-SN1-RE",
+                lecture={
+                    "prof": "Daoust, Simon",
+                    "W": "1200-1400",
+                    "title": "Cellular Biology",
+                },
+                lab={
+                    "prof": "Daoust, Simon",
+                    "T": "0830-1030",
+                    "title": "Cellular Biology",
+                },
+            ),
+        )
+
+        rows = [
+            "00005        BIOL        101-SN1-RE            Cellular Biology                                        T              0800-1000",
+            "                         Lecture               Parkhill, Jean-Paul",
+            "             BIOL        101-SN1-RE            Cellular Biology                                        W              1030-1230",
+            "                         Laboratory            Parkhill, Jean-Paul",
+        ]
+
+        for row in rows:
+            self.parser.parse_row(row)
+
+        self.assertEqual(self.parser.sections.__len__(), 1)
+        self.assertEqual(
+            self.parser.currentClass,
+            Section(
+                program="Science Courses",
+                course="BIOLOGY",
+                count=1,
+                section="00005",
+                code="101-SN1-RE",
+                lecture={
+                    "prof": "Parkhill, Jean-Paul",
+                    "T": "0800-1000",
+                    "title": "Cellular Biology",
+                },
+                lab={
+                    "prof": "Parkhill, Jean-Paul",
+                    "W": "1030-1230",
+                    "title": "Cellular Biology",
+                },
+            ),
+        )
 
 
 section_edge_case = [
