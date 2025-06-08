@@ -1,4 +1,5 @@
 import re
+from typing import Callable
 import unittest
 
 from pydantic_core import from_json
@@ -11,47 +12,32 @@ class RawFileTest(unittest.TestCase):
         self.cl = {}
         self.files = Files()
 
-    def test_brokenDisc(self):
-        raw: list[str] = []
+        self.raw: list[str] = []
         with open(self.files.rawFile, "r") as file:
-            raw = from_json(file.read())
+            self.raw = from_json(file.read())
 
+    def t(self, test_func: Callable[[str], bool]):
+        print("TESTING", test_func.__name__)
         is_valid = True
-        for i, row in enumerate(raw):
-            if self.brokenDisc(row):
+        for i, row in enumerate(self.raw):
+            if test_func(row):
                 print(i, row, sep=": ")
                 is_valid = False
 
         if not is_valid:
             raise
+
+    def test_brokenDisc(self):
+        self.t(self.brokenDisc)
 
     def test_time_doublelines(self):
-        raw: list[str] = []
-        with open(self.files.rawFile, "r") as file:
-            raw = from_json(file.read())
-
-        is_valid = True
-        for i, row in enumerate(raw):
-            if self.doublelines(row):
-                print(i, row, sep=": ")
-                is_valid = False
-
-        if not is_valid:
-            raise
+        self.t(self.doublelines)
 
     def test_time_duplicate(self):
-        raw: list[str] = []
-        with open(self.files.rawFile, "r") as file:
-            raw = from_json(file.read())
+        self.t(self.timeDuplicate)
 
-        is_valid = True
-        for i, row in enumerate(raw):
-            if self.timeDuplicate(row):
-                print(i, row, sep=": ")
-                is_valid = False
-
-        if not is_valid:
-            raise
+    def test_lecture_line(self):
+        self.t(self.lecture_line_not_starting_with_lecture)
 
     def brokenDisc(self, row: str):
         if re.search(r"(?<!\s)Lecture", row):
@@ -97,3 +83,15 @@ class RawFileTest(unittest.TestCase):
                     self.cl[day] = time
 
         return False
+
+    def lecture_line_not_starting_with_lecture(self, row: str) -> bool:
+        r = row.lstrip()
+
+        return -1 < r.find("Lecture") < 0
+
+
+"""
+Some more edge cases:
+- The line that contains the teacher doesn't have the word 'Lecture' before it
+- Some classes have no teacher nor the word 'Lecture' in it wtf
+"""

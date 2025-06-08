@@ -3,12 +3,12 @@ import os
 
 class Files:
     def __init__(self) -> None:
-        semester = "winter"
+        semester = "fall"
         curPath = os.path.dirname(__file__)
         curPath = curPath[0:-2]
         semesterDir = curPath + semester + "/" + semester
 
-        self.pdfName = curPath + "Schedule of Classes Dec 15.txt"
+        self.pdfName = curPath + "SCHEDULE_OF_CLASSES_FALL_2025_June_3.txt"
         self.rawFile = semesterDir + "-raw.json"
         self.classesFile = semesterDir + "-classes.json"
         self.outFile = semesterDir + "-out.json"
