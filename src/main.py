@@ -1,6 +1,7 @@
+import unittest
+import util
 from files import Files
 from pdf_parser.parser import Parser
-import util
 from web_scraper.scraper import Scraper
 
 
@@ -18,4 +19,5 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    unittest.main(module="test.parser")
+    # main()
