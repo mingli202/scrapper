@@ -4,6 +4,7 @@ import re
 from typing import Callable
 from models import Section
 import inspect
+import copy
 
 
 from files import Files
@@ -211,12 +212,11 @@ class Parser:
             pass
         elif self.parse_random_floating_line(text):
             pass
-        elif self.parse_course_line(text, space):
+        elif self.parse_more_line(text, space):
             pass
         else:
             print("no match", text)
             exit()
-        pass
 
     def parse_program_line(self, text: str, space: int) -> bool:
         cl = self.currentClass
@@ -337,7 +337,7 @@ class Parser:
         if space not in [25, 26]:
             return False
 
-        if re.match("^ADDITIONAL", text):
+        if re.match("^ADDITIONAL", text) or re.match(r"\*\*\*.*\*\*\*", text):
             cl.more += f"{text}\n"
         else:
             cl.more += f"{text} "
@@ -563,7 +563,10 @@ class TestParse(unittest.TestCase):
                     "title": "Cellular Biology",
                 },
             ),
+            "Basic section parsing",
         )
+
+        first_class = copy.deepcopy(self.parser.currentClass)
 
         rows = [
             "00005        BIOL        101-SN1-RE            Cellular Biology                                        T              0800-1000",
@@ -575,7 +578,16 @@ class TestParse(unittest.TestCase):
         for row in rows:
             self.parser.parse_row(row)
 
-        self.assertEqual(self.parser.sections.__len__(), 1)
+        self.assertEqual(
+            self.parser.sections.__len__(),
+            1,
+            "section count should be updated correctly",
+        )
+        self.assertListEqual(
+            self.parser.sections,
+            [first_class.model_dump()],
+            "section list should be updated when encountering the next section",
+        )
         self.assertEqual(
             self.parser.currentClass,
             Section(
@@ -595,6 +607,125 @@ class TestParse(unittest.TestCase):
                     "title": "Cellular Biology",
                 },
             ),
+            "Next section should override",
+        )
+
+    def test_implementation_2(self):
+        rows = [
+            "                                                    Science Courses",
+            "BIOLOGY",
+            " 101-SN1-AB Co-requisite: 202-SN2-RE or 202-SF2-AB",
+            "00010        BIOL        101-SN1-RE            Cellular Biology                                        F              1300-1500",
+            "                         Lecture               von Roretz, Christopher",
+            "                         For Honours Science students only",
+            "             BIOL        101-SN1-RE            Cellular Biology                                        R              1030-1230",
+            "                         Laboratory            von Roretz, Christopher",
+        ]
+
+        for row in rows:
+            self.parser.parse_row(row)
+
+        self.assertEqual(self.parser.sections.__len__(), 0)
+        self.assertEqual(
+            self.parser.currentClass,
+            Section(
+                program="Science Courses",
+                course="BIOLOGY",
+                count=0,
+                section="00010",
+                code="101-SN1-RE",
+                lecture={
+                    "prof": "von Roretz, Christopher",
+                    "F": "1300-1500",
+                    "title": "Cellular Biology",
+                },
+                lab={
+                    "prof": "von Roretz, Christopher",
+                    "R": "1030-1230",
+                    "title": "Cellular Biology",
+                },
+                more="For Honours Science students only ",
+            ),
+            "should show more",
+        )
+
+        rows = [
+            "00012        BIOL        101-SN1-RE            Cellular Biology                                        T              1300-1500",
+            "                         Lecture               Hughes, Cameron",
+            "             BIOL        101-SN1-RE            Cellular Biology                                        R              1430-1630",
+            "                         Laboratory            Hughes, Cameron",
+            " 101-NYA-05",
+            "00001        BIOL        101-NYA-05            General Biology I                                       TF             1130-1300",
+            "                         Lecture               Hughes, Cameron",
+            "                         For students in the old science program prior to Fall 2024.",
+            "             BIOL        101-NYA-05            General Biology I                                       M              1230-1430",
+            "                         Laboratory            Hughes, Cameron",
+        ]
+
+        for row in rows:
+            self.parser.parse_row(row)
+
+        self.assertEqual(self.parser.sections.__len__(), 2)
+        self.assertEqual(
+            self.parser.currentClass,
+            Section(
+                program="Science Courses",
+                course="BIOLOGY",
+                count=2,
+                section="00001",
+                code="101-NYA-05",
+                lecture={
+                    "prof": "Hughes, Cameron",
+                    "TF": "1130-1300",
+                    "title": "General Biology I",
+                },
+                lab={
+                    "prof": "Hughes, Cameron",
+                    "M": "1230-1430",
+                    "title": "General Biology I",
+                },
+                more="For students in the old science program prior to Fall 2024. ",
+            ),
+            "change course code",
+        )
+
+        rows = [
+            "00002        BIOL        101-NYA-05            General Biology I                                       TF             1130-1300",
+            "                         Lecture",
+            "                         *** Not open, may open during registration ***",
+            "                         For students in the old science program prior to Fall 2024.",
+            "                                                    Science Courses",
+            "BIOLOGY",
+            " 101-NYA-05",
+            "             BIOL        101-NYA-05            General Biology I                                       M              1430-1630",
+            "                         Laboratory",
+        ]
+
+        for row in rows:
+            self.parser.parse_row(row)
+
+        self.assertEqual(self.parser.sections.__len__(), 3)
+        self.assertEqual(
+            self.parser.currentClass,
+            Section(
+                program="Science Courses",
+                course="BIOLOGY",
+                count=3,
+                section="00002",
+                code="101-NYA-05",
+                lecture={
+                    "prof": "",
+                    "TF": "1130-1300",
+                    "title": "General Biology I",
+                },
+                lab={
+                    "prof": "",
+                    "M": "1430-1630",
+                    "title": "General Biology I",
+                },
+                more="*** Not open, may open during registration ***\nFor students in the old science program prior to Fall 2024. ",
+            ),
+            "double more line",
         )
 
 
