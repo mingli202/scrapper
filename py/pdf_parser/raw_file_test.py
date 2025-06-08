@@ -85,6 +85,13 @@ class RawFileTest(unittest.TestCase):
         return False
 
     def lecture_line_not_starting_with_lecture(self, row: str) -> bool:
-        row = row.strip()
+        r = row.lstrip()
 
-        return row.find("Lecture") != -1 and not row.startswith("Lecture")
+        return -1 < r.find("Lecture") < 0
+
+
+"""
+Some more edge cases:
+- The line that contains the teacher doesn't have the word 'Lecture' before it
+- Some classes have no teacher nor the word 'Lecture' in it wtf
+"""
