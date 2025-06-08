@@ -9,8 +9,13 @@ import unittest
 
 
 class Parser:
+    parse_improvement = False
+
     def __init__(self, files: Files):
         self.files = files
+
+        self.sections: list[dict] = []
+        self.currentClass = Section()
 
     def run(self):
         self.writeToRaw()
