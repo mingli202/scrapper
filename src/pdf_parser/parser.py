@@ -103,7 +103,7 @@ class Parser:
         with open(self.files.outFile, "w") as file:
             file.write(json.dumps(self.sections, indent=2))
 
-    def parse_row(self, row: str, tmp):
+    def parse_row(self, row: str, tmp: LecLab):
         space = len(row) - len(row.lstrip())
         text = row.strip()
         a = [k for k in row.split(" ") if k != ""]
