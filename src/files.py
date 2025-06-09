@@ -5,7 +5,7 @@ class Files:
     def __init__(self) -> None:
         semester = "fall"
         curPath = os.path.dirname(__file__)
-        curPath = curPath[0:-2]
+        curPath = "/".join(curPath.split("/")[:-1]) + "/"
         semesterDir = curPath + semester + "/" + semester
 
         self.pdfName = curPath + "SCHEDULE_OF_CLASSES_FALL_2025_June_3.txt"
