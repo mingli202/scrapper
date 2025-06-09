@@ -118,7 +118,7 @@ class Scraper:
             id = pids[0][0]
             if len(pids) > 1:
                 for pid in pids:
-                    c = self.closelness(pid[1].lower(), fname)
+                    c = self.closeness(pid[1].lower(), fname)
                     if c > max and c > 0.5:
                         id = pid[0]
                         max = c
@@ -128,7 +128,7 @@ class Scraper:
 
         return rating, id
 
-    def closelness(self, candidate: str, target: str) -> float:
+    def closeness(self, candidate: str, target: str) -> float:
         i = 0
         for char in target:
             if char == candidate[i]:
