@@ -4,7 +4,7 @@ import unittest
 from typing import Callable
 
 from files import Files
-from models import Section
+from models import LecLab, Section
 from pdf_parser.parser import Parser
 
 
@@ -25,19 +25,26 @@ class TestParser(unittest.TestCase):
 
         return space, text, a
 
-    def t(self, func: Callable) -> Callable:
+    def t(self, func: Callable) -> tuple[Callable, LecLab]:
         sig = inspect.signature(func)
+        tmp = LecLab()
 
         def f(row: str):
             space, text, a = self.get_row_data(row)
-            variable_dict = {"space": space, "text": text, "a": a, "row": row}
+            variable_dict = {
+                "space": space,
+                "text": text,
+                "a": a,
+                "row": row,
+                "tmp": tmp,
+            }
             function_params = {k: variable_dict[k] for k in sig.parameters.keys()}
             func(**function_params)
 
-        return f
+        return f, tmp
 
     def test_program_line(self):
-        t = self.t(self.parser.parse_program_line)
+        t, _ = self.t(self.parser.parse_program_line)
 
         for s in [
             "                                                    Science Courses",
@@ -51,8 +58,8 @@ class TestParser(unittest.TestCase):
             "                                                           French",
             "                                                        Humanities",
             "                                                  Physical Education",
-            "                                              Complementary Courses",
             "                                                    Career Programs",
+            "                                              Complementary Courses",
         ]:
             t(s)
             self.assertEqual(self.parser.currentClass, Section(program=s.strip()))
@@ -63,7 +70,7 @@ class TestParser(unittest.TestCase):
         )
 
     def test_course_line(self):
-        t = self.t(self.parser.parse_course_line)
+        t, _ = self.t(self.parser.parse_course_line)
 
         t("ENGLISH")
         self.assertEqual(
@@ -86,62 +93,69 @@ class TestParser(unittest.TestCase):
         )
 
     def test_section_line(self):
-        t = self.t(self.parser.parse_section_line)
+        t, tmp = self.t(self.parser.parse_section_line)
 
         self.assertEqual(
             self.parser.currentClass,
-            Section(course="", section="", code="", lecture={}),
+            Section(course="", section="", code="", lecture=None),
         )
 
         t(
             "00001        HISA        520-AH3-AB            Art History III - Understanding Contemporary Art        W              1300-1600"
         )
+        self.parser.updateSection(tmp)
         self.assertEqual(
-            self.parser.currentClass,
+            self.parser.sections[-1],
             Section(
                 course="",
                 section="00001",
                 code="520-AH3-AB",
-                lecture={
-                    "title": "Art History III - Understanding Contemporary Art",
-                    "W": "1300-1600",
-                },
-            ),
+                lecture=LecLab(
+                    title="Art History III - Understanding Contemporary Art",
+                    time={
+                        "W": ["1300-1600"],
+                    },
+                ),
+            ).model_dump(),
             "should have these values",
         )
 
         t(
             "00001        CRIMINOLOGY    310-518-AB            Fieldwork I - Practical                                 MW             0830-1800"
         )
+        self.parser.updateSection(tmp)
+
         self.assertEqual(
-            self.parser.currentClass,
+            self.parser.sections[-1],
             Section(
                 count=1,
                 course="",
                 section="00001",
                 code="310-518-AB",
-                lecture={
-                    "title": "Fieldwork I - Practical",
-                    "MW": "0830-1800",
-                },
-            ),
+                lecture=LecLab(
+                    title="Fieldwork I - Practical",
+                    time={
+                        "MW": ["0830-1800"],
+                    },
+                ),
+            ).model_dump(),
             "should replace with these new values",
         )
 
-        self.assertEqual(self.parser.sections.__len__(), 1)
+        self.assertEqual(self.parser.sections.__len__(), 2)
 
     def test_lecture_line(self):
-        t = self.t(self.parser.parse_lecture_line)
+        t, _ = self.t(self.parser.parse_lecture_line)
 
         t("                         Laboratory            MacLean, Roger")
         self.assertEqual(self.parser.currentClass, Section())
 
         t("                         Lecture")
-        self.assertEqual(self.parser.currentClass, Section(lecture={"prof": ""}))
+        self.assertEqual(self.parser.currentClass, Section(lecture=LecLab(prof="")))
 
         t("                         Lecture               Dukanic, Filip")
         self.assertEqual(
-            self.parser.currentClass, Section(lecture={"prof": "Dukanic, Filip"})
+            self.parser.currentClass, Section(lecture=LecLab(prof="Dukanic, Filip"))
         )
 
         t(
@@ -149,32 +163,35 @@ class TestParser(unittest.TestCase):
         )
         self.assertEqual(
             self.parser.currentClass,
-            Section(lecture={"prof": "Lucier, Jason", "W": "1330-1430"}),
+            Section(lecture=LecLab(prof="Lucier, Jason", time={"W": ["1330-1430"]})),
         )
 
     def test_lab_line(self):
-        t = self.t(self.parser.parse_lab_line)
+        t, tmp = self.t(self.parser.parse_lab_line)
 
         t(
             "             DENT        111-316-AB            Periodontal Instrumentation                             R             0830-1030"
         )
+        self.parser.updateSection(tmp)
         self.assertEqual(
-            self.parser.currentClass,
+            self.parser.sections[-1],
             Section(
                 code="111-316-AB",
-                lab={"title": "Periodontal Instrumentation", "R": "0830-1030"},
+                lecture=LecLab(
+                    title="Periodontal Instrumentation", time={"R": ["0830-1030"]}
+                ),
             ),
         )
 
     def test_laboratory_line(self):
-        t = self.t(self.parser.parse_laboratory_line)
+        t, _ = self.t(self.parser.parse_laboratory_line)
 
         t("                         Laboratory")
-        self.assertEqual(self.parser.currentClass, Section(lab={"prof": ""}))
+        self.assertEqual(self.parser.currentClass, Section(lab=LecLab(prof="")))
 
         t("                         Laboratory            MacLean, Roger")
         self.assertEqual(
-            self.parser.currentClass, Section(lab={"prof": "MacLean, Roger"})
+            self.parser.currentClass, Section(lab=LecLab(prof="MacLean, Roger"))
         )
 
         t(
@@ -182,16 +199,16 @@ class TestParser(unittest.TestCase):
         )
         self.assertEqual(
             self.parser.currentClass,
-            Section(lab={"prof": "Hasko, Anila", "F": "1030-1230"}),
+            Section(lab=LecLab(prof="Hasko, Anila", time={"F": ["1030-1230"]})),
         )
 
     def test_random_floating_time(self):
-        t = self.t(self.parser.parse_random_floating_line)
+        t, tmp = self.t(self.parser.parse_random_floating_line)
 
         t(
             "                                                                                                       R              1600-1800"
         )
-        self.assertEqual(self.parser.currentClass, Section(lecture={"R": "1600-1800"}))
+        self.assertEqual(tmp, LecLab(time={"R": ["1600-1800"]}))
 
     def test_implementation_1(self):
         rows = [
@@ -203,9 +220,10 @@ class TestParser(unittest.TestCase):
             "             BIOL        101-SN1-RE            Cellular Biology                                        T              0830-1030",
             "                         Laboratory            Daoust, Simon",
         ]
+        tmp = LecLab()
 
         for row in rows:
-            self.parser.parse_row(row)
+            self.parser.parse_row(row, tmp)
 
         self.assertEqual(self.parser.sections.__len__(), 0)
         self.assertEqual(
@@ -216,16 +234,16 @@ class TestParser(unittest.TestCase):
                 count=0,
                 section="00001",
                 code="101-SN1-RE",
-                lecture={
-                    "prof": "Daoust, Simon",
-                    "W": "1200-1400",
-                    "title": "Cellular Biology",
-                },
-                lab={
-                    "prof": "Daoust, Simon",
-                    "T": "0830-1030",
-                    "title": "Cellular Biology",
-                },
+                lecture=LecLab(
+                    prof="Daoust, Simon",
+                    time={"W": ["1200-1400"]},
+                    title="Cellular Biology",
+                ),
+                lab=LecLab(
+                    prof="Daoust, Simon",
+                    title="Cellular Biology",
+                    time={"T": ["0830-1030"]},
+                ),
             ),
             "Basic section parsing",
         )
@@ -240,7 +258,7 @@ class TestParser(unittest.TestCase):
         ]
 
         for row in rows:
-            self.parser.parse_row(row)
+            self.parser.parse_row(row, tmp)
 
         self.assertEqual(
             self.parser.sections.__len__(),
@@ -260,16 +278,16 @@ class TestParser(unittest.TestCase):
                 count=1,
                 section="00005",
                 code="101-SN1-RE",
-                lecture={
-                    "prof": "Parkhill, Jean-Paul",
-                    "T": "0800-1000",
-                    "title": "Cellular Biology",
-                },
-                lab={
-                    "prof": "Parkhill, Jean-Paul",
-                    "W": "1030-1230",
-                    "title": "Cellular Biology",
-                },
+                lecture=LecLab(
+                    prof="Parkhill, Jean-Paul",
+                    title="Cellular Biology",
+                    time={"T": ["0800-1000"]},
+                ),
+                lab=LecLab(
+                    prof="Parkhill, Jean-Paul",
+                    time={"W": ["1030-1230"]},
+                    title="Cellular Biology",
+                ),
             ),
             "Next section should override",
         )
@@ -286,8 +304,10 @@ class TestParser(unittest.TestCase):
             "                         Laboratory            von Roretz, Christopher",
         ]
 
+        tmp = LecLab()
+
         for row in rows:
-            self.parser.parse_row(row)
+            self.parser.parse_row(row, tmp)
 
         self.assertEqual(self.parser.sections.__len__(), 0)
         self.assertEqual(
@@ -298,16 +318,16 @@ class TestParser(unittest.TestCase):
                 count=0,
                 section="00010",
                 code="101-SN1-RE",
-                lecture={
-                    "prof": "von Roretz, Christopher",
-                    "F": "1300-1500",
-                    "title": "Cellular Biology",
-                },
-                lab={
-                    "prof": "von Roretz, Christopher",
-                    "R": "1030-1230",
-                    "title": "Cellular Biology",
-                },
+                lecture=LecLab(
+                    prof="von Roretz, Christopher",
+                    title="Cellular Biology",
+                    time={"F": ["1300-1500"]},
+                ),
+                lab=LecLab(
+                    prof="von Roretz, Christopher",
+                    time={"R": ["1030-1230"]},
+                    title="Cellular Biology",
+                ),
                 more="For Honours Science students only ",
             ),
             "should show more",
@@ -327,7 +347,7 @@ class TestParser(unittest.TestCase):
         ]
 
         for row in rows:
-            self.parser.parse_row(row)
+            self.parser.parse_row(row, tmp)
 
         self.assertEqual(self.parser.sections.__len__(), 2)
         self.assertEqual(
@@ -338,16 +358,16 @@ class TestParser(unittest.TestCase):
                 count=2,
                 section="00001",
                 code="101-NYA-05",
-                lecture={
-                    "prof": "Hughes, Cameron",
-                    "TF": "1130-1300",
-                    "title": "General Biology I",
-                },
-                lab={
-                    "prof": "Hughes, Cameron",
-                    "M": "1230-1430",
-                    "title": "General Biology I",
-                },
+                lecture=LecLab(
+                    prof="Hughes, Cameron",
+                    time={"TF": ["1130-1300"]},
+                    title="General Biology I",
+                ),
+                lab=LecLab(
+                    prof="Hughes, Cameron",
+                    time={"M": ["1230-1430"]},
+                    title="General Biology I",
+                ),
                 more="For students in the old science program prior to Fall 2024. ",
             ),
             "change course code",
@@ -366,7 +386,7 @@ class TestParser(unittest.TestCase):
         ]
 
         for row in rows:
-            self.parser.parse_row(row)
+            self.parser.parse_row(row, tmp)
 
         self.assertEqual(self.parser.sections.__len__(), 3)
         self.assertEqual(
@@ -377,16 +397,16 @@ class TestParser(unittest.TestCase):
                 count=3,
                 section="00002",
                 code="101-NYA-05",
-                lecture={
-                    "prof": "",
-                    "TF": "1130-1300",
-                    "title": "General Biology I",
-                },
-                lab={
-                    "prof": "",
-                    "M": "1430-1630",
-                    "title": "General Biology I",
-                },
+                lecture=LecLab(
+                    prof="",
+                    time={"TF": ["1130-1300"]},
+                    title="General Biology I",
+                ),
+                lab=LecLab(
+                    prof="",
+                    time={"M": ["1430-1630"]},
+                    title="General Biology I",
+                ),
                 more="*** Not open, may open during registration ***\nFor students in the old science program prior to Fall 2024. ",
             ),
             "double more line",
@@ -400,23 +420,50 @@ class TestParser(unittest.TestCase):
             "                         Lecture",
         ]
 
+        tmp = LecLab()
+
         for row in rows:
-            self.parser.parse_row(row)
+            self.parser.parse_row(row, tmp)
 
         self.assertEqual(
             self.parser.currentClass,
             Section(
                 program="Career Programs",
                 code="180-51J-C",
-                lecture={
-                    "title": "Nursing V",
-                    "prof": "",
-                    "MT": "0800-1000",
-                },
+                lecture=LecLab(
+                    title="Nursing V",
+                    prof="",
+                    time={"MT": ["0800-1000"]},
+                ),
                 count=0,
                 section="00001",
             ),
             "should be equal",
+        )
+
+        rows = [
+            " 180-10D-L  (LABORATORY)",
+            "00011        NURS        180-10D-L             Introduction to Nursing I - Laboratory                  WF            1530-1630",
+            "                         Laboratory                                                                    F              1330-1430",
+        ]
+
+        for row in rows:
+            self.parser.parse_row(row, tmp)
+
+        self.assertEqual(
+            self.parser.currentClass,
+            Section(
+                program="Career Programs",
+                code="180-10D-L",
+                lab=LecLab(
+                    title="Introduction to Nursing I - Laboratory",
+                    prof="",
+                    time={"WF": ["1530-1630"], "F": ["1330-1430"]},
+                ),
+                count=1,
+                section="00011",
+            ),
+            "no lecture only lab tf",
         )
 
     def test_no_lecture_row(self):
@@ -425,7 +472,30 @@ class TestParser(unittest.TestCase):
             " 180-10D-LS (CLINICAL)",
             "00021        NURS        180-10D-LS            Introduction to Nursing I - clinical                    W             0830-1130",
             "                                                                                                       W              1200-1400",
+            "00022        NURS        180-10D-LS            Introduction to Nursing I - clinical                    W             0830-1130",
+            "                                                                                                       W              1200-1400",
         ]
+
+        tmp = LecLab()
+
+        for row in rows:
+            self.parser.parse_row(row, tmp)
+
+        self.parser.updateSection(tmp)
+        self.assertEqual(
+            self.parser.sections,
+            [
+                Section(
+                    program="Career Programs",
+                    code="180-10D-LS",
+                    section="00021",
+                    lecture=LecLab(
+                        title="Introduction to Nursing I - clinical",
+                        time={"W": ["0830-1130", "1200-1400"]},
+                    ),
+                )
+            ],
+        )
 
 
 section_edge_case = [
