@@ -11,8 +11,12 @@ class LecLab(BaseModel):
     time: Time = {}
 
     def update(self, tmp: Self):
-        self.title = tmp.title
-        self.prof = tmp.prof
+        if tmp.title != "":
+            self.title = tmp.title
+
+        if tmp.prof != "":
+            self.prof = tmp.prof
+
         self.update_time(tmp.time)
 
     def update_time(self, tmp: Time):
