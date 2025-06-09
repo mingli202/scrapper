@@ -142,7 +142,12 @@ class Scraper:
         SCHOOL_REF = "U2Nob29sLTEyMDUw"
 
         url = f"https://www.ratemyprofessors.com/search/professors/12050?q={lastname}"
-        r = requests.get(url)
+        r = requests.get(
+            url,
+            headers={
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:139.0) Gecko/20100101 Firefox/139.0"
+            },
+        )
 
         if r.status_code != 200:
             raise
@@ -162,7 +167,12 @@ class Scraper:
         SCHOOL_REF = "U2Nob29sLTEyMDUw"
 
         url = f"https://www.ratemyprofessors.com/ShowRatings.jsp?tid={pid}"
-        r = requests.get(url)
+        r = requests.get(
+            url,
+            headers={
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:139.0) Gecko/20100101 Firefox/139.0"
+            },
+        )
 
         if r.status_code != 200:
             print("Error")
