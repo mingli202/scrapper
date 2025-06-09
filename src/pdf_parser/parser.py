@@ -1,7 +1,7 @@
 import json
 import os
 import re
-from models import Section
+from models import Section, LecLab, Time
 
 
 from files import Files
@@ -56,7 +56,7 @@ class Parser:
         with open(self.files.rawFile, "w") as file:
             file.write(json.dumps(arr, indent=2))
 
-    def updateSection(self, tmp: dict):
+    def updateSection(self, tmp: LecLab):
         section = self.currentClass
 
         if section.section == "":
@@ -65,17 +65,23 @@ class Parser:
         if section.lab:
             section.lab.update(tmp)
         else:
+            if not section.lecture:
+                section.lecture = LecLab()
+
             section.lecture.update(tmp)
 
         self.sections.append(section.model_dump())
 
         section.code = ""
         section.section = ""
-        section.lecture = {}
-        section.lab = {}
+        section.lecture = None
+        section.lab = None
         section.more = ""
         section.count += 1
-        tmp.clear()
+
+        tmp.title = ""
+        tmp.prof = ""
+        tmp.time = Time()
 
     def parse(self):
         if os.path.exists(self.files.outFile):
@@ -87,7 +93,7 @@ class Parser:
         with open(self.files.rawFile, "r") as file:
             raw = json.loads(file.read())
 
-        tmp = {}
+        tmp = LecLab()
 
         for row in raw:
             self.parse_row(row, tmp)
@@ -124,7 +130,7 @@ class Parser:
             print("no match", text)
             exit()
 
-    def parse_program_line(self, text: str, space: int, tmp: dict) -> bool:
+    def parse_program_line(self, text: str, space: int, tmp: LecLab) -> bool:
         cl = self.currentClass
 
         programs = [
@@ -149,7 +155,7 @@ class Parser:
         cl.program = text
         return True
 
-    def parse_course_line(self, text: str, space: int, tmp: dict) -> bool:
+    def parse_course_line(self, text: str, space: int, tmp: LecLab) -> bool:
         cl = self.currentClass
 
         if not (text.isupper() and space == 0):
@@ -164,7 +170,7 @@ class Parser:
     def parse_code_header(self, space: int) -> bool:
         return space == 1
 
-    def parse_section_line(self, row: str, a: list[str], tmp: dict) -> bool:
+    def parse_section_line(self, row: str, a: list[str], tmp: LecLab) -> bool:
         if not re.match(r"^\d{5}", row):
             return False
 
@@ -175,12 +181,12 @@ class Parser:
         cl.section = section
         cl.code = code
 
-        tmp["title"] = " ".join(title)
-        tmp[day] = time
+        tmp.title = " ".join(title)
+        tmp.update_time({day: [time]})
 
         return True
 
-    def parse_lecture_line(self, text: str, a: list[str], tmp: dict) -> bool:
+    def parse_lecture_line(self, text: str, a: list[str], tmp: LecLab) -> bool:
         cl = self.currentClass
 
         if not re.match("^Lecture", text):
@@ -188,17 +194,22 @@ class Parser:
 
         if re.search(r"[MTWRF]{1,5}\s+\d{4}-\d{4}", text):
             _, *prof, day, time = a
-            cl.lecture[day] = time
+
+            tmp.time.setdefault(day, []).append(time)
         else:
             _, *prof = a
 
-        cl.lecture["prof"] = " ".join(prof)
-        cl.lecture.update(**tmp)
+        tmp.prof = " ".join(prof)
+
+        if not cl.lecture:
+            cl.lecture = LecLab()
+        cl.lecture.update(tmp)
+
         tmp.clear()
 
         return True
 
-    def parse_lab_line(self, space: int, a: list[str], tmp: dict) -> bool:
+    def parse_lab_line(self, space: int, a: list[str], tmp: LecLab) -> bool:
         cl = self.currentClass
 
         if not space == 13:
@@ -206,12 +217,12 @@ class Parser:
 
         _, code, *title, day, time = a
         cl.code = code
-        tmp["title"] = " ".join(title)
-        tmp[day] = time
+        tmp.title = " ".join(title)
+        tmp.update_time({day: [time]})
 
         return True
 
-    def parse_laboratory_line(self, text: str, a: list[str], tmp: dict) -> bool:
+    def parse_laboratory_line(self, text: str, a: list[str], tmp: LecLab) -> bool:
         cl = self.currentClass
 
         if not re.match("^Laboratory", text):
@@ -219,19 +230,23 @@ class Parser:
 
         if re.search(r"[MTWRF]{1,5}\s+\d{4}-\d{4}", text):
             _, *prof, day, time = a
-            cl.lab[day] = time
+            tmp.update_time({day: [time]})
         else:
             _, *prof = a
 
-        cl.lab["prof"] = " ".join(prof)
-        cl.lab.update(**tmp)
+        tmp.prof = " ".join(prof)
+
+        if not cl.lab:
+            cl.lab = LecLab()
+        cl.lab.update(tmp)
+
         tmp.clear()
 
         return True
 
-    def parse_random_floating_line(self, text: str, tmp: dict) -> bool:
+    def parse_random_floating_line(self, text: str, tmp: LecLab) -> bool:
         if m := re.search(r"([MTWRF]{1,5})\s+(\d{4}-\d{4})", text):
-            tmp[m.group(1)] = m.group(2)
+            tmp.update_time({m.group(1): [m.group(2)]})
 
             return True
 

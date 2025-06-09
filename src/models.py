@@ -1,4 +1,28 @@
+from typing import Self
 from pydantic import BaseModel
+
+
+Time = dict[str, list[str]]
+
+
+class LecLab(BaseModel):
+    title: str = ""
+    prof: str = ""
+    time: Time = {}
+
+    def update(self, tmp: Self):
+        self.title = tmp.title
+        self.prof = tmp.prof
+        self.update_time(tmp.time)
+
+    def update_time(self, tmp: Time):
+        for k, v in tmp.items():
+            self.time.setdefault(k, []).extend(v)
+
+    def clear(self):
+        self.title = ""
+        self.prof = ""
+        self.time = Time()
 
 
 class Section(BaseModel):
@@ -7,8 +31,8 @@ class Section(BaseModel):
     section: str = ""
     course: str = ""
     code: str = ""
-    lecture: dict[str, str] = {}
-    lab: dict[str, str] = {}
+    lecture: LecLab | None = None
+    lab: LecLab | None = None
     more: str = ""
 
 
