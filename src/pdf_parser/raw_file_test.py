@@ -33,8 +33,8 @@ class RawFileTest(unittest.TestCase):
     def test_time_doublelines(self):
         self.t(self.doublelines)
 
-    def test_time_duplicate(self):
-        self.t(self.timeDuplicate)
+    # def test_time_duplicate(self):
+    #     self.t(self.timeDuplicate)
 
     def test_lecture_line(self):
         self.t(self.lecture_line_not_starting_with_lecture)

@@ -533,6 +533,32 @@ class TestParser(unittest.TestCase):
             ).model_dump(),
         )
 
+    def test_double_lecture_line(self):
+        double_lecture_line = [
+            "00001        FILM        530-MTE-AB            Media and the Environment                               W              1200-1430",
+            "                         Lecture               Young, Ryan",
+            "             FILM        530-MTE-AB            Media and the Environment                               W              1130-1200",
+            "                         Lecture               Young, Ryan",
+        ]
+
+        tmp = LecLab()
+        for row in double_lecture_line:
+            self.parser.parse_row(row, tmp)
+
+        self.parser.updateSection(tmp)
+        self.assertEqual(
+            self.parser.sections[-1],
+            Section(
+                section="00001",
+                code="530-MTE-AB",
+                lecture=LecLab(
+                    title="Media and the Environment",
+                    prof="Young, Ryan",
+                    time={"W": ["1200-1430", "1130-1200"]},
+                ),
+            ).model_dump(),
+        )
+
 
 blended_section_case = [
     "00001        INFO        393-JEB-AB            Information Sources & Services III (Blended)            TR             1330-1530",
