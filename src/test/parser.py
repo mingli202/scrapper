@@ -172,15 +172,9 @@ class TestParser(unittest.TestCase):
         t(
             "             DENT        111-316-AB            Periodontal Instrumentation                             R             0830-1030"
         )
-        self.parser.updateSection(tmp)
         self.assertEqual(
-            self.parser.sections[-1],
-            Section(
-                code="111-316-AB",
-                lecture=LecLab(
-                    title="Periodontal Instrumentation", time={"R": ["0830-1030"]}
-                ),
-            ),
+            tmp,
+            LecLab(title="Periodontal Instrumentation", time={"R": ["0830-1030"]}),
         )
 
     def test_laboratory_line(self):
@@ -493,17 +487,52 @@ class TestParser(unittest.TestCase):
                         title="Introduction to Nursing I - clinical",
                         time={"W": ["0830-1130", "1200-1400"]},
                     ),
-                )
+                ).model_dump(),
+                Section(
+                    count=1,
+                    program="Career Programs",
+                    code="180-10D-LS",
+                    section="00022",
+                    lecture=LecLab(
+                        title="Introduction to Nursing I - clinical",
+                        time={"W": ["0830-1130", "1200-1400"]},
+                    ),
+                ).model_dump(),
             ],
         )
 
+    def test_section_edge_case(self):
+        section_edge_case = [
+            "00001        THEA        561-A5R-AB            Production Lab 3                                        M             1430-1730",
+            "                         Lecture               Fauquembergue, Kevin                                    W             1100-1200",
+            "                         ADDITIONAL FEE:       $60.00                                                  W             1800-2000",
+            "                                                                                                       F              1430-1830",
+        ]
 
-section_edge_case = [
-    "00001        THEA        561-A5R-AB            Production Lab 3                                        M             1430-1730",
-    "                         Lecture               Fauquembergue, Kevin                                    W             1100-1200",
-    "                         ADDITIONAL FEE:       $60.00                                                  W             1800-2000",
-    "                                                                                                       F              1430-1830",
-]
+        tmp = LecLab()
+
+        for row in section_edge_case:
+            self.parser.parse_row(row, tmp)
+
+        self.parser.updateSection(tmp)
+        self.assertEqual(
+            self.parser.sections[-1],
+            Section(
+                count=0,
+                code="561-A5R-AB",
+                lecture=LecLab(
+                    title="Production Lab 3",
+                    prof="Fauquembergue, Kevin",
+                    time={
+                        "M": ["1430-1730"],
+                        "W": ["1100-1200", "1800-2000"],
+                        "F": ["1430-1830"],
+                    },
+                ),
+                section="00001",
+            ).model_dump(),
+        )
+
 
 blended_section_case = [
     "00001        INFO        393-JEB-AB            Information Sources & Services III (Blended)            TR             1330-1530",
