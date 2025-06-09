@@ -18,15 +18,19 @@ class Scraper:
 
     def run(self):
         if os.path.exists(self.files.ratings):
-            print("Rating files already exists")
+            with open(self.files.ratings, "r") as file:
+                ratings = json.loads(file.read())
 
-            if not unittest.main(
-                exit=False, module="web_scraper.test"
-            ).result.wasSuccessful():
-                print("scraper test unsuccessful")
-                exit(1)
+            if ratings.__len__() != 0:
+                print("Rating files already exists")
 
-            return
+                if not unittest.main(
+                    exit=False, module="web_scraper.test"
+                ).result.wasSuccessful():
+                    print("scraper test unsuccessful")
+                    exit(1)
+
+                return
 
         professors = self.get_professors()
 
