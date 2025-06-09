@@ -1,10 +1,7 @@
 import json
 import os
 import re
-from typing import Callable
 from models import Section
-import inspect
-import copy
 
 
 from files import Files
@@ -12,13 +9,12 @@ import unittest
 
 
 class Parser:
-    parse_improvement = False
-
     def __init__(self, files: Files):
         self.files = files
 
         self.sections: list[dict] = []
         self.currentClass = Section()
+        self.tmp = {}
 
     def run(self):
         self.writeToRaw()
@@ -60,157 +56,67 @@ class Parser:
         with open(self.files.rawFile, "w") as file:
             file.write(json.dumps(arr, indent=2))
 
-    def updateSection(self, section: Section):
-        if section.section != "":
-            self.sections.append(section.model_dump())
+    def updateSection(self, tmp: dict):
+        section = self.currentClass
 
-            section.code = ""
-            section.section = ""
-            section.lecture = {}
-            section.lab = {}
-            section.more = ""
-            section.count += 1
+        if section.section == "":
+            return
+
+        if section.lab:
+            section.lab.update(tmp)
+        else:
+            section.lecture.update(tmp)
+
+        self.sections.append(section.model_dump())
+
+        section.code = ""
+        section.section = ""
+        section.lecture = {}
+        section.lab = {}
+        section.more = ""
+        section.count += 1
+        tmp.clear()
 
     def parse(self):
         if os.path.exists(self.files.outFile):
             print("out_file already exists")
             return
 
-        def updateSection(section: Section, sections: list[dict]):
-            if section.section != "":
-                sections.append(section.model_dump())
-
-                section.code = ""
-                section.section = ""
-                section.lecture = {}
-                section.lab = {}
-                section.more = ""
-                section.count += 1
-
-        cl = Section()
-        sections: list[dict] = []
-        programs = [
-            "Courses",
-            "Arts, Literature & Communication",
-            "Arts & Science",
-            "English",
-            "French",
-            "Humanities",
-            "Physical Education",
-            "English",
-        ]
-
         raw: list[str] = []
 
         with open(self.files.rawFile, "r") as file:
             raw = json.loads(file.read())
 
+        tmp = {}
+
         for row in raw:
-            space = len(row) - len(row.lstrip())
-            text = row.strip()
-            a = [k for k in row.split(" ") if k != ""]
+            self.parse_row(row, tmp)
 
-            if self.parse_improvement:
-                self.parse_row(row)
-
-            # program line
-            if any(text.find(x) != -1 for x in programs) and space >= 30:
-                if text != cl.program:
-                    updateSection(cl, sections)
-                    cl.course = ""
-
-                cl.program = text
-
-            # course line
-            elif text.isupper() and space == 0:
-                if text != cl.course:
-                    updateSection(cl, sections)
-
-                cl.course = text
-
-            # code header
-            elif space == 1:
-                continue
-
-            # section line
-            elif re.match(r"^\d{5}", row):
-                updateSection(cl, sections)
-
-                section, _, code, *title, day, time = a
-                cl.section = section
-                cl.code = code
-                cl.lecture["title"] = " ".join(title)
-                cl.lecture[day] = time
-
-            # lecture line
-            elif re.match("^Lecture", text):
-                if re.search(r"[MTWRF]{1,5}\s+\d{4}-\d{4}", text):
-                    _, *prof, day, time = a
-                    cl.lecture[day] = time
-                else:
-                    _, *prof = a
-
-                cl.lecture["prof"] = " ".join(prof)
-
-            # lab line
-            elif space == 13:
-                _, code, *title, day, time = a
-                cl.code = code
-                cl.lab["title"] = " ".join(title)
-                cl.lab[day] = time
-
-            elif re.match("^Laboratory", text):
-                if re.search(r"[MTWRF]{1,5}\s+\d{4}-\d{4}", text):
-                    _, *prof, day, time = a
-                    cl.lab[day] = time
-                else:
-                    _, *prof = a
-
-                cl.lab["prof"] = " ".join(prof)
-
-            # random floating time
-            elif m := re.search(r"([MTWRF]{1,5})\s+(\d{4}-\d{4})", text):
-                if cl.lab:
-                    cl.lab[m.group(1)] = m.group(2)
-                else:
-                    cl.lecture[m.group(1)] = m.group(2)
-
-            # more
-            elif space in [25, 26]:
-                if re.match("^ADDITIONAL", text):
-                    cl.more += f"{text}\n"
-                else:
-                    cl.more += f"{text} "
-
-            else:
-                print("no match", text)
-                exit()
-
-        updateSection(cl, sections)
+        self.updateSection(tmp)
 
         with open(self.files.outFile, "w") as file:
-            file.write(json.dumps(sections, indent=2))
+            file.write(json.dumps(self.sections, indent=2))
 
-    def parse_row(self, row: str):
+    def parse_row(self, row: str, tmp):
         space = len(row) - len(row.lstrip())
         text = row.strip()
         a = [k for k in row.split(" ") if k != ""]
 
-        if self.parse_program_line(text, space):
+        if self.parse_program_line(text, space, tmp):
             pass
-        elif self.parse_course_line(text, space):
+        elif self.parse_course_line(text, space, tmp):
             pass
         elif self.parse_code_header(space):
             pass
-        elif self.parse_section_line(row, a):
+        elif self.parse_section_line(row, a, tmp):
             pass
-        elif self.parse_lecture_line(text, a):
+        elif self.parse_lecture_line(text, a, tmp):
             pass
-        elif self.parse_lab_line(space, a):
+        elif self.parse_lab_line(space, a, tmp):
             pass
-        elif self.parse_laboratory_line(text, a):
+        elif self.parse_laboratory_line(text, a, tmp):
             pass
-        elif self.parse_random_floating_line(text):
+        elif self.parse_random_floating_line(text, tmp):
             pass
         elif self.parse_more_line(text, space):
             pass
@@ -218,7 +124,7 @@ class Parser:
             print("no match", text)
             exit()
 
-    def parse_program_line(self, text: str, space: int) -> bool:
+    def parse_program_line(self, text: str, space: int, tmp: dict) -> bool:
         cl = self.currentClass
 
         programs = [
@@ -237,20 +143,20 @@ class Parser:
             return False
 
         if text != cl.program:
-            self.updateSection(cl)
+            self.updateSection(tmp)
             cl.course = ""
 
         cl.program = text
         return True
 
-    def parse_course_line(self, text: str, space: int) -> bool:
+    def parse_course_line(self, text: str, space: int, tmp: dict) -> bool:
         cl = self.currentClass
 
         if not (text.isupper() and space == 0):
             return False
 
         if text != cl.course:
-            self.updateSection(cl)
+            self.updateSection(tmp)
 
         cl.course = text
         return True
@@ -258,23 +164,23 @@ class Parser:
     def parse_code_header(self, space: int) -> bool:
         return space == 1
 
-    def parse_section_line(self, row: str, a: list[str]) -> bool:
-        cl = self.currentClass
-
+    def parse_section_line(self, row: str, a: list[str], tmp: dict) -> bool:
         if not re.match(r"^\d{5}", row):
             return False
 
-        self.updateSection(cl)
+        cl = self.currentClass
+        self.updateSection(tmp)
 
         section, _, code, *title, day, time = a
         cl.section = section
         cl.code = code
-        cl.lecture["title"] = " ".join(title)
-        cl.lecture[day] = time
+
+        tmp["title"] = " ".join(title)
+        tmp[day] = time
 
         return True
 
-    def parse_lecture_line(self, text: str, a: list[str]) -> bool:
+    def parse_lecture_line(self, text: str, a: list[str], tmp: dict) -> bool:
         cl = self.currentClass
 
         if not re.match("^Lecture", text):
@@ -287,10 +193,12 @@ class Parser:
             _, *prof = a
 
         cl.lecture["prof"] = " ".join(prof)
+        cl.lecture.update(**tmp)
+        tmp.clear()
 
         return True
 
-    def parse_lab_line(self, space: int, a: list[str]) -> bool:
+    def parse_lab_line(self, space: int, a: list[str], tmp: dict) -> bool:
         cl = self.currentClass
 
         if not space == 13:
@@ -298,12 +206,12 @@ class Parser:
 
         _, code, *title, day, time = a
         cl.code = code
-        cl.lab["title"] = " ".join(title)
-        cl.lab[day] = time
+        tmp["title"] = " ".join(title)
+        tmp[day] = time
 
         return True
 
-    def parse_laboratory_line(self, text: str, a: list[str]) -> bool:
+    def parse_laboratory_line(self, text: str, a: list[str], tmp: dict) -> bool:
         cl = self.currentClass
 
         if not re.match("^Laboratory", text):
@@ -316,17 +224,14 @@ class Parser:
             _, *prof = a
 
         cl.lab["prof"] = " ".join(prof)
+        cl.lab.update(**tmp)
+        tmp.clear()
 
         return True
 
-    def parse_random_floating_line(self, text: str) -> bool:
-        cl = self.currentClass
-
+    def parse_random_floating_line(self, text: str, tmp: dict) -> bool:
         if m := re.search(r"([MTWRF]{1,5})\s+(\d{4}-\d{4})", text):
-            if cl.lab:
-                cl.lab[m.group(1)] = m.group(2)
-            else:
-                cl.lecture[m.group(1)] = m.group(2)
+            tmp[m.group(1)] = m.group(2)
 
             return True
 
