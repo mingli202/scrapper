@@ -34,15 +34,22 @@ class Scraper:
         pids = self.get_saved_pids()
         new_pids = {}
 
-        def fn(prof: str):
+        def fn(prof: str) -> tuple[Rating, str, str]:
             rating, pid = self.get_rating(prof, pids)
             print(rating)
-            ratings.append(rating)
-            new_pids[prof] = pid
+            return rating, prof, pid
 
         with ThreadPoolExecutor(max_workers=10) as e:
-            for prof in professors:
-                e.submit(fn, prof)
+            results = e.map(fn, professors)
+
+            for rating, prof, pid in results:
+                ratings.append(rating)
+                new_pids[prof] = pid
+
+        # for debugging purposes
+        # for prof in professors:
+        #     fn(prof)
+        #     return
 
         with open(self.files.ratings, "w") as file:
             file.write(json.dumps([r.model_dump() for r in ratings], indent=2))
