@@ -92,8 +92,8 @@ class ScraperTest(unittest.TestCase):
         self.assertEqual(
             Rating(
                 prof="Young, Ryan",
-                avg=2.8,
-                takeAgain=34,
+                avg=2.7,
+                takeAgain=33,
                 difficulty=2.7,
                 nRating=6,
                 status="found",
@@ -159,7 +159,7 @@ class ScraperTest(unittest.TestCase):
             Rating(
                 prof="Lo Vasco, Frank",
                 avg=3.3,
-                takeAgain=52,
+                takeAgain=51,
                 difficulty=4.1,
                 nRating=53,
                 status="found",
