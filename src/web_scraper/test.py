@@ -40,10 +40,10 @@ class ScraperTest(unittest.TestCase):
             print(not_unique_last_name)
 
     def test_closelness(self):
-        c = self.scraper.closelness("Grgoy", "Gregory")
+        c = self.scraper.closeness("Grgoy", "Gregory")
         self.assertEqual(c, 5 / 7)
 
-        c = self.scraper.closelness("Greg", "Gregory")
+        c = self.scraper.closeness("Greg", "Gregory")
         self.assertEqual(c, 4 / 7)
 
     def test_valid_pids(self):
