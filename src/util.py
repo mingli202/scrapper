@@ -1,8 +1,8 @@
 import json
-from pydantic_core import from_json
 from files import Files
-from models import Rating, Section
+from models import Section
 import math
+import copy
 
 
 def stripAccent(s: str):
@@ -17,107 +17,81 @@ def stripAccent(s: str):
 
 
 def addRating(files: Files):
-    sections: list[Section] = []
-    ratings: list[Rating] = []
-
-    with open(files.outFile) as file:
-        sections = [Section(**s) for s in from_json(file.read())]
-
-    with open(files.ratings) as file:
-        ratings = [Rating(**r) for r in from_json(file.read())]
-
-    ratings_dict: dict[str, Rating] = {}
-    for rating in ratings:
-        ratings_dict[rating.prof] = rating
-
-    sections_with_rating = []
+    sections = files.get_out_file_content()
+    ratings = files.get_ratings_file_content()
+    sections_with_rating: list[dict] = []
 
     for section in sections:
-        s = section.model_dump()
+        if section.lecture:
+            prof = section.lecture.prof
+            section.lecture.rating = ratings.get(prof)
 
-        r = ratings_dict.get(s["lecture"]["prof"])
-        if r is None:
-            r = {}
-        else:
-            r = r.model_dump()
+        if section.lab:
+            prof = section.lab.prof
+            section.lab.rating = ratings.get(prof)
 
-        s["lecture"]["rating"] = r
-
-        if "prof" in s["lab"]:
-            r = ratings_dict.get(s["lab"]["prof"])
-            if r is None:
-                r = {}
-            else:
-                r = r.model_dump()
-
-            s["lab"]["rating"] = r
-
-        sections_with_rating.append(s)
+        sections_with_rating.append(section.model_dump())
 
     with open(files.classesFile, "w") as file:
         file.write(json.dumps(sections_with_rating, indent=2))
 
 
-def handleViewData(targetClass: dict):
-    c = dict(targetClass)
+def handleViewData(targetClass: Section) -> dict:
+    c = copy.deepcopy(targetClass)
 
     col = ["M", "T", "W", "R", "F"]
     row = []
 
-    for i in range(21):
-        if i % 2 == 0:
-            row.append(i * 50 + 800)
+    for day in range(21):
+        if day % 2 == 0:
+            row.append(day * 50 + 800)
         else:
-            row.append(math.floor(i / 2) * 2 * 50 + 830)
+            row.append(math.floor(day / 2) * 2 * 50 + 830)
 
-    lecture: dict[str, str] = dict(c["lecture"])
-    lecture.pop("title", False)
-    lecture.pop("prof", False)
-    lecture.pop("rating", False)
-
-    lab: dict[str, str] = dict(c["lab"])
-    lab.pop("title", False)
-    lab.pop("prof", False)
-    lab.pop("rating", False)
+    lecture = {}
+    if targetClass.lecture:
+        lecture = targetClass.lecture.time
+    lab = {}
+    if targetClass.lab:
+        lab = targetClass.lab.time
 
     days = lecture | lab
 
     viewData = []
 
-    for i in days:
-        t = days[i]
-        t = t.split("-")
+    for day in days:
+        times = days[day]
+        for t in times:
+            t = t.split("-")
 
-        try:
-            rowStart = row.index(int(t[0])) + 1
-        except ValueError:
-            rowStart = 1
+            try:
+                rowStart = row.index(int(t[0])) + 1
+            except ValueError:
+                rowStart = 1
 
-        try:
-            rowEnd = row.index(int(t[1])) + 1
-        except ValueError:
-            rowEnd = 21
+            try:
+                rowEnd = row.index(int(t[1])) + 1
+            except ValueError:
+                rowEnd = 21
 
-        for d in i:
-            if d == "S":
-                continue
+            for d in day:
+                if d == "S":
+                    continue
 
-            colStart = col.index(d) + 1
+                colStart = col.index(d) + 1
 
-            viewData.append({colStart: [rowStart, rowEnd]})
+                viewData.append({f"{colStart}": [rowStart, rowEnd]})
 
-    c["viewData"] = viewData
-    return c
+    c.viewData = viewData
+    return c.model_dump()
 
 
 def addViewData(files: Files):
-    classes: list[dict] = []
-    with open(files.classesFile, "r") as file:
-        classes = from_json(file.read())
+    classes = files.get_classes_file_content()
 
-    polished = {}
+    polished: dict[int, dict] = {}
     for index, course in enumerate(classes):
         polished.update({index: handleViewData(course)})
 
-    with open(files.classesFile, "w") as file:
+    with open(files.allClasses, "w") as file:
         file.write(json.dumps(polished, indent=2))
