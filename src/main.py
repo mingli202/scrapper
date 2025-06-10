@@ -1,4 +1,3 @@
-import unittest
 import util
 from files import Files
 from pdf_parser.parser import Parser
@@ -19,5 +18,4 @@ def main():
 
 
 if __name__ == "__main__":
-    unittest.main(module="test.parser")
-    # main()
+    main()
