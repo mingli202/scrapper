@@ -155,9 +155,9 @@ class Scraper:
         return re.findall(
             r'{"__id":"[\w=]+","__typename":"Teacher","id":"[\w=]+","legacyId":(\d+),"avgRating":[\d\.]+,"numRatings":[\d\.]+,"wouldTakeAgainPercent":[\d\.]+,"avgDifficulty":[\d\.]+,"department":"[\w ]+","school":{"__ref":"'
             + f"{SCHOOL_REF}"
-            + r'"},"firstName":"([\w\' -]+)","lastName":'
-            + f'"{lastname}"'
-            + r',"isSaved":false}',
+            + r'"},"firstName":"([\w\' -,]+)","lastName":'
+            + f'"{lastname}'
+            + r',?","isSaved":false}',
             r.text,
             re.I,
         )
@@ -180,7 +180,7 @@ class Scraper:
 
         if matches := re.search(
             rf'"__typename":"Teacher".+"legacyId":{pid}'
-            + r',"firstName":"[\w\' -]+","lastName":"[\w\' -]+","department":"[\w ]+","school":{"__ref":"'
+            + r',"firstName":"[\w\' -,]+","lastName":"[\w\' -,]+","department":"[\w ,]+","school":{"__ref":"'
             + f"{SCHOOL_REF}"
             + r'"}.+"numRatings":([\d\.]+).+"avgRating":([\d\.]+).+"avgDifficulty":([\d\.]+),"wouldTakeAgainPercent":([\d\.]+).+'
             + rf'"__typename":"School","legacyId":{SCHOOL_ID}',
