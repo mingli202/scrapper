@@ -9,9 +9,13 @@ import json
 
 
 class ScraperTest(unittest.TestCase):
-    def setUp(self) -> None:
-        self.files = Files()
-        self.scraper = Scraper(self.files)
+    @classmethod
+    def setUpClass(cls) -> None:
+        cls.files = Files()
+        cls.professors: list[str] = []
+        with open(cls.files.professors, "r") as file:
+            cls.professors = from_json(file.read())
+        cls.scraper = Scraper(cls.files)
 
     def test_prof_rating_regex(self):
         self.assertIsNotNone(self.scraper.get_stats_from_pid("817818", "Grant, Grell"))
