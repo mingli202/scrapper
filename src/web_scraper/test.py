@@ -1,3 +1,4 @@
+import os
 import unittest
 
 from pydantic_core import from_json
@@ -68,6 +69,7 @@ class ScraperTest(unittest.TestCase):
         )
         self.assertEqual(Rating(prof="Voinea, Sorin"), rating)
 
+    # NOTE: these are hardcoded values, so subject ot change
     def test_valid_rating(self):
         rating = self.scraper.get_rating(
             "Trepanier, Michele", self.scraper.get_saved_pids()
@@ -131,25 +133,54 @@ class ScraperTest(unittest.TestCase):
             rating,
         )
 
-    def get_ratings(self) -> list[Rating]:
-        with open(self.files.ratings, "r") as file:
-            return [Rating(**r) for r in from_json(file.read())]
-
     # NOTE: manually check foundn't
-    # WARN: checked! remove this for next semester, ogay
+    # NOTE: fall2025 june 3 schedule pdf checked!
     def test_accuracy_of_not_found(self):
-        return
-        odd: list[str] = []
-        ratings: list[Rating] = self.get_ratings()
+        checked = True
 
-        for rating in ratings:
+        if checked:
+            self.updateSectionWithCheckedPids()
+            return
+
+        odd: dict[str, str] = {}
+
+        ratings: dict[str, Rating] = self.files.get_ratings_file_content()
+
+        if os.path.exists(self.files.missingPids):
+            with open(self.files.missingPids, "r") as file:
+                odd = json.loads(file.read())
+
+        for rating in ratings.values():
             if rating.status == "foundn't":
-                odd.append(rating.prof)
+                odd[rating.prof] = ""
 
         if len(odd) > 0:
             print(json.dumps(odd, indent=2))
 
+        with open(self.files.missingPids, "w") as file:
+            file.write(json.dumps(odd, indent=2))
+
         self.assertEqual(len(odd), 0)
+
+    def updateSectionWithCheckedPids(self):
+        ratings = self.files.get_ratings_file_content()
+        pids = {
+            k: v
+            for k, v in self.files.get_missing_pids_file_content().items()
+            if v != ""
+        }
+        new_pids = self.files.get_pids_file_content()
+        self.scraper.scrape_ratings(list(pids.keys()), ratings, pids, new_pids)
+
+        self.assertEqual(ratings["Walker, Tara Leigh"].status, "found")
+
+        with open(self.files.ratings, "w") as file:
+            file.write(
+                json.dumps({k: v.model_dump() for k, v in ratings.items()}, indent=2)
+            )
+
+        with open(self.files.pids, "w") as file:
+            file.write(json.dumps(new_pids, indent=2))
 
     def test_special_cases(self):
         rating: Rating = self.scraper.get_rating(
