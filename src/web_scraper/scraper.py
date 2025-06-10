@@ -32,23 +32,13 @@ class Scraper:
 
                 return
 
-        professors = self.get_professors()
+        professors = self.files.get_professors_file_content()
 
-        ratings: list[Rating] = []
+        ratings: dict[str, Rating] = {}
         pids = self.get_saved_pids()
         new_pids = {}
 
-        def fn(prof: str) -> tuple[Rating, str, str]:
-            rating, pid = self.get_rating(prof, pids)
-            print(rating)
-            return rating, prof, pid
-
-        with ThreadPoolExecutor(max_workers=10) as e:
-            results = e.map(fn, professors)
-
-            for rating, prof, pid in results:
-                ratings.append(rating)
-                new_pids[prof] = pid
+        self.scrape_ratings(professors, ratings, pids, new_pids)
 
         # for debugging purposes
         # for prof in professors:
@@ -56,7 +46,9 @@ class Scraper:
         #     return
 
         with open(self.files.ratings, "w") as file:
-            file.write(json.dumps([r.model_dump() for r in ratings], indent=2))
+            file.write(
+                json.dumps({k: v.model_dump() for k, v in ratings.items()}, indent=2)
+            )
 
         with open(self.files.pids, "w") as file:
             file.write(json.dumps(new_pids, indent=2))
@@ -66,6 +58,27 @@ class Scraper:
         ).result.wasSuccessful():
             print("scraper test unsuccessful")
             exit(1)
+
+    def scrape_ratings(
+        self,
+        professors: list[str],
+        ratings: dict[str, Rating],
+        pids: dict[str, str],
+        new_pids: dict[str, str],
+    ):
+        def fn(prof: str) -> tuple[Rating, str, str]:
+            rating, pid = self.get_rating(prof, pids)
+            print(rating)
+            return rating, prof, pid
+
+        results = [fn(p) for p in professors]
+
+        # with ThreadPoolExecutor(max_workers=10) as e:
+        #     results = e.map(fn, professors)
+
+        for rating, prof, pid in results:
+            ratings[prof] = rating
+            new_pids[prof] = pid
 
     def get_saved_pids(self) -> dict[str, str]:
         if not os.path.exists(self.files.pids):
@@ -155,7 +168,7 @@ class Scraper:
         return re.findall(
             r'{"__id":"[\w=]+","__typename":"Teacher","id":"[\w=]+","legacyId":(\d+),"avgRating":[\d\.]+,"numRatings":[\d\.]+,"wouldTakeAgainPercent":[\d\.]+,"avgDifficulty":[\d\.]+,"department":"[\w ]+","school":{"__ref":"'
             + f"{SCHOOL_REF}"
-            + r'"},"firstName":"([\w\' -,]+)","lastName":'
+            + r'"},"firstName":"([\w\' \-,]+)","lastName":'
             + f'"{lastname}'
             + r',?","isSaved":false}',
             r.text,
@@ -180,7 +193,7 @@ class Scraper:
 
         if matches := re.search(
             rf'"__typename":"Teacher".+"legacyId":{pid}'
-            + r',"firstName":"[\w\' -,]+","lastName":"[\w\' -,]+","department":"[\w ,]+","school":{"__ref":"'
+            + r',"firstName":"[\w\' \-,]+","lastName":"[\w\' \-,]+","department":"[\w ,]+","school":{"__ref":"'
             + f"{SCHOOL_REF}"
             + r'"}.+"numRatings":([\d\.]+).+"avgRating":([\d\.]+).+"avgDifficulty":([\d\.]+),"wouldTakeAgainPercent":([\d\.]+).+'
             + rf'"__typename":"School","legacyId":{SCHOOL_ID}',
