@@ -16,6 +16,8 @@ class RawFileTest(unittest.TestCase):
         with open(self.files.rawFile, "r") as file:
             self.raw = from_json(file.read())
 
+        self.classCodeRegex = r"\d{3}-\w{3}-\w{1,2}"
+
     def t(self, test_func: Callable[[str], bool]):
         print("TESTING", test_func.__name__)
         is_valid = True
@@ -40,11 +42,18 @@ class RawFileTest(unittest.TestCase):
         self.t(self.lecture_line_not_starting_with_lecture)
 
     def brokenDisc(self, row: str):
-        if re.search(r"(?<!\s)Lecture", row):
+        if re.search(r"[\w\d]+\s*Lecture", row) and not re.search(
+            self.classCodeRegex, row
+        ):
+            return True
+
+        if re.search(r"[\w\d]+\s*Laboratory", row) and not re.search(
+            self.classCodeRegex, row
+        ):
             return True
 
         if re.match(r"^\d{5}", row):
-            if re.match(r"^\d{5}\s*\w+\d{3}-\w{3}-\w{2}", row):
+            if re.match(r"^\d{5}\s*\w+\d{3}-\w{3}-\w{1,2}", row):
                 return True
 
         return False

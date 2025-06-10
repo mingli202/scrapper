@@ -135,11 +135,14 @@ class ScraperTest(unittest.TestCase):
 
     # NOTE: manually check foundn't
     # NOTE: fall2025 june 3 schedule pdf checked!
+    # NOTE: missingPids checked!
     def test_accuracy_of_not_found(self):
         checked = True
+        updated = True
 
         if checked:
-            self.updateSectionWithCheckedPids()
+            if not updated:
+                self.updateSectionWithCheckedPids()
             return
 
         odd: dict[str, str] = {}
