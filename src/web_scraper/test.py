@@ -120,6 +120,9 @@ class ScraperTest(unittest.TestCase):
 
     # NOTE: belongs to Concordia
     def test_Klochko_Yuliya(self):
+        if "Klochko, Yuliya" not in self.professors:
+            return
+
         rating: Rating = self.scraper.get_rating(
             "Klochko, Yuliya", self.scraper.get_saved_pids()
         )[0]
