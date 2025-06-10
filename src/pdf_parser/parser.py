@@ -20,7 +20,7 @@ class Parser:
         self.writeToRaw()
 
         if not unittest.main(
-            module="pdf_parser.raw_file_test", exit=False
+            module="test.raw_file_test", exit=False
         ).result.wasSuccessful():
             print("parser test unsuccessful")
             exit(1)
@@ -28,7 +28,7 @@ class Parser:
         self.parse()
 
         if not unittest.main(
-            module="pdf_parser.out_file_test", exit=False
+            module="test.out_file_test", exit=False
         ).result.wasSuccessful():
             print("parser test unsuccessful")
             exit(1)
