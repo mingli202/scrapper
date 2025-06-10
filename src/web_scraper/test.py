@@ -75,12 +75,12 @@ class ScraperTest(unittest.TestCase):
         self.assertEqual(
             Rating(
                 prof="Trepanier, Michele",
-                avg=3.1,
-                takeAgain=47,
+                avg=2.9,
+                takeAgain=48,
                 difficulty=3.5,
-                nRating=19,
+                nRating=21,
                 status="found",
-                score=60.9,
+                score=57.3,
             ),
             rating,
         )
