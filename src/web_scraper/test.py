@@ -136,7 +136,7 @@ class ScraperTest(unittest.TestCase):
             return [Rating(**r) for r in from_json(file.read())]
 
     # NOTE: manually check foundn't
-    # WARN: checked! remove this for next semester
+    # WARN: checked! remove this for next semester, ogay
     def test_accuracy_of_not_found(self):
         return
         odd: list[str] = []
@@ -159,11 +159,11 @@ class ScraperTest(unittest.TestCase):
             Rating(
                 prof="Lo Vasco, Frank",
                 avg=3.3,
-                takeAgain=54,
+                takeAgain=52,
                 difficulty=4.1,
-                nRating=43,
+                nRating=53,
                 status="found",
-                score=65.3,
+                score=65.4,
             ),
             rating,
         )
