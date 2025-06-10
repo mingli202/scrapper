@@ -5,10 +5,21 @@ from pydantic import BaseModel
 Time = dict[str, list[str]]
 
 
+class Rating(BaseModel):
+    score: float = 0
+    avg: float = 0
+    nRating: int = 0
+    takeAgain: int = 0
+    difficulty: float = 0
+    status: str = "foundn't"
+    prof: str = ""
+
+
 class LecLab(BaseModel):
     title: str = ""
     prof: str = ""
     time: Time = {}
+    rating: Rating | None = None
 
     def update(self, tmp: Self):
         if tmp.title != "":
@@ -29,6 +40,9 @@ class LecLab(BaseModel):
         self.time = Time()
 
 
+ViewData = list[dict[str, list[int]]]
+
+
 class Section(BaseModel):
     program: str = ""
     count: int = 0
@@ -38,13 +52,4 @@ class Section(BaseModel):
     lecture: LecLab | None = None
     lab: LecLab | None = None
     more: str = ""
-
-
-class Rating(BaseModel):
-    score: float = 0
-    avg: float = 0
-    nRating: int = 0
-    takeAgain: int = 0
-    difficulty: float = 0
-    status: str = "foundn't"
-    prof: str = ""
+    viewData: ViewData = []
