@@ -2,7 +2,7 @@ import os
 
 from pydantic_core import from_json
 
-from models import Rating
+from models import Rating, Section
 
 
 class Files:
@@ -21,6 +21,7 @@ class Files:
         self.ratings = semesterDir + "-ratings.json"
         self.pids = semesterDir + "-pids.json"
         self.missingPids = semesterDir + "-missing-pid.json"
+        self.allClasses = "/".join(semesterDir.split("/")[:-1] + ["allClasses.json"])
 
     def get_raw_file_content(self) -> list[str]:
         with open(self.rawFile, "r") as file:
@@ -41,3 +42,15 @@ class Files:
     def get_pids_file_content(self) -> dict[str, str]:
         with open(self.pids, "r") as file:
             return from_json(file.read())
+
+    def get_out_file_content(self) -> list[Section]:
+        with open(self.outFile, "r") as file:
+            return [Section(**s) for s in from_json(file.read())]
+
+    def get_classes_file_content(self) -> list[Section]:
+        with open(self.outFile, "r") as file:
+            return [Section(**s) for s in from_json(file.read())]
+
+    def get_all_classes_file_content(self) -> dict[int, Section]:
+        with open(self.outFile, "r") as file:
+            return {k: Section(**v) for k, v in from_json(file.read()).items()}
