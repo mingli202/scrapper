@@ -15,6 +15,7 @@ import util
 class Scraper:
     def __init__(self, files: Files):
         self.files = files
+        self.debug = False
 
     def run(self):
         if os.path.exists(self.files.ratings):
@@ -25,7 +26,7 @@ class Scraper:
                 print("Rating files already exists")
 
                 if not unittest.main(
-                    exit=False, module="web_scraper.test"
+                    exit=False, module="test.web_scraper_test"
                 ).result.wasSuccessful():
                     print("scraper test unsuccessful")
                     exit(1)
@@ -39,11 +40,6 @@ class Scraper:
         new_pids = {}
 
         self.scrape_ratings(professors, ratings, pids, new_pids)
-
-        # for debugging purposes
-        # for prof in professors:
-        #     fn(prof)
-        #     return
 
         with open(self.files.ratings, "w") as file:
             file.write(
@@ -73,12 +69,13 @@ class Scraper:
 
         results = [fn(p) for p in professors]
 
-        # with ThreadPoolExecutor(max_workers=10) as e:
-        #     results = e.map(fn, professors)
-
-        for rating, prof, pid in results:
-            ratings[prof] = rating
-            new_pids[prof] = pid
+        if self.debug:
+            for rating, prof, pid in results:
+                ratings[prof] = rating
+                new_pids[prof] = pid
+        else:
+            with ThreadPoolExecutor(max_workers=10) as e:
+                results = e.map(fn, professors)
 
     def get_saved_pids(self) -> dict[str, str]:
         if not os.path.exists(self.files.pids):
