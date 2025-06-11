@@ -170,6 +170,7 @@ class Parser:
     def parse_code_header(self, space: int) -> bool:
         return space == 1
 
+    # FIX: disc can be multi word so this doesn't work
     def parse_section_line(self, row: str, a: list[str], tmp: LecLab) -> bool:
         if not re.match(r"^\d{5}", row):
             return False
