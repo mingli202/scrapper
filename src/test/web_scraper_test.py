@@ -5,7 +5,7 @@ from pydantic_core import from_json
 from files import Files
 
 from models import Rating
-from web_scraper.scraper import Scraper
+from scraper import Scraper
 import json
 
 

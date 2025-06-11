@@ -1,7 +1,7 @@
 import util
 from files import Files
-from pdf_parser.parser import Parser
-from web_scraper.scraper import Scraper
+from parser import Parser
+from scraper import Scraper
 
 
 # TODO: 1. Change filename and semester in files.py

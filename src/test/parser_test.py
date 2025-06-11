@@ -5,7 +5,7 @@ from typing import Callable
 
 from files import Files
 from models import LecLab, Section
-from pdf_parser.parser import Parser
+from parser import Parser
 
 
 class TestParser(unittest.TestCase):
