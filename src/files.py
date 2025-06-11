@@ -29,7 +29,9 @@ class Files:
 
     def get_ratings_file_content(self) -> dict[str, Rating]:
         with open(self.ratings, "r") as file:
-            return {k: Rating(**v) for k, v in from_json(file.read()).items()}
+            return {
+                k: Rating.model_validate(v) for k, v in from_json(file.read()).items()
+            }
 
     def get_missing_pids_file_content(self) -> dict[str, str]:
         with open(self.missingPids, "r") as file:
@@ -45,12 +47,14 @@ class Files:
 
     def get_out_file_content(self) -> list[Section]:
         with open(self.outFile, "r") as file:
-            return [Section(**s) for s in from_json(file.read())]
+            return [Section.model_validate(s) for s in from_json(file.read())]
 
     def get_classes_file_content(self) -> list[Section]:
-        with open(self.outFile, "r") as file:
-            return [Section(**s) for s in from_json(file.read())]
+        with open(self.classesFile, "r") as file:
+            return [Section.model_validate(s) for s in from_json(file.read())]
 
     def get_all_classes_file_content(self) -> dict[int, Section]:
-        with open(self.outFile, "r") as file:
-            return {k: Section(**v) for k, v in from_json(file.read()).items()}
+        with open(self.allClasses, "r") as file:
+            return {
+                k: Section.model_validate(v) for k, v in from_json(file.read()).items()
+            }
