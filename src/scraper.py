@@ -33,7 +33,7 @@ class Scraper:
 
                 return
 
-        professors = self.files.get_professors_file_content()
+        professors = self.get_professors()
 
         ratings: dict[str, Rating] = {}
         pids = self.get_saved_pids()
@@ -67,15 +67,15 @@ class Scraper:
             print(rating)
             return rating, prof, pid
 
-        results = [fn(p) for p in professors]
-
         if self.debug:
-            for rating, prof, pid in results:
-                ratings[prof] = rating
-                new_pids[prof] = pid
+            results = [fn(p) for p in professors]
         else:
-            with ThreadPoolExecutor(max_workers=10) as e:
+            with ThreadPoolExecutor() as e:
                 results = e.map(fn, professors)
+
+        for rating, prof, pid in results:
+            ratings[prof] = rating
+            new_pids[prof] = pid
 
     def get_saved_pids(self) -> dict[str, str]:
         if not os.path.exists(self.files.pids):
