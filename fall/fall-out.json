@@ -23226,26 +23226,6 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1053,
-    "section": "00001",
-    "course": "",
-    "code": "350-DFA-AB",
-    "lecture": {
-      "title": "Initiation à la psychologie",
-      "prof": "Caouette, Julie",
-      "time": {
-        "TR": [
-          "1600-1730"
-        ]
-      },
-      "rating": null
-    },
-    "lab": null,
-    "more": "",
-    "viewData": []
-  },
-  {
-    "program": "Complementary Courses",
     "count": 1054,
     "section": "00001",
     "course": "",
@@ -23642,6 +23622,26 @@
     },
     "lab": null,
     "more": "As part of the college's Climate Action Plan, these courses will be covering the four Climate and Ecological Emergency Learning Objectives in their content. Depending on the discipline, these Learning Objectives will be woven into the course competencies in various ways, and assessed by the teacher as part of the course evaluation plan. ",
+    "viewData": []
+  },
+  {
+    "program": "Complementary Courses",
+    "count": 1053,
+    "section": "00001",
+    "course": "",
+    "code": "350-DFA-AB",
+    "lecture": {
+      "title": "Initiation à la psychologie",
+      "prof": "Caouette, Julie",
+      "time": {
+        "TR": [
+          "1600-1730"
+        ]
+      },
+      "rating": null
+    },
+    "lab": null,
+    "more": "",
     "viewData": []
   }
 ]
