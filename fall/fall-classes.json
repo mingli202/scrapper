@@ -19589,26 +19589,6 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 563,
-    "section": "00002",
-    "course": "",
-    "code": "608-T1A-AB",
-    "lecture": {
-      "title": "Beginners Italian 101",
-      "prof": "",
-      "time": {
-        "F": [
-          "1130-1430"
-        ]
-      },
-      "rating": null
-    },
-    "lab": null,
-    "more": "*** Not open, may open during registration ***\n",
-    "viewData": []
-  },
-  {
-    "program": "Arts, Literature & Communication",
     "count": 564,
     "section": "00001",
     "course": "",
@@ -23659,62 +23639,6 @@
   },
   {
     "program": "English",
-    "count": 705,
-    "section": "00060",
-    "course": "ENGLISH",
-    "code": "603-103-MQ",
-    "lecture": {
-      "title": "Writing Tutors",
-      "prof": "Eberle, Wendy",
-      "time": {
-        "TR": [
-          "1230-1430"
-        ]
-      },
-      "rating": {
-        "score": 55.1,
-        "avg": 2.8,
-        "nRating": 12,
-        "takeAgain": 25,
-        "difficulty": 3.3,
-        "status": "found",
-        "prof": "Eberle, Wendy"
-      }
-    },
-    "lab": null,
-    "more": "",
-    "viewData": []
-  },
-  {
-    "program": "English",
-    "count": 706,
-    "section": "00061",
-    "course": "ENGLISH",
-    "code": "603-103-MQ",
-    "lecture": {
-      "title": "A Godlike Science (Writing Tutors)",
-      "prof": "Lepine, Anna",
-      "time": {
-        "WF": [
-          "1030-1230"
-        ]
-      },
-      "rating": {
-        "score": 75.5,
-        "avg": 3.9,
-        "nRating": 20,
-        "takeAgain": 72,
-        "difficulty": 3.4,
-        "status": "found",
-        "prof": "Lepine, Anna"
-      }
-    },
-    "lab": null,
-    "more": "As part of the college's Climate Action Plan, these courses will be covering the four Climate and Ecological Emergency Learning Objectives in their content. Depending on the discipline, these Learning Objectives will be woven into the course competencies in various ways, and assessed by the teacher as part of the course evaluation plan. ",
-    "viewData": []
-  },
-  {
-    "program": "English",
     "count": 707,
     "section": "00001",
     "course": "ENGLISH",
@@ -24176,62 +24100,6 @@
     },
     "lab": null,
     "more": "*** Not open, may open during registration ***\n",
-    "viewData": []
-  },
-  {
-    "program": "English",
-    "count": 724,
-    "section": "00060",
-    "course": "ENGLISH",
-    "code": "603-200-AB",
-    "lecture": {
-      "title": "Writing Tutors",
-      "prof": "Eberle, Wendy",
-      "time": {
-        "TR": [
-          "1230-1430"
-        ]
-      },
-      "rating": {
-        "score": 55.1,
-        "avg": 2.8,
-        "nRating": 12,
-        "takeAgain": 25,
-        "difficulty": 3.3,
-        "status": "found",
-        "prof": "Eberle, Wendy"
-      }
-    },
-    "lab": null,
-    "more": "",
-    "viewData": []
-  },
-  {
-    "program": "English",
-    "count": 725,
-    "section": "00061",
-    "course": "ENGLISH",
-    "code": "603-200-AB",
-    "lecture": {
-      "title": "A Godlike Science (Writing Tutors)",
-      "prof": "Lepine, Anna",
-      "time": {
-        "WF": [
-          "1030-1230"
-        ]
-      },
-      "rating": {
-        "score": 75.5,
-        "avg": 3.9,
-        "nRating": 20,
-        "takeAgain": 72,
-        "difficulty": 3.4,
-        "status": "found",
-        "prof": "Lepine, Anna"
-      }
-    },
-    "lab": null,
-    "more": "As part of the college's Climate Action Plan, these courses will be covering the four Climate and Ecological Emergency Learning Objectives in their content. Depending on the discipline, these Learning Objectives will be woven into the course competencies in various ways, and assessed by the teacher as part of the course evaluation plan. ",
     "viewData": []
   },
   {
@@ -33398,34 +33266,6 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1053,
-    "section": "00001",
-    "course": "",
-    "code": "350-DFA-AB",
-    "lecture": {
-      "title": "Initiation \u00e0 la psychologie",
-      "prof": "Caouette, Julie",
-      "time": {
-        "TR": [
-          "1600-1730"
-        ]
-      },
-      "rating": {
-        "score": 68.6,
-        "avg": 3.6,
-        "nRating": 11,
-        "takeAgain": 75,
-        "difficulty": 2.6,
-        "status": "found",
-        "prof": "Caouette, Julie"
-      }
-    },
-    "lab": null,
-    "more": "",
-    "viewData": []
-  },
-  {
-    "program": "Complementary Courses",
     "count": 1054,
     "section": "00001",
     "course": "",
@@ -33842,6 +33682,166 @@
     },
     "lab": null,
     "more": "For all programs. ",
+    "viewData": []
+  },
+  {
+    "program": "Arts, Literature & Communication",
+    "count": 563,
+    "section": "00002",
+    "course": "",
+    "code": "608-T1A-AB",
+    "lecture": {
+      "title": "Beginners Italian 101",
+      "prof": "",
+      "time": {
+        "F": [
+          "1130-1430"
+        ]
+      },
+      "rating": null
+    },
+    "lab": null,
+    "more": "*** Not open, may open during registration ***\n",
+    "viewData": []
+  },
+  {
+    "program": "English",
+    "count": 705,
+    "section": "00060",
+    "course": "ENGLISH",
+    "code": "603-103-MQ",
+    "lecture": {
+      "title": "Writing Tutors",
+      "prof": "Eberle, Wendy",
+      "time": {
+        "TR": [
+          "1230-1430"
+        ]
+      },
+      "rating": {
+        "score": 55.1,
+        "avg": 2.8,
+        "nRating": 12,
+        "takeAgain": 25,
+        "difficulty": 3.3,
+        "status": "found",
+        "prof": "Eberle, Wendy"
+      }
+    },
+    "lab": null,
+    "more": "",
+    "viewData": []
+  },
+  {
+    "program": "English",
+    "count": 706,
+    "section": "00061",
+    "course": "ENGLISH",
+    "code": "603-103-MQ",
+    "lecture": {
+      "title": "A Godlike Science (Writing Tutors)",
+      "prof": "Lepine, Anna",
+      "time": {
+        "WF": [
+          "1030-1230"
+        ]
+      },
+      "rating": {
+        "score": 75.5,
+        "avg": 3.9,
+        "nRating": 20,
+        "takeAgain": 72,
+        "difficulty": 3.4,
+        "status": "found",
+        "prof": "Lepine, Anna"
+      }
+    },
+    "lab": null,
+    "more": "As part of the college's Climate Action Plan, these courses will be covering the four Climate and Ecological Emergency Learning Objectives in their content. Depending on the discipline, these Learning Objectives will be woven into the course competencies in various ways, and assessed by the teacher as part of the course evaluation plan. ",
+    "viewData": []
+  },
+  {
+    "program": "English",
+    "count": 724,
+    "section": "00060",
+    "course": "ENGLISH",
+    "code": "603-200-AB",
+    "lecture": {
+      "title": "Writing Tutors",
+      "prof": "Eberle, Wendy",
+      "time": {
+        "TR": [
+          "1230-1430"
+        ]
+      },
+      "rating": {
+        "score": 55.1,
+        "avg": 2.8,
+        "nRating": 12,
+        "takeAgain": 25,
+        "difficulty": 3.3,
+        "status": "found",
+        "prof": "Eberle, Wendy"
+      }
+    },
+    "lab": null,
+    "more": "",
+    "viewData": []
+  },
+  {
+    "program": "English",
+    "count": 725,
+    "section": "00061",
+    "course": "ENGLISH",
+    "code": "603-200-AB",
+    "lecture": {
+      "title": "A Godlike Science (Writing Tutors)",
+      "prof": "Lepine, Anna",
+      "time": {
+        "WF": [
+          "1030-1230"
+        ]
+      },
+      "rating": {
+        "score": 75.5,
+        "avg": 3.9,
+        "nRating": 20,
+        "takeAgain": 72,
+        "difficulty": 3.4,
+        "status": "found",
+        "prof": "Lepine, Anna"
+      }
+    },
+    "lab": null,
+    "more": "As part of the college's Climate Action Plan, these courses will be covering the four Climate and Ecological Emergency Learning Objectives in their content. Depending on the discipline, these Learning Objectives will be woven into the course competencies in various ways, and assessed by the teacher as part of the course evaluation plan. ",
+    "viewData": []
+  },
+  {
+    "program": "Complementary Courses",
+    "count": 1053,
+    "section": "00001",
+    "course": "",
+    "code": "350-DFA-AB",
+    "lecture": {
+      "title": "Initiation \u00e0 la psychologie",
+      "prof": "Caouette, Julie",
+      "time": {
+        "TR": [
+          "1600-1730"
+        ]
+      },
+      "rating": {
+        "score": 68.6,
+        "avg": 3.6,
+        "nRating": 11,
+        "takeAgain": 75,
+        "difficulty": 2.6,
+        "status": "found",
+        "prof": "Caouette, Julie"
+      }
+    },
+    "lab": null,
+    "more": "",
     "viewData": []
   }
 ]
