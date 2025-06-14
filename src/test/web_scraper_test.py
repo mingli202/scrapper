@@ -134,11 +134,11 @@ class ScraperTest(unittest.TestCase):
         )
 
     # NOTE: manually check foundn't
-    # NOTE: fall2025 june 3 schedule pdf checked!
+    # NOTE: fall2025 june 6 schedule pdf checked!
     # NOTE: missingPids checked!
     def test_accuracy_of_not_found(self):
-        checked = False
-        updated = False
+        checked = True
+        updated = True
 
         if checked:
             if not updated:
