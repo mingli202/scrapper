@@ -49,8 +49,8 @@ class Parser:
             # TODO: Change for next semester
             if line.find("SCHEDULE OF CLASSES - FALL 2025") == -1
             and len(line) != 0
-            and not re.match(r"^SECTION", line)
-            and not re.match(r"^John Abbott", line)
+            and not re.search(r"SECTION", line)
+            and not re.search(r"John Abbott College", line)
         ]
 
         with open(self.files.rawFile, "w") as file:
