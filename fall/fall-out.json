@@ -644,7 +644,7 @@
     "course": "BIOLOGY",
     "code": "101-SF2-AB",
     "lecture": {
-      "title": "\u00c9cologie et \u00e9volution",
+      "title": "Écologie et évolution",
       "prof": "Levesque, Christian",
       "time": {
         "TR": [
@@ -654,7 +654,7 @@
       "rating": null
     },
     "lab": {
-      "title": "\u00c9cologie et \u00e9volution",
+      "title": "Écologie et évolution",
       "prof": "Levesque, Christian",
       "time": {
         "W": [
@@ -673,7 +673,7 @@
     "course": "BIOLOGY",
     "code": "101-SF2-AB",
     "lecture": {
-      "title": "\u00c9cologie et \u00e9volution",
+      "title": "Écologie et évolution",
       "prof": "Levesque, Christian",
       "time": {
         "TR": [
@@ -683,7 +683,7 @@
       "rating": null
     },
     "lab": {
-      "title": "\u00c9cologie et \u00e9volution",
+      "title": "Écologie et évolution",
       "prof": "Levesque, Christian",
       "time": {
         "W": [
@@ -987,7 +987,7 @@
     "code": "202-SN1-RE",
     "lecture": {
       "title": "General Chemistry",
-      "prof": "B\u00e9rub\u00e9, Am\u00e9lie",
+      "prof": "Bérubé, Amélie",
       "time": {
         "TF": [
           "1000-1130"
@@ -997,7 +997,7 @@
     },
     "lab": {
       "title": "General Chemistry",
-      "prof": "B\u00e9rub\u00e9, Am\u00e9lie",
+      "prof": "Bérubé, Amélie",
       "time": {
         "M": [
           "0830-1030"
@@ -1016,7 +1016,7 @@
     "code": "202-SN1-RE",
     "lecture": {
       "title": "General Chemistry",
-      "prof": "B\u00e9rub\u00e9, Am\u00e9lie",
+      "prof": "Bérubé, Amélie",
       "time": {
         "TF": [
           "1000-1130"
@@ -1026,7 +1026,7 @@
     },
     "lab": {
       "title": "General Chemistry",
-      "prof": "B\u00e9rub\u00e9, Am\u00e9lie",
+      "prof": "Bérubé, Amélie",
       "time": {
         "M": [
           "1030-1230"
@@ -1045,7 +1045,7 @@
     "code": "202-SN1-RE",
     "lecture": {
       "title": "General Chemistry",
-      "prof": "R\u00e9gimbal, Jean-Michel",
+      "prof": "Régimbal, Jean-Michel",
       "time": {
         "WF": [
           "0830-1000"
@@ -1055,7 +1055,7 @@
     },
     "lab": {
       "title": "General Chemistry",
-      "prof": "R\u00e9gimbal, Jean-Michel",
+      "prof": "Régimbal, Jean-Michel",
       "time": {
         "M": [
           "1230-1430"
@@ -1074,7 +1074,7 @@
     "code": "202-SN1-RE",
     "lecture": {
       "title": "General Chemistry",
-      "prof": "R\u00e9gimbal, Jean-Michel",
+      "prof": "Régimbal, Jean-Michel",
       "time": {
         "WF": [
           "0830-1000"
@@ -1084,7 +1084,7 @@
     },
     "lab": {
       "title": "General Chemistry",
-      "prof": "R\u00e9gimbal, Jean-Michel",
+      "prof": "Régimbal, Jean-Michel",
       "time": {
         "M": [
           "1430-1630"
@@ -1142,7 +1142,7 @@
     },
     "lab": {
       "title": "General Chemistry",
-      "prof": "R\u00e9gimbal, Jean-Michel",
+      "prof": "Régimbal, Jean-Michel",
       "time": {
         "T": [
           "1030-1230"
@@ -1222,7 +1222,7 @@
     "code": "202-SN1-RE",
     "lecture": {
       "title": "General Chemistry",
-      "prof": "Perez Quintana, Germ\u00e1n Miguel",
+      "prof": "Perez Quintana, Germán Miguel",
       "time": {
         "MR": [
           "1000-1130"
@@ -1232,7 +1232,7 @@
     },
     "lab": {
       "title": "General Chemistry",
-      "prof": "Perez Quintana, Germ\u00e1n Miguel",
+      "prof": "Perez Quintana, Germán Miguel",
       "time": {
         "W": [
           "0800-1000"
@@ -1251,7 +1251,7 @@
     "code": "202-SN1-RE",
     "lecture": {
       "title": "General Chemistry",
-      "prof": "Perez Quintana, Germ\u00e1n Miguel",
+      "prof": "Perez Quintana, Germán Miguel",
       "time": {
         "MR": [
           "1000-1130"
@@ -1261,7 +1261,7 @@
     },
     "lab": {
       "title": "General Chemistry",
-      "prof": "Perez Quintana, Germ\u00e1n Miguel",
+      "prof": "Perez Quintana, Germán Miguel",
       "time": {
         "W": [
           "1000-1200"
@@ -1470,7 +1470,7 @@
     },
     "lab": {
       "title": "General Chemistry",
-      "prof": "B\u00e9rub\u00e9, Am\u00e9lie",
+      "prof": "Bérubé, Amélie",
       "time": {
         "F": [
           "1230-1430"
@@ -1499,7 +1499,7 @@
     },
     "lab": {
       "title": "General Chemistry",
-      "prof": "Perez Quintana, Germ\u00e1n Miguel",
+      "prof": "Perez Quintana, Germán Miguel",
       "time": {
         "F": [
           "1430-1630"
@@ -1866,7 +1866,7 @@
     "code": "202-SN2-RE",
     "lecture": {
       "title": "Chemistry of Solutions",
-      "prof": "Perez Quintana, Germ\u00e1n Miguel",
+      "prof": "Perez Quintana, Germán Miguel",
       "time": {
         "M": [
           "1400-1600"
@@ -1876,7 +1876,7 @@
     },
     "lab": {
       "title": "Chemistry of Solutions",
-      "prof": "Perez Quintana, Germ\u00e1n Miguel",
+      "prof": "Perez Quintana, Germán Miguel",
       "time": {
         "R": [
           "1230-1430"
@@ -1895,7 +1895,7 @@
     "code": "202-SN2-RE",
     "lecture": {
       "title": "Chemistry of Solutions",
-      "prof": "Perez Quintana, Germ\u00e1n Miguel",
+      "prof": "Perez Quintana, Germán Miguel",
       "time": {
         "M": [
           "1400-1600"
@@ -1905,7 +1905,7 @@
     },
     "lab": {
       "title": "Chemistry of Solutions",
-      "prof": "Perez Quintana, Germ\u00e1n Miguel",
+      "prof": "Perez Quintana, Germán Miguel",
       "time": {
         "R": [
           "1430-1630"
@@ -1982,7 +1982,7 @@
     "code": "202-SF2-AB",
     "lecture": {
       "title": "Chimie des solutions",
-      "prof": "R\u00e9gimbal, Jean-Michel",
+      "prof": "Régimbal, Jean-Michel",
       "time": {
         "T": [
           "1430-1630"
@@ -1992,7 +1992,7 @@
     },
     "lab": {
       "title": "Chimie des solutions",
-      "prof": "R\u00e9gimbal, Jean-Michel",
+      "prof": "Régimbal, Jean-Michel",
       "time": {
         "F": [
           "1230-1430"
@@ -2011,7 +2011,7 @@
     "code": "202-SF2-AB",
     "lecture": {
       "title": "Chimie des solutions",
-      "prof": "R\u00e9gimbal, Jean-Michel",
+      "prof": "Régimbal, Jean-Michel",
       "time": {
         "T": [
           "1430-1630"
@@ -2021,7 +2021,7 @@
     },
     "lab": {
       "title": "Chimie des solutions",
-      "prof": "R\u00e9gimbal, Jean-Michel",
+      "prof": "Régimbal, Jean-Michel",
       "time": {
         "F": [
           "1430-1630"
@@ -2098,7 +2098,7 @@
     "code": "202-SNU-RE",
     "lecture": {
       "title": "Organic Chemistry",
-      "prof": "B\u00e9rub\u00e9, Am\u00e9lie",
+      "prof": "Bérubé, Amélie",
       "time": {
         "T": [
           "0800-1000"
@@ -2108,7 +2108,7 @@
     },
     "lab": {
       "title": "Organic Chemistry",
-      "prof": "B\u00e9rub\u00e9, Am\u00e9lie",
+      "prof": "Bérubé, Amélie",
       "time": {
         "R": [
           "0830-1130"
@@ -2127,7 +2127,7 @@
     "code": "202-SNU-RE",
     "lecture": {
       "title": "Organic Chemistry",
-      "prof": "B\u00e9rub\u00e9, Am\u00e9lie",
+      "prof": "Bérubé, Amélie",
       "time": {
         "T": [
           "0800-1000"
@@ -2137,7 +2137,7 @@
     },
     "lab": {
       "title": "Organic Chemistry",
-      "prof": "B\u00e9rub\u00e9, Am\u00e9lie",
+      "prof": "Bérubé, Amélie",
       "time": {
         "R": [
           "1300-1600"
@@ -2550,7 +2550,7 @@
     "code": "205-SNC-AB",
     "lecture": {
       "title": "Planetary Geology",
-      "prof": "L\u00e9veill\u00e9, Richard John",
+      "prof": "Léveillé, Richard John",
       "time": {
         "MW": [
           "1430-1530"
@@ -2560,7 +2560,7 @@
     },
     "lab": {
       "title": "Planetary Geology",
-      "prof": "L\u00e9veill\u00e9, Richard John",
+      "prof": "Léveillé, Richard John",
       "time": {
         "R": [
           "0830-1030"
@@ -2579,7 +2579,7 @@
     "code": "205-SNC-AB",
     "lecture": {
       "title": "Planetary Geology",
-      "prof": "L\u00e9veill\u00e9, Richard John",
+      "prof": "Léveillé, Richard John",
       "time": {
         "MW": [
           "1430-1530"
@@ -2589,7 +2589,7 @@
     },
     "lab": {
       "title": "Planetary Geology",
-      "prof": "L\u00e9veill\u00e9, Richard John",
+      "prof": "Léveillé, Richard John",
       "time": {
         "R": [
           "1030-1230"
@@ -2608,7 +2608,7 @@
     "code": "205-SNP-AB",
     "lecture": {
       "title": "Earth Systems Science",
-      "prof": "L\u00e9veill\u00e9, Richard John",
+      "prof": "Léveillé, Richard John",
       "time": {
         "MW": [
           "1530-1630"
@@ -2618,7 +2618,7 @@
     },
     "lab": {
       "title": "Earth Systems Science",
-      "prof": "L\u00e9veill\u00e9, Richard John",
+      "prof": "Léveillé, Richard John",
       "time": {
         "T": [
           "1230-1430"
@@ -2637,7 +2637,7 @@
     "code": "205-SNP-AB",
     "lecture": {
       "title": "Earth Systems Science",
-      "prof": "L\u00e9veill\u00e9, Richard John",
+      "prof": "Léveillé, Richard John",
       "time": {
         "MW": [
           "1530-1630"
@@ -2647,7 +2647,7 @@
     },
     "lab": {
       "title": "Earth Systems Science",
-      "prof": "L\u00e9veill\u00e9, Richard John",
+      "prof": "Léveillé, Richard John",
       "time": {
         "T": [
           "1430-1630"
@@ -3287,7 +3287,7 @@
     "course": "MATHEMATICS",
     "code": "201-SF3-AB",
     "lecture": {
-      "title": "Calcul int\u00e9gral",
+      "title": "Calcul intégral",
       "prof": "Herlin, Antoine",
       "time": {
         "TR": [
@@ -5106,7 +5106,7 @@
     "course": "PHYSICS",
     "code": "203-SF2-AB",
     "lecture": {
-      "title": "\u00c9lectricit\u00e9 et magn\u00e9tisme",
+      "title": "Électricité et magnétisme",
       "prof": "Pare, Nanouk",
       "time": {
         "R": [
@@ -5116,7 +5116,7 @@
       "rating": null
     },
     "lab": {
-      "title": "\u00c9lectricit\u00e9 et magn\u00e9tisme",
+      "title": "Électricité et magnétisme",
       "prof": "Camirand, Hubert",
       "time": {
         "M": [
@@ -5135,7 +5135,7 @@
     "course": "PHYSICS",
     "code": "203-SF2-AB",
     "lecture": {
-      "title": "\u00c9lectricit\u00e9 et magn\u00e9tisme",
+      "title": "Électricité et magnétisme",
       "prof": "Pare, Nanouk",
       "time": {
         "R": [
@@ -5145,7 +5145,7 @@
       "rating": null
     },
     "lab": {
-      "title": "\u00c9lectricit\u00e9 et magn\u00e9tisme",
+      "title": "Électricité et magnétisme",
       "prof": "Camirand, Hubert",
       "time": {
         "M": [
@@ -8464,7 +8464,7 @@
     "course": "METHODOLOGY",
     "code": "300-10F-AB",
     "lecture": {
-      "title": "M\u00e9thodes de travail intellectuel",
+      "title": "Méthodes de travail intellectuel",
       "prof": "Young, Thomas",
       "time": {
         "WF": [
@@ -8484,7 +8484,7 @@
     "course": "METHODOLOGY",
     "code": "300-10F-AB",
     "lecture": {
-      "title": "M\u00e9thodes de travail intellectuel",
+      "title": "Méthodes de travail intellectuel",
       "prof": "Bryce, Stephen",
       "time": {
         "TR": [
@@ -8504,7 +8504,7 @@
     "course": "METHODOLOGY",
     "code": "300-10F-AB",
     "lecture": {
-      "title": "M\u00e9thodes de travail intellectuel",
+      "title": "Méthodes de travail intellectuel",
       "prof": "Sotiron, Jean Michel",
       "time": {
         "MW": [
@@ -8524,7 +8524,7 @@
     "course": "METHODOLOGY",
     "code": "300-10F-AB",
     "lecture": {
-      "title": "M\u00e9thodes de travail intellectuel",
+      "title": "Méthodes de travail intellectuel",
       "prof": "Sotiron, Jean Michel",
       "time": {
         "MW": [
@@ -8544,7 +8544,7 @@
     "course": "METHODOLOGY",
     "code": "300-10F-AB",
     "lecture": {
-      "title": "M\u00e9thodes de travail intellectuel",
+      "title": "Méthodes de travail intellectuel",
       "prof": "Seck, Medoune Mouhamad",
       "time": {
         "TR": [
@@ -8564,7 +8564,7 @@
     "course": "METHODOLOGY",
     "code": "300-10F-AB",
     "lecture": {
-      "title": "M\u00e9thodes de travail intellectuel",
+      "title": "Méthodes de travail intellectuel",
       "prof": "Seck, Medoune Mouhamad",
       "time": {
         "TR": [
@@ -8584,7 +8584,7 @@
     "course": "METHODOLOGY",
     "code": "300-10F-AB",
     "lecture": {
-      "title": "M\u00e9thodes de travail intellectuel",
+      "title": "Méthodes de travail intellectuel",
       "prof": "Harrar, Vanessa",
       "time": {
         "TR": [
@@ -8604,7 +8604,7 @@
     "course": "METHODOLOGY",
     "code": "300-10F-AB",
     "lecture": {
-      "title": "M\u00e9thodes de travail intellectuel",
+      "title": "Méthodes de travail intellectuel",
       "prof": "Nassif, Charbel",
       "time": {
         "WF": [
@@ -8624,7 +8624,7 @@
     "course": "METHODOLOGY",
     "code": "300-10F-AB",
     "lecture": {
-      "title": "M\u00e9thodes de travail intellectuel",
+      "title": "Méthodes de travail intellectuel",
       "prof": "Nassif, Charbel",
       "time": {
         "WF": [
@@ -8644,7 +8644,7 @@
     "course": "METHODOLOGY",
     "code": "300-10F-AB",
     "lecture": {
-      "title": "M\u00e9thodes de travail intellectuel",
+      "title": "Méthodes de travail intellectuel",
       "prof": "Tosaj, Nicholas",
       "time": {
         "MW": [
@@ -8664,7 +8664,7 @@
     "course": "METHODOLOGY",
     "code": "300-10F-AB",
     "lecture": {
-      "title": "M\u00e9thodes de travail intellectuel",
+      "title": "Méthodes de travail intellectuel",
       "prof": "Tosaj, Nicholas",
       "time": {
         "F": [
@@ -8684,7 +8684,7 @@
     "course": "METHODOLOGY",
     "code": "300-10F-AB",
     "lecture": {
-      "title": "M\u00e9thodes de travail intellectuel",
+      "title": "Méthodes de travail intellectuel",
       "prof": "Riverin, Maude",
       "time": {
         "MW": [
@@ -8704,7 +8704,7 @@
     "course": "METHODOLOGY",
     "code": "300-10F-AB",
     "lecture": {
-      "title": "M\u00e9thodes de travail intellectuel",
+      "title": "Méthodes de travail intellectuel",
       "prof": "Boer, Elise Marianne",
       "time": {
         "M": [
@@ -8724,7 +8724,7 @@
     "course": "METHODOLOGY",
     "code": "300-10F-AB",
     "lecture": {
-      "title": "M\u00e9thodes de travail intellectuel",
+      "title": "Méthodes de travail intellectuel",
       "prof": "Ziliotti, Roberto",
       "time": {
         "TR": [
@@ -8744,7 +8744,7 @@
     "course": "METHODOLOGY",
     "code": "300-10F-AB",
     "lecture": {
-      "title": "M\u00e9thodes de travail intellectuel",
+      "title": "Méthodes de travail intellectuel",
       "prof": "Boer, Elise Marianne",
       "time": {
         "F": [
@@ -9217,7 +9217,7 @@
     "code": "300-222-AB",
     "lecture": {
       "title": "Research and Qualitative Methods",
-      "prof": "L\u00e9g\u00e8re, Jessica",
+      "prof": "Légère, Jessica",
       "time": {
         "W": [
           "0830-1100"
@@ -9227,7 +9227,7 @@
     },
     "lab": {
       "title": "Research and Qualitative Methods",
-      "prof": "L\u00e9g\u00e8re, Jessica",
+      "prof": "Légère, Jessica",
       "time": {
         "M": [
           "0830-1000"
@@ -9246,7 +9246,7 @@
     "code": "300-222-AB",
     "lecture": {
       "title": "Research and Qualitative Methods",
-      "prof": "L\u00e9g\u00e8re, Jessica",
+      "prof": "Légère, Jessica",
       "time": {
         "W": [
           "0830-1100"
@@ -9256,7 +9256,7 @@
     },
     "lab": {
       "title": "Research and Qualitative Methods",
-      "prof": "L\u00e9g\u00e8re, Jessica",
+      "prof": "Légère, Jessica",
       "time": {
         "M": [
           "1000-1130"
@@ -9275,7 +9275,7 @@
     "code": "300-222-AB",
     "lecture": {
       "title": "Research and Qualitative Methods",
-      "prof": "L\u00e9g\u00e8re, Jessica",
+      "prof": "Légère, Jessica",
       "time": {
         "R": [
           "0830-1100"
@@ -9285,7 +9285,7 @@
     },
     "lab": {
       "title": "Research and Qualitative Methods",
-      "prof": "L\u00e9g\u00e8re, Jessica",
+      "prof": "Légère, Jessica",
       "time": {
         "T": [
           "0830-1000"
@@ -9304,7 +9304,7 @@
     "code": "300-222-AB",
     "lecture": {
       "title": "Research and Qualitative Methods",
-      "prof": "L\u00e9g\u00e8re, Jessica",
+      "prof": "Légère, Jessica",
       "time": {
         "R": [
           "0830-1100"
@@ -9314,7 +9314,7 @@
     },
     "lab": {
       "title": "Research and Qualitative Methods",
-      "prof": "L\u00e9g\u00e8re, Jessica",
+      "prof": "Légère, Jessica",
       "time": {
         "T": [
           "1000-1130"
@@ -9509,7 +9509,7 @@
     "code": "300-303-AB",
     "lecture": {
       "title": "Social Science Integrative Project",
-      "prof": "Beaupr\u00e9-Odorico, Vicki",
+      "prof": "Beaupré-Odorico, Vicki",
       "time": {
         "T": [
           "0830-1130"
@@ -9529,7 +9529,7 @@
     "code": "300-303-AB",
     "lecture": {
       "title": "Social Science Integrative Project",
-      "prof": "Chowanietz, Christophe Cl\u00e9ment",
+      "prof": "Chowanietz, Christophe Clément",
       "time": {
         "TR": [
           "1300-1430"
@@ -10383,7 +10383,7 @@
     "code": "360-223-AB",
     "lecture": {
       "title": "Quantitative Methods",
-      "prof": "Beaupr\u00e9-Odorico, Vicki",
+      "prof": "Beaupré-Odorico, Vicki",
       "time": {
         "W": [
           "1200-1400"
@@ -10393,7 +10393,7 @@
     },
     "lab": {
       "title": "Quantitative Methods",
-      "prof": "Beaupr\u00e9-Odorico, Vicki",
+      "prof": "Beaupré-Odorico, Vicki",
       "time": {
         "M": [
           "1200-1400"
@@ -10412,7 +10412,7 @@
     "code": "360-223-AB",
     "lecture": {
       "title": "Quantitative Methods",
-      "prof": "Beaupr\u00e9-Odorico, Vicki",
+      "prof": "Beaupré-Odorico, Vicki",
       "time": {
         "W": [
           "1430-1630"
@@ -10422,7 +10422,7 @@
     },
     "lab": {
       "title": "Quantitative Methods",
-      "prof": "Beaupr\u00e9-Odorico, Vicki",
+      "prof": "Beaupré-Odorico, Vicki",
       "time": {
         "M": [
           "1430-1630"
@@ -10637,7 +10637,7 @@
     "code": "385-101-AB",
     "lecture": {
       "title": "Introduction to Political Science",
-      "prof": "Chowanietz, Christophe Cl\u00e9ment",
+      "prof": "Chowanietz, Christophe Clément",
       "time": {
         "TR": [
           "1130-1300"
@@ -10657,7 +10657,7 @@
     "code": "385-101-AB",
     "lecture": {
       "title": "Introduction to Political Science",
-      "prof": "Chowanietz, Christophe Cl\u00e9ment",
+      "prof": "Chowanietz, Christophe Clément",
       "time": {
         "MW": [
           "1000-1130"
@@ -10677,7 +10677,7 @@
     "code": "385-101-AB",
     "lecture": {
       "title": "Introduction to Political Science",
-      "prof": "Chowanietz, Christophe Cl\u00e9ment",
+      "prof": "Chowanietz, Christophe Clément",
       "time": {
         "MW": [
           "1130-1300"
@@ -12119,7 +12119,7 @@
     "course": "MATHEMATICS",
     "code": "201-A3F-AB",
     "lecture": {
-      "title": "Probabilit\u00e9s et statistiques",
+      "title": "Probabilités et statistiques",
       "prof": "Dubois, Olivier",
       "time": {
         "MW": [
@@ -12681,7 +12681,7 @@
     "course": "",
     "code": "502-CCC-AB",
     "lecture": {
-      "title": "Arts and Cultures of Qu\u00e9bec",
+      "title": "Arts and Cultures of Québec",
       "prof": "TBA-2, Film",
       "time": {
         "F": [
@@ -12701,7 +12701,7 @@
     "course": "",
     "code": "502-CCC-AB",
     "lecture": {
-      "title": "Arts and Cultures of Qu\u00e9bec",
+      "title": "Arts and Cultures of Québec",
       "prof": "TBA-2, Film",
       "time": {
         "R": [
@@ -12721,7 +12721,7 @@
     "course": "",
     "code": "502-CFC-AB",
     "lecture": {
-      "title": "Arts et cultures du Qu\u00e9bec",
+      "title": "Arts et cultures du Québec",
       "prof": "Golden, Anne",
       "time": {
         "M": [
@@ -12741,7 +12741,7 @@
     "course": "",
     "code": "502-CFC-AB",
     "lecture": {
-      "title": "Arts et cultures du Qu\u00e9bec",
+      "title": "Arts et cultures du Québec",
       "prof": "Wees, Michael",
       "time": {
         "W": [
@@ -12762,7 +12762,7 @@
     "code": "502-SEG-AB",
     "lecture": {
       "title": "Integrating Seminar for Multidisciplinary",
-      "prof": "Belzile, Fr\u00e9d\u00e9rick A.",
+      "prof": "Belzile, Frédérick A.",
       "time": {
         "F": [
           "1130-1530"
@@ -12862,7 +12862,7 @@
     "code": "530-DMA-AB",
     "lecture": {
       "title": "Introduction to Digital Media",
-      "prof": "Belzile, Fr\u00e9d\u00e9rick A.",
+      "prof": "Belzile, Frédérick A.",
       "time": {
         "W": [
           "1130-1430"
@@ -12882,7 +12882,7 @@
     "code": "530-DME-AB",
     "lecture": {
       "title": "Explorations in Digital Media (Level 2)",
-      "prof": "Belzile, Fr\u00e9d\u00e9rick A.",
+      "prof": "Belzile, Frédérick A.",
       "time": {
         "R": [
           "1130-1430"
@@ -13622,7 +13622,7 @@
     "course": "",
     "code": "560-AFT-AB",
     "lecture": {
-      "title": "Atelier de th\u00e9\u00e2tre: explorer la condition humaine",
+      "title": "Atelier de théâtre: explorer la condition humaine",
       "prof": "Fontaine, Edouard",
       "time": {
         "TF": [
@@ -16785,7 +16785,7 @@
     "course": "FRENCH",
     "code": "602-011-AB",
     "lecture": {
-      "title": "Initiation au fran\u00e7ais, langue seconde",
+      "title": "Initiation au français, langue seconde",
       "prof": "Sweeney, Antoine",
       "time": {
         "MTW": [
@@ -16805,7 +16805,7 @@
     "course": "FRENCH",
     "code": "602-006-50",
     "lecture": {
-      "title": "Pratique du fran\u00e7ais, langue seconde, \u00e0 l'oral et \u00e0 l'\u00e9crit",
+      "title": "Pratique du français, langue seconde, à l'oral et à l'écrit",
       "prof": "Piquette, Sophie",
       "time": {
         "MW": [
@@ -16825,7 +16825,7 @@
     "course": "FRENCH",
     "code": "602-009-AB",
     "lecture": {
-      "title": "Renforcement en fran\u00e7ais, langue seconde",
+      "title": "Renforcement en français, langue seconde",
       "prof": "Nicou, Claude",
       "time": {
         "MW": [
@@ -16845,7 +16845,7 @@
     "course": "FRENCH",
     "code": "602-009-AB",
     "lecture": {
-      "title": "Renforcement en fran\u00e7ais, langue seconde",
+      "title": "Renforcement en français, langue seconde",
       "prof": "Tellier, Christine",
       "time": {
         "TR": [
@@ -16865,7 +16865,7 @@
     "course": "FRENCH",
     "code": "602-009-AB",
     "lecture": {
-      "title": "Renforcement en fran\u00e7ais, langue seconde",
+      "title": "Renforcement en français, langue seconde",
       "prof": "Tellier, Christine",
       "time": {
         "TR": [
@@ -16885,8 +16885,8 @@
     "course": "FRENCH",
     "code": "602-009-AB",
     "lecture": {
-      "title": "Renforcement en fran\u00e7ais, langue seconde",
-      "prof": "Rozenberg, \u00c9velyne",
+      "title": "Renforcement en français, langue seconde",
+      "prof": "Rozenberg, Évelyne",
       "time": {
         "TR": [
           "1600-1800"
@@ -16905,7 +16905,7 @@
     "course": "FRENCH",
     "code": "602-008-RE",
     "lecture": {
-      "title": "Mise \u00e0 niveau pour Fran\u00e7ais, langue seconde de la 5e seconda",
+      "title": "Mise à niveau pour Français, langue seconde de la 5e seconda",
       "prof": "Nicou, Claude",
       "time": {
         "MW": [
@@ -16925,7 +16925,7 @@
     "course": "FRENCH",
     "code": "602-008-RE",
     "lecture": {
-      "title": "Mise \u00e0 niveau pour Fran\u00e7ais, langue seconde de la 5e seconda",
+      "title": "Mise à niveau pour Français, langue seconde de la 5e seconda",
       "prof": "Tellier, Christine",
       "time": {
         "TR": [
@@ -16945,7 +16945,7 @@
     "course": "FRENCH",
     "code": "602-008-RE",
     "lecture": {
-      "title": "Mise \u00e0 niveau pour Fran\u00e7ais, langue seconde de la 5e seconda",
+      "title": "Mise à niveau pour Français, langue seconde de la 5e seconda",
       "prof": "Tellier, Christine",
       "time": {
         "TR": [
@@ -16965,8 +16965,8 @@
     "course": "FRENCH",
     "code": "602-008-RE",
     "lecture": {
-      "title": "Mise \u00e0 niveau pour Fran\u00e7ais, langue seconde de la 5e seconda",
-      "prof": "Rozenberg, \u00c9velyne",
+      "title": "Mise à niveau pour Français, langue seconde de la 5e seconda",
+      "prof": "Rozenberg, Évelyne",
       "time": {
         "TR": [
           "1600-1800"
@@ -16985,7 +16985,7 @@
     "course": "FRENCH",
     "code": "602-PR2-AB",
     "lecture": {
-      "title": "Pratique du fran\u00e7ais, langue d'enseignement 2",
+      "title": "Pratique du français, langue d'enseignement 2",
       "prof": "Larochelle, Claudia",
       "time": {
         "MWR": [
@@ -17005,7 +17005,7 @@
     "course": "FRENCH",
     "code": "602-REN-AB",
     "lecture": {
-      "title": "Renforcement en fran\u00e7ais \u00e9crit",
+      "title": "Renforcement en français écrit",
       "prof": "Mariage, Sylvie",
       "time": {
         "MW": [
@@ -17025,8 +17025,8 @@
     "course": "FRENCH",
     "code": "602-REN-AB",
     "lecture": {
-      "title": "Renforcement en fran\u00e7ais \u00e9crit",
-      "prof": "Tiganus Calin, Am\u00e9lia",
+      "title": "Renforcement en français écrit",
+      "prof": "Tiganus Calin, Amélia",
       "time": {
         "MW": [
           "1230-1430"
@@ -17045,7 +17045,7 @@
     "course": "FRENCH",
     "code": "602-REN-AB",
     "lecture": {
-      "title": "Renforcement en fran\u00e7ais \u00e9crit",
+      "title": "Renforcement en français écrit",
       "prof": "Michael, Minar",
       "time": {
         "TR": [
@@ -17065,7 +17065,7 @@
     "course": "FRENCH",
     "code": "602-REN-AB",
     "lecture": {
-      "title": "Renforcement en fran\u00e7ais \u00e9crit",
+      "title": "Renforcement en français écrit",
       "prof": "Michael, Minar",
       "time": {
         "TR": [
@@ -17085,7 +17085,7 @@
     "course": "FRENCH",
     "code": "602-C01-MQ",
     "lecture": {
-      "title": "Fran\u00e7ais et soci\u00e9t\u00e9 qu\u00e9b\u00e9coise (niveau 1)",
+      "title": "Français et société québécoise (niveau 1)",
       "prof": "Prince, Sophie",
       "time": {
         "MW": [
@@ -17105,7 +17105,7 @@
     "course": "FRENCH",
     "code": "602-C01-MQ",
     "lecture": {
-      "title": "Fran\u00e7ais et soci\u00e9t\u00e9 qu\u00e9b\u00e9coise (niveau 1)",
+      "title": "Français et société québécoise (niveau 1)",
       "prof": "Prince, Sophie",
       "time": {
         "MW": [
@@ -17125,7 +17125,7 @@
     "course": "FRENCH",
     "code": "602-C02-MQ",
     "lecture": {
-      "title": "Fran\u00e7ais et soci\u00e9t\u00e9 qu\u00e9b\u00e9coise (niveau 2)",
+      "title": "Français et société québécoise (niveau 2)",
       "prof": "Hemmati, Proshat",
       "time": {
         "MW": [
@@ -17145,7 +17145,7 @@
     "course": "FRENCH",
     "code": "602-C02-MQ",
     "lecture": {
-      "title": "Fran\u00e7ais et soci\u00e9t\u00e9 qu\u00e9b\u00e9coise (niveau 2)",
+      "title": "Français et société québécoise (niveau 2)",
       "prof": "Hemmati, Proshat",
       "time": {
         "MW": [
@@ -17165,7 +17165,7 @@
     "course": "FRENCH",
     "code": "602-C02-MQ",
     "lecture": {
-      "title": "Fran\u00e7ais et soci\u00e9t\u00e9 qu\u00e9b\u00e9coise (niveau 2)",
+      "title": "Français et société québécoise (niveau 2)",
       "prof": "Pezeshki, Shahrouz",
       "time": {
         "TR": [
@@ -17185,7 +17185,7 @@
     "course": "FRENCH",
     "code": "602-D01-MQ",
     "lecture": {
-      "title": "Fran\u00e7ais, travail et num\u00e9rique (niveau 1)",
+      "title": "Français, travail et numérique (niveau 1)",
       "prof": "Piquette, Sophie",
       "time": {
         "MW": [
@@ -17205,7 +17205,7 @@
     "course": "FRENCH",
     "code": "602-D02-MQ",
     "lecture": {
-      "title": "Fran\u00e7ais, travail et num\u00e9rique (niveau 2)",
+      "title": "Français, travail et numérique (niveau 2)",
       "prof": "Xu, Xiao",
       "time": {
         "TR": [
@@ -17225,7 +17225,7 @@
     "course": "FRENCH",
     "code": "602-D02-MQ",
     "lecture": {
-      "title": "Fran\u00e7ais, travail et num\u00e9rique (niveau 2)",
+      "title": "Français, travail et numérique (niveau 2)",
       "prof": "Xu, Xiao",
       "time": {
         "TR": [
@@ -17245,7 +17245,7 @@
     "course": "FRENCH",
     "code": "602-E01-MQ",
     "lecture": {
-      "title": "Projet exp\u00e9rientiel - Niveau 1",
+      "title": "Projet expérientiel - Niveau 1",
       "prof": "Pezeshki, Shahrouz",
       "time": {
         "F": [
@@ -17265,7 +17265,7 @@
     "course": "FRENCH",
     "code": "602-UF0-MQ",
     "lecture": {
-      "title": "Oeuvres narratives et \u00e9criture",
+      "title": "Oeuvres narratives et écriture",
       "prof": "Laganiere, Frederic",
       "time": {
         "MW": [
@@ -17285,7 +17285,7 @@
     "course": "FRENCH",
     "code": "602-UF0-MQ",
     "lecture": {
-      "title": "Oeuvres narratives et \u00e9criture",
+      "title": "Oeuvres narratives et écriture",
       "prof": "Aissani, Louiza",
       "time": {
         "M": [
@@ -17305,8 +17305,8 @@
     "course": "FRENCH",
     "code": "602-UF0-MQ",
     "lecture": {
-      "title": "Oeuvres narratives et \u00e9criture",
-      "prof": "Estim\u00e9, Qualito",
+      "title": "Oeuvres narratives et écriture",
+      "prof": "Estimé, Qualito",
       "time": {
         "M": [
           "1430-1730"
@@ -17325,7 +17325,7 @@
     "course": "FRENCH",
     "code": "602-UF0-MQ",
     "lecture": {
-      "title": "Oeuvres narratives et \u00e9criture",
+      "title": "Oeuvres narratives et écriture",
       "prof": "Michael, Minar",
       "time": {
         "M": [
@@ -17345,7 +17345,7 @@
     "course": "FRENCH",
     "code": "602-UF0-MQ",
     "lecture": {
-      "title": "Oeuvres narratives et \u00e9criture",
+      "title": "Oeuvres narratives et écriture",
       "prof": "Bessette, Ariane",
       "time": {
         "T": [
@@ -17365,7 +17365,7 @@
     "course": "FRENCH",
     "code": "602-UF0-MQ",
     "lecture": {
-      "title": "Oeuvres narratives et \u00e9criture",
+      "title": "Oeuvres narratives et écriture",
       "prof": "Aissani, Louiza",
       "time": {
         "T": [
@@ -17385,7 +17385,7 @@
     "course": "FRENCH",
     "code": "602-UF0-MQ",
     "lecture": {
-      "title": "Oeuvres narratives et \u00e9criture",
+      "title": "Oeuvres narratives et écriture",
       "prof": "Beausoleil, Jean Marc",
       "time": {
         "T": [
@@ -17405,7 +17405,7 @@
     "course": "FRENCH",
     "code": "602-UF0-MQ",
     "lecture": {
-      "title": "Oeuvres narratives et \u00e9criture",
+      "title": "Oeuvres narratives et écriture",
       "prof": "Limoges, Alexandre",
       "time": {
         "T": [
@@ -17425,7 +17425,7 @@
     "course": "FRENCH",
     "code": "602-UF0-MQ",
     "lecture": {
-      "title": "Oeuvres narratives et \u00e9criture",
+      "title": "Oeuvres narratives et écriture",
       "prof": "Bessette, Ariane",
       "time": {
         "W": [
@@ -17445,7 +17445,7 @@
     "course": "FRENCH",
     "code": "602-UF0-MQ",
     "lecture": {
-      "title": "Oeuvres narratives et \u00e9criture",
+      "title": "Oeuvres narratives et écriture",
       "prof": "Bechara, Rosa Maria",
       "time": {
         "W": [
@@ -17465,7 +17465,7 @@
     "course": "FRENCH",
     "code": "602-UF0-MQ",
     "lecture": {
-      "title": "Oeuvres narratives et \u00e9criture",
+      "title": "Oeuvres narratives et écriture",
       "prof": "Beausoleil, Jean Marc",
       "time": {
         "W": [
@@ -17485,7 +17485,7 @@
     "course": "FRENCH",
     "code": "602-UF0-MQ",
     "lecture": {
-      "title": "Litt\u00e9rature et univers narratif - Personnages f\u00e9minins",
+      "title": "Littérature et univers narratif - Personnages féminins",
       "prof": "Ste-Marie, Isabelle",
       "time": {
         "W": [
@@ -17505,7 +17505,7 @@
     "course": "FRENCH",
     "code": "602-UF0-MQ",
     "lecture": {
-      "title": "Oeuvres narratives et \u00e9criture",
+      "title": "Oeuvres narratives et écriture",
       "prof": "Bechara, Rosa Maria",
       "time": {
         "R": [
@@ -17525,7 +17525,7 @@
     "course": "FRENCH",
     "code": "602-UF0-MQ",
     "lecture": {
-      "title": "Litt\u00e9rature et univers narratif - Personnages f\u00e9minins",
+      "title": "Littérature et univers narratif - Personnages féminins",
       "prof": "Ste-Marie, Isabelle",
       "time": {
         "R": [
@@ -17545,7 +17545,7 @@
     "course": "FRENCH",
     "code": "602-UF0-MQ",
     "lecture": {
-      "title": "Oeuvres narratives et \u00e9criture",
+      "title": "Oeuvres narratives et écriture",
       "prof": "Hemmati, Proshat",
       "time": {
         "R": [
@@ -17565,7 +17565,7 @@
     "course": "FRENCH",
     "code": "602-UF0-MQ",
     "lecture": {
-      "title": "Oeuvres narratives et \u00e9criture",
+      "title": "Oeuvres narratives et écriture",
       "prof": "Sweeney, Antoine",
       "time": {
         "F": [
@@ -17585,7 +17585,7 @@
     "course": "FRENCH",
     "code": "602-UF0-MQ",
     "lecture": {
-      "title": "Oeuvres narratives et \u00e9criture",
+      "title": "Oeuvres narratives et écriture",
       "prof": "Michael, Minar",
       "time": {
         "F": [
@@ -17605,7 +17605,7 @@
     "course": "FRENCH",
     "code": "602-UF1-MQ",
     "lecture": {
-      "title": "Po\u00e9sie, th\u00e9\u00e2tre et \u00e9criture",
+      "title": "Poésie, théâtre et écriture",
       "prof": "Bechara, Rosa Maria",
       "time": {
         "M": [
@@ -17625,7 +17625,7 @@
     "course": "FRENCH",
     "code": "602-UF1-MQ",
     "lecture": {
-      "title": "Po\u00e9sie, th\u00e9\u00e2tre et \u00e9criture",
+      "title": "Poésie, théâtre et écriture",
       "prof": "Popica, Maria",
       "time": {
         "M": [
@@ -17645,7 +17645,7 @@
     "course": "FRENCH",
     "code": "602-UF1-MQ",
     "lecture": {
-      "title": "Po\u00e9sie, th\u00e9\u00e2tre et \u00e9criture",
+      "title": "Poésie, théâtre et écriture",
       "prof": "Popica, Maria",
       "time": {
         "T": [
@@ -17665,7 +17665,7 @@
     "course": "FRENCH",
     "code": "602-UF1-MQ",
     "lecture": {
-      "title": "Po\u00e9sie, th\u00e9\u00e2tre et \u00e9criture",
+      "title": "Poésie, théâtre et écriture",
       "prof": "Boutin, David",
       "time": {
         "W": [
@@ -17685,8 +17685,8 @@
     "course": "FRENCH",
     "code": "602-UF1-MQ",
     "lecture": {
-      "title": "Po\u00e9sie, th\u00e9\u00e2tre et \u00e9criture",
-      "prof": "Tiganus Calin, Am\u00e9lia",
+      "title": "Poésie, théâtre et écriture",
+      "prof": "Tiganus Calin, Amélia",
       "time": {
         "W": [
           "1430-1730"
@@ -17705,7 +17705,7 @@
     "course": "FRENCH",
     "code": "602-UF1-MQ",
     "lecture": {
-      "title": "Po\u00e9sie, th\u00e9\u00e2tre et \u00e9criture",
+      "title": "Poésie, théâtre et écriture",
       "prof": "Boutin, David",
       "time": {
         "R": [
@@ -17725,7 +17725,7 @@
     "course": "FRENCH",
     "code": "602-UF1-MQ",
     "lecture": {
-      "title": "Po\u00e9sie, th\u00e9\u00e2tre et \u00e9criture",
+      "title": "Poésie, théâtre et écriture",
       "prof": "Provencher, Lysanne",
       "time": {
         "R": [
@@ -17745,7 +17745,7 @@
     "course": "FRENCH",
     "code": "602-UF1-MQ",
     "lecture": {
-      "title": "Po\u00e9sie, th\u00e9\u00e2tre et \u00e9criture",
+      "title": "Poésie, théâtre et écriture",
       "prof": "Provencher, Lysanne",
       "time": {
         "F": [
@@ -17765,7 +17765,7 @@
     "course": "FRENCH",
     "code": "602-UF1-MQ",
     "lecture": {
-      "title": "Po\u00e9sie, th\u00e9\u00e2tre et \u00e9criture",
+      "title": "Poésie, théâtre et écriture",
       "prof": "Bechara, Rosa Maria",
       "time": {
         "F": [
@@ -17785,7 +17785,7 @@
     "course": "FRENCH",
     "code": "602-UF2-MQ",
     "lecture": {
-      "title": "Comparaison d'oeuvres litt\u00e9raires",
+      "title": "Comparaison d'oeuvres littéraires",
       "prof": "Lazhar, Yasmine",
       "time": {
         "M": [
@@ -17805,8 +17805,8 @@
     "course": "FRENCH",
     "code": "602-UF2-MQ",
     "lecture": {
-      "title": "Comparaison d'oeuvres litt\u00e9raires",
-      "prof": "Gagn\u00e9, Nicolas",
+      "title": "Comparaison d'oeuvres littéraires",
+      "prof": "Gagné, Nicolas",
       "time": {
         "M": [
           "1430-1730"
@@ -17825,7 +17825,7 @@
     "course": "FRENCH",
     "code": "602-UF2-MQ",
     "lecture": {
-      "title": "Comparaison d'oeuvres litt\u00e9raires",
+      "title": "Comparaison d'oeuvres littéraires",
       "prof": "Lazhar, Yasmine",
       "time": {
         "T": [
@@ -17845,7 +17845,7 @@
     "course": "FRENCH",
     "code": "602-UF2-MQ",
     "lecture": {
-      "title": "Comparaison d'oeuvres litt\u00e9raires",
+      "title": "Comparaison d'oeuvres littéraires",
       "prof": "Sweeney, Antoine",
       "time": {
         "T": [
@@ -17865,7 +17865,7 @@
     "course": "FRENCH",
     "code": "602-UF2-MQ",
     "lecture": {
-      "title": "Comparaison d'oeuvres litt\u00e9raires",
+      "title": "Comparaison d'oeuvres littéraires",
       "prof": "Dukanic, Filip",
       "time": {
         "T": [
@@ -17885,7 +17885,7 @@
     "course": "FRENCH",
     "code": "602-UF2-MQ",
     "lecture": {
-      "title": "Comparaison d'oeuvres litt\u00e9raires",
+      "title": "Comparaison d'oeuvres littéraires",
       "prof": "Aissani, Louiza",
       "time": {
         "W": [
@@ -17905,8 +17905,8 @@
     "course": "FRENCH",
     "code": "602-UF2-MQ",
     "lecture": {
-      "title": "Comparaison d'oeuvres litt\u00e9raires",
-      "prof": "Estim\u00e9, Qualito",
+      "title": "Comparaison d'oeuvres littéraires",
+      "prof": "Estimé, Qualito",
       "time": {
         "W": [
           "1430-1730"
@@ -17925,7 +17925,7 @@
     "course": "FRENCH",
     "code": "602-UF2-MQ",
     "lecture": {
-      "title": "Comparaison d'oeuvres litt\u00e9raires",
+      "title": "Comparaison d'oeuvres littéraires",
       "prof": "Dukanic, Filip",
       "time": {
         "W": [
@@ -17945,7 +17945,7 @@
     "course": "FRENCH",
     "code": "602-UF2-MQ",
     "lecture": {
-      "title": "Comparaison d'oeuvres litt\u00e9raires",
+      "title": "Comparaison d'oeuvres littéraires",
       "prof": "Beausoleil, Jean Marc",
       "time": {
         "R": [
@@ -17965,8 +17965,8 @@
     "course": "FRENCH",
     "code": "602-UF2-MQ",
     "lecture": {
-      "title": "Comparaison d'oeuvres litt\u00e9raires",
-      "prof": "Estim\u00e9, Qualito",
+      "title": "Comparaison d'oeuvres littéraires",
+      "prof": "Estimé, Qualito",
       "time": {
         "R": [
           "1430-1730"
@@ -17985,7 +17985,7 @@
     "course": "FRENCH",
     "code": "602-UF2-MQ",
     "lecture": {
-      "title": "Comparaison d'oeuvres litt\u00e9raires",
+      "title": "Comparaison d'oeuvres littéraires",
       "prof": "Beausoleil, Jean Marc",
       "time": {
         "F": [
@@ -18005,7 +18005,7 @@
     "course": "FRENCH",
     "code": "602-UF2-MQ",
     "lecture": {
-      "title": "Comparaison d'oeuvres litt\u00e9raires",
+      "title": "Comparaison d'oeuvres littéraires",
       "prof": "Larochelle, Claudia",
       "time": {
         "F": [
@@ -18025,8 +18025,8 @@
     "course": "FRENCH",
     "code": "602-UF2-MQ",
     "lecture": {
-      "title": "Comparaison d'oeuvres litt\u00e9raires",
-      "prof": "Gagn\u00e9, Nicolas",
+      "title": "Comparaison d'oeuvres littéraires",
+      "prof": "Gagné, Nicolas",
       "time": {
         "F": [
           "1130-1430"
@@ -18066,7 +18066,7 @@
     "code": "602-100-MQ",
     "lecture": {
       "title": "Basic French",
-      "prof": "Rozenberg, \u00c9velyne",
+      "prof": "Rozenberg, Évelyne",
       "time": {
         "MW": [
           "1300-1430"
@@ -18146,7 +18146,7 @@
     "code": "602-101-MQ",
     "lecture": {
       "title": "French Language and Communication",
-      "prof": "Rozenberg, \u00c9velyne",
+      "prof": "Rozenberg, Évelyne",
       "time": {
         "MW": [
           "1000-1130"
@@ -18166,7 +18166,7 @@
     "code": "602-101-MQ",
     "lecture": {
       "title": "French Language and Communication",
-      "prof": "Rozenberg, \u00c9velyne",
+      "prof": "Rozenberg, Évelyne",
       "time": {
         "MW": [
           "1430-1600"
@@ -18246,7 +18246,7 @@
     "code": "602-101-MQ",
     "lecture": {
       "title": "French Language and Communication",
-      "prof": "Gagn\u00e9, Nicolas",
+      "prof": "Gagné, Nicolas",
       "time": {
         "TR": [
           "1300-1430"
@@ -18426,7 +18426,7 @@
     "code": "602-102-MQ",
     "lecture": {
       "title": "French Language and Culture",
-      "prof": "Estim\u00e9, Qualito",
+      "prof": "Estimé, Qualito",
       "time": {
         "F": [
           "1130-1430"
@@ -18485,7 +18485,7 @@
     "course": "FRENCH",
     "code": "602-103-MQ",
     "lecture": {
-      "title": "Analyse litt\u00e9raire",
+      "title": "Analyse littéraire",
       "prof": "Mariage, Sylvie",
       "time": {
         "T": [
@@ -18666,7 +18666,7 @@
     "code": "602-201-AB",
     "lecture": {
       "title": "French: Level 2",
-      "prof": "Gagn\u00e9, Nicolas",
+      "prof": "Gagné, Nicolas",
       "time": {
         "MR": [
           "1130-1300"
@@ -18825,7 +18825,7 @@
     "course": "FRENCH",
     "code": "602-203-AB",
     "lecture": {
-      "title": "Condition f\u00e9minine",
+      "title": "Condition féminine",
       "prof": "Provencher, Lysanne",
       "time": {
         "M": [
@@ -18885,7 +18885,7 @@
     "course": "FRENCH",
     "code": "602-203-AB",
     "lecture": {
-      "title": "Identit\u00e9s plurielles",
+      "title": "Identités plurielles",
       "prof": "Mariage, Sylvie",
       "time": {
         "W": [
@@ -21126,7 +21126,7 @@
     "code": "109-101-MQ",
     "lecture": {
       "title": "Training for Athletic Performance",
-      "prof": "Marin, No\u00e9mie",
+      "prof": "Marin, Noémie",
       "time": {
         "T": [
           "1230-1430"
@@ -21146,7 +21146,7 @@
     "code": "109-101-MQ",
     "lecture": {
       "title": "Fresh Air Fitness",
-      "prof": "Marin, No\u00e9mie",
+      "prof": "Marin, Noémie",
       "time": {
         "W": [
           "1030-1230"
@@ -21166,7 +21166,7 @@
     "code": "109-101-MQ",
     "lecture": {
       "title": "Team Sports",
-      "prof": "Marin, No\u00e9mie",
+      "prof": "Marin, Noémie",
       "time": {
         "F": [
           "1230-1430"
@@ -21466,7 +21466,7 @@
     "code": "109-101-MQ",
     "lecture": {
       "title": "Fitness Conditioning",
-      "prof": "Priv\u00e9e, Chelsea",
+      "prof": "Privée, Chelsea",
       "time": {
         "M": [
           "1000-1200"
@@ -21486,7 +21486,7 @@
     "code": "109-101-MQ",
     "lecture": {
       "title": "Fitness Conditioning",
-      "prof": "Priv\u00e9e, Chelsea",
+      "prof": "Privée, Chelsea",
       "time": {
         "M": [
           "1200-1400"
@@ -21506,7 +21506,7 @@
     "code": "109-101-MQ",
     "lecture": {
       "title": "Fitness Conditioning",
-      "prof": "Priv\u00e9e, Chelsea",
+      "prof": "Privée, Chelsea",
       "time": {
         "T": [
           "1200-1400"
@@ -21526,7 +21526,7 @@
     "code": "109-101-MQ",
     "lecture": {
       "title": "Sustainable Fitness (Aug 14-20 9:00-15:00)",
-      "prof": "Raymond-Parent, Genevi\u00e8ve",
+      "prof": "Raymond-Parent, Geneviève",
       "time": {
         "F": [
           "1600-1800"
@@ -21898,7 +21898,7 @@
       "rating": null
     },
     "lab": null,
-    "more": "ADDITIONAL FEE:       $145.00\nIntensive course: includes 8 classes on campus and 1 weekend trip Oct 17-19 in Foret Ouareau. Students must provide suitable hiking boots (some pairs available to rent), appropriate clothing. Some equipment available to rent from college \u2013 tents, stoves, sleeping bags, back packs (max. $15). ",
+    "more": "ADDITIONAL FEE:       $145.00\nIntensive course: includes 8 classes on campus and 1 weekend trip Oct 17-19 in Foret Ouareau. Students must provide suitable hiking boots (some pairs available to rent), appropriate clothing. Some equipment available to rent from college – tents, stoves, sleeping bags, back packs (max. $15). ",
     "viewData": []
   },
   {
@@ -21918,7 +21918,7 @@
       "rating": null
     },
     "lab": null,
-    "more": "ADDITIONAL FEE:       $145.00\n6 classes plus one weekend trip (Sept.26-28) to Montagne D'Argent. Students must provide appropriate outdoor clothing and footwear. Climbing equipment provided. Must provide or rent camping equipment. Some equipment available to rent from college \u2013 tents, stoves, sleeping bags, back packs (max $15). Climbing shoes are optional and can be rented for $20/semester and $8/weekend. ",
+    "more": "ADDITIONAL FEE:       $145.00\n6 classes plus one weekend trip (Sept.26-28) to Montagne D'Argent. Students must provide appropriate outdoor clothing and footwear. Climbing equipment provided. Must provide or rent camping equipment. Some equipment available to rent from college – tents, stoves, sleeping bags, back packs (max $15). Climbing shoes are optional and can be rented for $20/semester and $8/weekend. ",
     "viewData": []
   },
   {
@@ -22029,7 +22029,7 @@
     "code": "109-102-MQ",
     "lecture": {
       "title": "Softball (Aug 14 - 20 9:00 - 15:00)",
-      "prof": "Marin, No\u00e9mie",
+      "prof": "Marin, Noémie",
       "time": {
         "F": [
           "1600-1800"
@@ -22049,7 +22049,7 @@
     "code": "109-102-MQ",
     "lecture": {
       "title": "Ball Hockey",
-      "prof": "Marin, No\u00e9mie",
+      "prof": "Marin, Noémie",
       "time": {
         "R": [
           "1200-1400"
@@ -22289,7 +22289,7 @@
     "code": "109-102-MQ",
     "lecture": {
       "title": "Weight Training Techniques",
-      "prof": "Priv\u00e9e, Chelsea",
+      "prof": "Privée, Chelsea",
       "time": {
         "R": [
           "0800-1000"
@@ -22309,7 +22309,7 @@
     "code": "109-102-MQ",
     "lecture": {
       "title": "Weight Training Techniques",
-      "prof": "Priv\u00e9e, Chelsea",
+      "prof": "Privée, Chelsea",
       "time": {
         "R": [
           "1000-1200"
@@ -22329,7 +22329,7 @@
     "code": "109-102-MQ",
     "lecture": {
       "title": "Pilates",
-      "prof": "Raymond-Parent, Genevi\u00e8ve",
+      "prof": "Raymond-Parent, Geneviève",
       "time": {
         "M": [
           "1200-1400"
@@ -22498,7 +22498,7 @@
       "rating": null
     },
     "lab": null,
-    "more": "ADDITIONAL FEE:       $145.00\nIntensive course: includes 6 classes on campus and 1 weekend trip Oct 24-26. Students must provide suitable and appropriate clothing. Some equipment available to rent from college \u2013 tents, stoves, sleeping bags, packs\u2026(max. $15). Trip location Fish Creek Pond, New York -  students must be eligible to enter the US. ",
+    "more": "ADDITIONAL FEE:       $145.00\nIntensive course: includes 6 classes on campus and 1 weekend trip Oct 24-26. Students must provide suitable and appropriate clothing. Some equipment available to rent from college – tents, stoves, sleeping bags, packs…(max. $15). Trip location Fish Creek Pond, New York -  students must be eligible to enter the US. ",
     "viewData": []
   },
   {
@@ -22518,7 +22518,7 @@
       "rating": null
     },
     "lab": null,
-    "more": "ADDITIONAL FEE:       $145.00\nIntensive course: Includes 6 classes on campus and one weekend trip, September 19 - 21 to Nominingue. Students must provide suitable hiking boots (some pairs available to rent), and appropriate camping gear (equipment available to rent from college \u2013 tents, stoves, sleeping bags). ",
+    "more": "ADDITIONAL FEE:       $145.00\nIntensive course: Includes 6 classes on campus and one weekend trip, September 19 - 21 to Nominingue. Students must provide suitable hiking boots (some pairs available to rent), and appropriate camping gear (equipment available to rent from college – tents, stoves, sleeping bags). ",
     "viewData": []
   },
   {
@@ -22538,7 +22538,7 @@
       "rating": null
     },
     "lab": null,
-    "more": "ADDITIONAL FEE:       $145.00\nIntensive course: Includes 6 classes on campus and 1 weekend trip October 3 \u2013 5 at Riviere du Diable, Mont Tremblant or Fish Creek Pond in the Adirondacks. Must be comfortable in deep water and able to swim 50 meters. Students must provide appropriate outdoor clothing. Camping equipment is available to rent from college \u2013 tents, stoves, sleeping bags. ",
+    "more": "ADDITIONAL FEE:       $145.00\nIntensive course: Includes 6 classes on campus and 1 weekend trip October 3 – 5 at Riviere du Diable, Mont Tremblant or Fish Creek Pond in the Adirondacks. Must be comfortable in deep water and able to swim 50 meters. Students must provide appropriate outdoor clothing. Camping equipment is available to rent from college – tents, stoves, sleeping bags. ",
     "viewData": []
   },
   {
@@ -22598,7 +22598,7 @@
       "rating": null
     },
     "lab": null,
-    "more": "ADDITIONAL FEE:       $145.00\nIntensive course: includes 6 classes on campus and 1 weekend trip Oct 3-5. Students must provide suitable hiking boots (some pairs available to rent), and appropriate clothing. Some equipment available to rent from college \u2013 tents, stoves, sleeping bags, back packs\u2026(max. $15). Trip location TBD; students must be eligible to enter the US. ",
+    "more": "ADDITIONAL FEE:       $145.00\nIntensive course: includes 6 classes on campus and 1 weekend trip Oct 3-5. Students must provide suitable hiking boots (some pairs available to rent), and appropriate clothing. Some equipment available to rent from college – tents, stoves, sleeping bags, back packs…(max. $15). Trip location TBD; students must be eligible to enter the US. ",
     "viewData": []
   },
   {
@@ -22618,7 +22618,7 @@
       "rating": null
     },
     "lab": null,
-    "more": "ADDITIONAL FEE:       $145.00\nIntensive course: includes 2 days of classes on Campus (Aug.11-12) and a 3 day trip (Aug.13-15) to Parc de la Verendrye, QC. Must be comfortable in deep water and able to swim 50 meters (with or without a lifejacket). Students must provide suitable hiking boots (some pairs available to rent), and appropriate outdoor clothing. Some equipment available to rent from college \u2013 tents, stoves, sleeping bags, back packs\u2026(max. $15). ",
+    "more": "ADDITIONAL FEE:       $145.00\nIntensive course: includes 2 days of classes on Campus (Aug.11-12) and a 3 day trip (Aug.13-15) to Parc de la Verendrye, QC. Must be comfortable in deep water and able to swim 50 meters (with or without a lifejacket). Students must provide suitable hiking boots (some pairs available to rent), and appropriate outdoor clothing. Some equipment available to rent from college – tents, stoves, sleeping bags, back packs…(max. $15). ",
     "viewData": []
   },
   {
@@ -22698,7 +22698,7 @@
       "rating": null
     },
     "lab": null,
-    "more": "ADDITIONAL FEE:       $125.00\nThis is an intensive course. It consists of 5 in-class sessions (August 13-15, 19 and Sat. Sept 27th) from 9:00-3:00 and one 2-day, overnight trip (August  17-18th) in Mont Tremblant.  Camping gear required and available for rent \u2013 Max. $15.00.  Must be comfortable on the Lake and have an interest in the outdoors. ",
+    "more": "ADDITIONAL FEE:       $125.00\nThis is an intensive course. It consists of 5 in-class sessions (August 13-15, 19 and Sat. Sept 27th) from 9:00-3:00 and one 2-day, overnight trip (August  17-18th) in Mont Tremblant.  Camping gear required and available for rent – Max. $15.00.  Must be comfortable on the Lake and have an interest in the outdoors. ",
     "viewData": []
   },
   {
@@ -22889,7 +22889,7 @@
     "code": "109-103-MQ",
     "lecture": {
       "title": "Team Sports",
-      "prof": "Priv\u00e9e, Chelsea",
+      "prof": "Privée, Chelsea",
       "time": {
         "W": [
           "0830-1030"
@@ -22909,7 +22909,7 @@
     "code": "109-103-MQ",
     "lecture": {
       "title": "Team Sports",
-      "prof": "Priv\u00e9e, Chelsea",
+      "prof": "Privée, Chelsea",
       "time": {
         "W": [
           "1030-1230"
@@ -22929,7 +22929,7 @@
     "code": "109-103-MQ",
     "lecture": {
       "title": "Mind-Body Retreat",
-      "prof": "Raymond-Parent, Genevi\u00e8ve",
+      "prof": "Raymond-Parent, Geneviève",
       "time": {
         "R": [
           "1200-1500"
@@ -23068,8 +23068,8 @@
     "course": "",
     "code": "387-DFF-AB",
     "lecture": {
-      "title": "Sociologie de la sant\u00e9",
-      "prof": "L\u00e9g\u00e8re, Jessica",
+      "title": "Sociologie de la santé",
+      "prof": "Légère, Jessica",
       "time": {
         "TR": [
           "1130-1300"
@@ -23088,7 +23088,7 @@
     "course": "",
     "code": "203-DFB-AB",
     "lecture": {
-      "title": "Sports et conception d'\u00e9quipements sportifs",
+      "title": "Sports et conception d'équipements sportifs",
       "prof": "Portelance, Etienne",
       "time": {
         "TR": [
@@ -23108,7 +23108,7 @@
     "course": "",
     "code": "420-DFF-AB",
     "lecture": {
-      "title": "Introduction \u00e0 la programmation",
+      "title": "Introduction à la programmation",
       "prof": "Fulleringer, Alexander",
       "time": {
         "TR": [
@@ -23128,7 +23128,7 @@
     "course": "",
     "code": "570-DFA-AB",
     "lecture": {
-      "title": "Fa\u00e7onnage",
+      "title": "Façonnage",
       "prof": "Horlik, Veronika",
       "time": {
         "W": [
@@ -23148,7 +23148,7 @@
     "course": "",
     "code": "570-DFA-AB",
     "lecture": {
-      "title": "Fa\u00e7onnage",
+      "title": "Façonnage",
       "prof": "Horlik, Veronika",
       "time": {
         "F": [
@@ -23208,7 +23208,7 @@
     "course": "",
     "code": "101-DFA-AB",
     "lecture": {
-      "title": "Biologie du sexe et de la sexualit\u00e9",
+      "title": "Biologie du sexe et de la sexualité",
       "prof": "Daoust, Simon",
       "time": {
         "MR": [
@@ -23228,7 +23228,7 @@
     "course": "",
     "code": "120-DFB-AB",
     "lecture": {
-      "title": "Nutrition pour le sport et l\u2019exercice",
+      "title": "Nutrition pour le sport et l’exercice",
       "prof": "Fahmy, Magda",
       "time": {
         "MW": [
@@ -23248,7 +23248,7 @@
     "course": "",
     "code": "120-DFB-AB",
     "lecture": {
-      "title": "Nutrition pour le sport et l\u2019exercice",
+      "title": "Nutrition pour le sport et l’exercice",
       "prof": "Fahmy, Magda",
       "time": {
         "TR": [
@@ -23331,7 +23331,7 @@
     "course": "",
     "code": "350-DFA-AB",
     "lecture": {
-      "title": "Initiation \u00e0 la psychologie",
+      "title": "Initiation à la psychologie",
       "prof": "Caouette, Julie",
       "time": {
         "TR": [
@@ -23351,7 +23351,7 @@
     "course": "",
     "code": "530-DFA-AB",
     "lecture": {
-      "title": "Cin\u00e9ma d\u2019animation en stop motion",
+      "title": "Cinéma d’animation en stop motion",
       "prof": "Schorr, Daniel",
       "time": {
         "T": [
@@ -23551,7 +23551,7 @@
     "course": "",
     "code": "381-DFD-AB",
     "lecture": {
-      "title": "Introduction \u00e0 la mus\u00e9ologie",
+      "title": "Introduction à la muséologie",
       "prof": "Gloux, Sabrina",
       "time": {
         "TR": [
@@ -23571,7 +23571,7 @@
     "course": "",
     "code": "401-DFC-AB",
     "lecture": {
-      "title": "Art oratoire en public pour des pr\u00e9sentations puissantes et",
+      "title": "Art oratoire en public pour des présentations puissantes et",
       "prof": "Raymond, Darcy Gabriel",
       "time": {
         "T": [
@@ -23601,7 +23601,7 @@
       "rating": null
     },
     "lab": null,
-    "more": "For all programs.  Intensive course: includes 9 classes on campus and 1 weekend trip, Oct.24-26 in Foret Ouareau.  Students must provide suitable hiking boots (some pairs available to rent), appropriate clothing. Some equipment available to rent from college \u2013 tents, stoves, sleeping bags, back packs (max. $15). ",
+    "more": "For all programs.  Intensive course: includes 9 classes on campus and 1 weekend trip, Oct.24-26 in Foret Ouareau.  Students must provide suitable hiking boots (some pairs available to rent), appropriate clothing. Some equipment available to rent from college – tents, stoves, sleeping bags, back packs (max. $15). ",
     "viewData": []
   },
   {
@@ -23621,7 +23621,7 @@
       "rating": null
     },
     "lab": null,
-    "more": "For all programs.  Intensive course: includes 9 classes on campus and 1 weekend trip, Oct.10-12 in Foret Ouareau.  Students must provide suitable hiking boots (some pairs available to rent), appropriate clothing. Some equipment available to rent from college \u2013 tents, stoves, sleeping bags, back packs (max. $15). ",
+    "more": "For all programs.  Intensive course: includes 9 classes on campus and 1 weekend trip, Oct.10-12 in Foret Ouareau.  Students must provide suitable hiking boots (some pairs available to rent), appropriate clothing. Some equipment available to rent from college – tents, stoves, sleeping bags, back packs (max. $15). ",
     "viewData": []
   },
   {
@@ -23645,3 +23645,4 @@
     "viewData": []
   }
 ]
+
