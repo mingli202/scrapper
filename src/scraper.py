@@ -50,7 +50,7 @@ class Scraper:
             file.write(json.dumps(new_pids, indent=2))
 
         if not unittest.main(
-            exit=False, module="test.web_scraper"
+            exit=False, module="test.web_scraper_test"
         ).result.wasSuccessful():
             print("scraper test unsuccessful")
             exit(1)

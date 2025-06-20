@@ -12,7 +12,7 @@ class Files:
         curPath = "/".join(curPath.split("/")[:-1]) + "/"
         semesterDir = curPath + semester + "/" + semester
 
-        self.pdfName = curPath + "schedule_of_classes_june_6.txt"
+        self.pdfName = curPath + "Schedule_of_classes_June_17.txt"
         self.rawFile = semesterDir + "-raw.json"
         self.classesFile = semesterDir + "-classes.json"
         self.outFile = semesterDir + "-out.json"
