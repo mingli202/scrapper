@@ -1163,7 +1163,7 @@
       "title": "General Chemistry",
       "prof": "Babich-Morin, Nicole",
       "time": {
-        "W": [
+        "WF": [
           "1430-1600"
         ]
       },
@@ -1175,9 +1175,6 @@
       "time": {
         "T": [
           "1230-1430"
-        ],
-        "F": [
-          "1430-1600"
         ]
       },
       "rating": null
@@ -7882,7 +7879,7 @@
       "prof": "Connor, Cameron James",
       "time": {
         "TW": [
-          "1430-1600"
+          "1300-1430"
         ],
         "F": [
           "1230-1430"
@@ -8310,7 +8307,7 @@
       "prof": "Connor, Cameron James",
       "time": {
         "TW": [
-          "1300-1430"
+          "1430-1600"
         ],
         "F": [
           "1430-1530"
@@ -8774,7 +8771,7 @@
       "rating": null
     },
     "lab": null,
-    "more": "For Honours Social Science students only ",
+    "more": "",
     "viewData": []
   },
   {
@@ -12011,7 +12008,7 @@
   },
   {
     "program": "Visual Arts Courses",
-    "count": 494,
+    "count": 495,
     "section": "00001",
     "course": "HISTORY OF ART",
     "code": "520-AH3-AB",
@@ -12031,7 +12028,7 @@
   },
   {
     "program": "Arts & Science",
-    "count": 495,
+    "count": 496,
     "section": "00024",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -12051,7 +12048,7 @@
   },
   {
     "program": "Arts & Science",
-    "count": 496,
+    "count": 497,
     "section": "00014",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -12071,7 +12068,7 @@
   },
   {
     "program": "Arts & Science",
-    "count": 497,
+    "count": 498,
     "section": "00001",
     "course": "HUMANITIES",
     "code": "345-A1S-AB",
@@ -12091,7 +12088,7 @@
   },
   {
     "program": "Arts & Science",
-    "count": 498,
+    "count": 499,
     "section": "00001",
     "course": "MATHEMATICS",
     "code": "201-A1S-AB",
@@ -12114,7 +12111,7 @@
   },
   {
     "program": "Arts & Science",
-    "count": 499,
+    "count": 500,
     "section": "00001",
     "course": "MATHEMATICS",
     "code": "201-A3F-AB",
@@ -12134,7 +12131,7 @@
   },
   {
     "program": "Arts & Science",
-    "count": 500,
+    "count": 501,
     "section": "00001",
     "course": "MATHEMATICS",
     "code": "201-A4S-AB",
@@ -12157,7 +12154,7 @@
   },
   {
     "program": "Arts & Science",
-    "count": 501,
+    "count": 502,
     "section": "00001",
     "course": "PHYSICS",
     "code": "203-A1S-AB",
@@ -12186,7 +12183,7 @@
   },
   {
     "program": "Arts & Science",
-    "count": 502,
+    "count": 503,
     "section": "00002",
     "course": "PHYSICS",
     "code": "203-A1S-AB",
@@ -12215,7 +12212,7 @@
   },
   {
     "program": "Arts & Science",
-    "count": 503,
+    "count": 504,
     "section": "00001",
     "course": "HISTORY",
     "code": "330-A1S-AB",
@@ -12235,7 +12232,7 @@
   },
   {
     "program": "Arts & Science",
-    "count": 504,
+    "count": 505,
     "section": "00001",
     "course": "VISUAL ARTS",
     "code": "510-A1S-AB",
@@ -12255,7 +12252,7 @@
   },
   {
     "program": "Arts & Science",
-    "count": 505,
+    "count": 506,
     "section": "00002",
     "course": "VISUAL ARTS",
     "code": "510-A1S-AB",
@@ -12275,7 +12272,7 @@
   },
   {
     "program": "Arts & Science",
-    "count": 506,
+    "count": 507,
     "section": "00001",
     "course": "HISTORY OF ART",
     "code": "520-A1S-AB",
@@ -12295,7 +12292,7 @@
   },
   {
     "program": "Arts & Science",
-    "count": 507,
+    "count": 508,
     "section": "00001",
     "course": "BIOLOGY",
     "code": "101-A1S-AB",
@@ -12324,7 +12321,7 @@
   },
   {
     "program": "Arts & Science",
-    "count": 508,
+    "count": 509,
     "section": "00002",
     "course": "BIOLOGY",
     "code": "101-A1S-AB",
@@ -12353,7 +12350,7 @@
   },
   {
     "program": "Arts & Science",
-    "count": 509,
+    "count": 510,
     "section": "00001",
     "course": "PSYCHOLOGY",
     "code": "350-A1S-AB",
@@ -12373,7 +12370,7 @@
   },
   {
     "program": "Liberal Arts Courses",
-    "count": 510,
+    "count": 511,
     "section": "00003",
     "course": "HUMANITIES",
     "code": "345-101-MQ",
@@ -12393,7 +12390,7 @@
   },
   {
     "program": "Liberal Arts Courses",
-    "count": 511,
+    "count": 512,
     "section": "00001",
     "course": "PHILOSOPHY",
     "code": "340-910-AB",
@@ -12413,7 +12410,7 @@
   },
   {
     "program": "Liberal Arts Courses",
-    "count": 512,
+    "count": 513,
     "section": "00001",
     "course": "PHILOSOPHY",
     "code": "340-912-AB",
@@ -12433,7 +12430,7 @@
   },
   {
     "program": "Liberal Arts Courses",
-    "count": 513,
+    "count": 514,
     "section": "00001",
     "course": "RELIGION",
     "code": "370-122-AB",
@@ -12453,7 +12450,7 @@
   },
   {
     "program": "Liberal Arts Courses",
-    "count": 514,
+    "count": 515,
     "section": "00001",
     "course": "MULTIDISCIPLINARY",
     "code": "360-124-AB",
@@ -12476,7 +12473,7 @@
   },
   {
     "program": "Liberal Arts Courses",
-    "count": 515,
+    "count": 517,
     "section": "00022",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -12496,7 +12493,7 @@
   },
   {
     "program": "Liberal Arts Courses",
-    "count": 516,
+    "count": 518,
     "section": "00026",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -12516,7 +12513,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 517,
+    "count": 519,
     "section": "00001",
     "course": "",
     "code": "502-CCA-AB",
@@ -12531,12 +12528,12 @@
       "rating": null
     },
     "lab": null,
-    "more": "Appropriate materials cost: $10 ",
+    "more": "Approximate materials cost: $10 ",
     "viewData": []
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 518,
+    "count": 520,
     "section": "00002",
     "course": "",
     "code": "502-CCA-AB",
@@ -12551,12 +12548,12 @@
       "rating": null
     },
     "lab": null,
-    "more": "Appropriate materials cost: $10 ",
+    "more": "Approximate materials cost: $10 ",
     "viewData": []
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 519,
+    "count": 521,
     "section": "00003",
     "course": "",
     "code": "502-CCA-AB",
@@ -12565,18 +12562,18 @@
       "prof": "Fisher, Jennifer",
       "time": {
         "WF": [
-          "1130-1330"
+          "1030-1230"
         ]
       },
       "rating": null
     },
     "lab": null,
-    "more": "Appropriate materials cost: $10 ",
+    "more": "Approximate materials cost: $10 ",
     "viewData": []
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 520,
+    "count": 522,
     "section": "00004",
     "course": "",
     "code": "502-CCA-AB",
@@ -12596,7 +12593,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 521,
+    "count": 523,
     "section": "00005",
     "course": "",
     "code": "502-CCA-AB",
@@ -12616,7 +12613,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 522,
+    "count": 524,
     "section": "00006",
     "course": "",
     "code": "502-CCA-AB",
@@ -12636,7 +12633,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 523,
+    "count": 525,
     "section": "00001",
     "course": "",
     "code": "502-CCB-AB",
@@ -12656,7 +12653,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 524,
+    "count": 526,
     "section": "00002",
     "course": "",
     "code": "502-CCB-AB",
@@ -12676,7 +12673,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 525,
+    "count": 527,
     "section": "00001",
     "course": "",
     "code": "502-CCC-AB",
@@ -12696,7 +12693,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 526,
+    "count": 528,
     "section": "00002",
     "course": "",
     "code": "502-CCC-AB",
@@ -12716,7 +12713,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 527,
+    "count": 529,
     "section": "00001",
     "course": "",
     "code": "502-CFC-AB",
@@ -12736,7 +12733,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 528,
+    "count": 530,
     "section": "00002",
     "course": "",
     "code": "502-CFC-AB",
@@ -12756,7 +12753,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 529,
+    "count": 531,
     "section": "00001",
     "course": "",
     "code": "502-SEG-AB",
@@ -12776,7 +12773,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 530,
+    "count": 532,
     "section": "00002",
     "course": "",
     "code": "502-SEG-AB",
@@ -12796,7 +12793,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 531,
+    "count": 533,
     "section": "00001",
     "course": "",
     "code": "530-ADT-AB",
@@ -12816,7 +12813,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 532,
+    "count": 534,
     "section": "00002",
     "course": "",
     "code": "530-ADT-AB",
@@ -12836,7 +12833,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 533,
+    "count": 535,
     "section": "00001",
     "course": "",
     "code": "530-DMA-AB",
@@ -12856,7 +12853,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 534,
+    "count": 536,
     "section": "00002",
     "course": "",
     "code": "530-DMA-AB",
@@ -12876,7 +12873,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 535,
+    "count": 537,
     "section": "00001",
     "course": "",
     "code": "530-DME-AB",
@@ -12896,7 +12893,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 536,
+    "count": 538,
     "section": "00002",
     "course": "",
     "code": "530-DME-AB",
@@ -12916,7 +12913,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 537,
+    "count": 539,
     "section": "00001",
     "course": "",
     "code": "530-FP1-AB",
@@ -12936,7 +12933,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 538,
+    "count": 540,
     "section": "00002",
     "course": "",
     "code": "530-FP1-AB",
@@ -12956,7 +12953,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 539,
+    "count": 541,
     "section": "00001",
     "course": "",
     "code": "530-FA2-AB",
@@ -12976,7 +12973,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 540,
+    "count": 542,
     "section": "00001",
     "course": "",
     "code": "530-FT1-AB",
@@ -12996,7 +12993,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 541,
+    "count": 543,
     "section": "00002",
     "course": "",
     "code": "530-FT1-AB",
@@ -13016,7 +13013,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 542,
+    "count": 544,
     "section": "00001",
     "course": "",
     "code": "530-FPE-AB",
@@ -13036,7 +13033,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 543,
+    "count": 545,
     "section": "00001",
     "course": "",
     "code": "530-MTP-AB",
@@ -13056,7 +13053,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 544,
+    "count": 546,
     "section": "00002",
     "course": "",
     "code": "530-MTP-AB",
@@ -13076,7 +13073,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 545,
+    "count": 547,
     "section": "00001",
     "course": "",
     "code": "585-PT1-AB",
@@ -13096,7 +13093,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 546,
+    "count": 548,
     "section": "00002",
     "course": "",
     "code": "585-PT1-AB",
@@ -13116,7 +13113,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 547,
+    "count": 549,
     "section": "00001",
     "course": "",
     "code": "585-PTE-AB",
@@ -13136,7 +13133,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 548,
+    "count": 550,
     "section": "00001",
     "course": "",
     "code": "530-MTM-AB",
@@ -13156,7 +13153,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 549,
+    "count": 551,
     "section": "00001",
     "course": "",
     "code": "585-DRA-AB",
@@ -13176,7 +13173,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 550,
+    "count": 552,
     "section": "00002",
     "course": "",
     "code": "585-DRA-AB",
@@ -13196,7 +13193,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 551,
+    "count": 553,
     "section": "00001",
     "course": "",
     "code": "530-MTE-AB",
@@ -13217,7 +13214,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 552,
+    "count": 554,
     "section": "00001",
     "course": "",
     "code": "585-SD1-AB",
@@ -13237,7 +13234,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 553,
+    "count": 555,
     "section": "00002",
     "course": "",
     "code": "585-SD1-AB",
@@ -13257,7 +13254,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 554,
+    "count": 556,
     "section": "00001",
     "course": "",
     "code": "585-SPA-AB",
@@ -13277,7 +13274,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 555,
+    "count": 557,
     "section": "00002",
     "course": "",
     "code": "585-SPA-AB",
@@ -13297,7 +13294,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 556,
+    "count": 558,
     "section": "00001",
     "course": "",
     "code": "585-SPB-AB",
@@ -13317,7 +13314,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 557,
+    "count": 559,
     "section": "00001",
     "course": "",
     "code": "603-CRA-AB",
@@ -13337,7 +13334,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 558,
+    "count": 560,
     "section": "00001",
     "course": "",
     "code": "603-CRE-AB",
@@ -13357,7 +13354,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 559,
+    "count": 561,
     "section": "00001",
     "course": "",
     "code": "603-JLM-AB",
@@ -13377,7 +13374,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 560,
+    "count": 562,
     "section": "00001",
     "course": "",
     "code": "603-LCS-AB",
@@ -13397,7 +13394,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 561,
+    "count": 563,
     "section": "00001",
     "course": "",
     "code": "340-PCM-AB",
@@ -13417,7 +13414,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 562,
+    "count": 564,
     "section": "00001",
     "course": "",
     "code": "585-WSA-AB",
@@ -13437,7 +13434,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 564,
+    "count": 566,
     "section": "00001",
     "course": "",
     "code": "608-T1A-AB",
@@ -13457,7 +13454,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 565,
+    "count": 567,
     "section": "00001",
     "course": "",
     "code": "607-S1A-AB",
@@ -13477,7 +13474,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 566,
+    "count": 568,
     "section": "00002",
     "course": "",
     "code": "607-S1A-AB",
@@ -13497,7 +13494,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 567,
+    "count": 569,
     "section": "00001",
     "course": "",
     "code": "607-S1B-AB",
@@ -13517,7 +13514,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 568,
+    "count": 570,
     "section": "00001",
     "course": "",
     "code": "608-TAL-AB",
@@ -13537,7 +13534,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 569,
+    "count": 571,
     "section": "00001",
     "course": "",
     "code": "510-SPR-AB",
@@ -13557,7 +13554,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 570,
+    "count": 572,
     "section": "00001",
     "course": "",
     "code": "560-TFA-AB",
@@ -13577,7 +13574,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 571,
+    "count": 573,
     "section": "00001",
     "course": "",
     "code": "560-TFB-AB",
@@ -13597,7 +13594,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 572,
+    "count": 574,
     "section": "00001",
     "course": "",
     "code": "560-AFT-AB",
@@ -13617,7 +13614,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 573,
+    "count": 575,
     "section": "00001",
     "course": "",
     "code": "560-THA-AB",
@@ -13637,7 +13634,7 @@
   },
   {
     "program": "Pathways Courses",
-    "count": 574,
+    "count": 576,
     "section": "00001",
     "course": "CHEMISTRY",
     "code": "105-003-RE",
@@ -13669,7 +13666,7 @@
   },
   {
     "program": "Pathways Courses",
-    "count": 575,
+    "count": 577,
     "section": "00002",
     "course": "CHEMISTRY",
     "code": "105-003-RE",
@@ -13701,7 +13698,7 @@
   },
   {
     "program": "Pathways Courses",
-    "count": 576,
+    "count": 578,
     "section": "00001",
     "course": "CHEMISTRY",
     "code": "202-001-RE",
@@ -13730,7 +13727,7 @@
   },
   {
     "program": "Pathways Courses",
-    "count": 577,
+    "count": 579,
     "section": "00002",
     "course": "CHEMISTRY",
     "code": "202-001-RE",
@@ -13759,7 +13756,7 @@
   },
   {
     "program": "Pathways Courses",
-    "count": 578,
+    "count": 580,
     "section": "00001",
     "course": "MATHEMATICS",
     "code": "201-016-RE",
@@ -13782,7 +13779,7 @@
   },
   {
     "program": "Pathways Courses",
-    "count": 579,
+    "count": 581,
     "section": "00002",
     "course": "MATHEMATICS",
     "code": "201-016-RE",
@@ -13805,7 +13802,7 @@
   },
   {
     "program": "Pathways Courses",
-    "count": 580,
+    "count": 582,
     "section": "00003",
     "course": "MATHEMATICS",
     "code": "201-016-RE",
@@ -13828,7 +13825,7 @@
   },
   {
     "program": "Pathways Courses",
-    "count": 581,
+    "count": 583,
     "section": "00004",
     "course": "MATHEMATICS",
     "code": "201-016-RE",
@@ -13851,7 +13848,7 @@
   },
   {
     "program": "Pathways Courses",
-    "count": 582,
+    "count": 584,
     "section": "00005",
     "course": "MATHEMATICS",
     "code": "201-016-RE",
@@ -13874,7 +13871,7 @@
   },
   {
     "program": "Pathways Courses",
-    "count": 583,
+    "count": 585,
     "section": "00001",
     "course": "MATHEMATICS",
     "code": "201-015-RE",
@@ -13894,7 +13891,7 @@
   },
   {
     "program": "Pathways Courses",
-    "count": 584,
+    "count": 586,
     "section": "00002",
     "course": "MATHEMATICS",
     "code": "201-015-RE",
@@ -13914,7 +13911,7 @@
   },
   {
     "program": "Pathways Courses",
-    "count": 585,
+    "count": 587,
     "section": "00003",
     "course": "MATHEMATICS",
     "code": "201-015-RE",
@@ -13934,7 +13931,7 @@
   },
   {
     "program": "Pathways Courses",
-    "count": 586,
+    "count": 588,
     "section": "00004",
     "course": "MATHEMATICS",
     "code": "201-015-RE",
@@ -13954,7 +13951,7 @@
   },
   {
     "program": "Pathways Courses",
-    "count": 587,
+    "count": 589,
     "section": "00005",
     "course": "MATHEMATICS",
     "code": "201-015-RE",
@@ -13974,7 +13971,7 @@
   },
   {
     "program": "Pathways Courses",
-    "count": 588,
+    "count": 590,
     "section": "00006",
     "course": "MATHEMATICS",
     "code": "201-015-RE",
@@ -13994,7 +13991,7 @@
   },
   {
     "program": "Pathways Courses",
-    "count": 589,
+    "count": 591,
     "section": "00001",
     "course": "MULTIDISCIPLINARY",
     "code": "360-SCS-AB",
@@ -14014,7 +14011,7 @@
   },
   {
     "program": "Pathways Courses",
-    "count": 590,
+    "count": 592,
     "section": "00002",
     "course": "MULTIDISCIPLINARY",
     "code": "360-SCS-AB",
@@ -14037,7 +14034,7 @@
   },
   {
     "program": "Pathways Courses",
-    "count": 591,
+    "count": 593,
     "section": "00001",
     "course": "MULTIDISCIPLINARY",
     "code": "360-CSS-AB",
@@ -14057,7 +14054,7 @@
   },
   {
     "program": "Pathways Courses",
-    "count": 592,
+    "count": 594,
     "section": "00002",
     "course": "MULTIDISCIPLINARY",
     "code": "360-CSS-AB",
@@ -14077,7 +14074,7 @@
   },
   {
     "program": "Pathways Courses",
-    "count": 593,
+    "count": 595,
     "section": "00001",
     "course": "PHYSICS",
     "code": "360-AFM-AB",
@@ -14097,7 +14094,7 @@
   },
   {
     "program": "Pathways Courses",
-    "count": 594,
+    "count": 596,
     "section": "00001",
     "course": "PHYSICS",
     "code": "203-001-RE",
@@ -14126,7 +14123,7 @@
   },
   {
     "program": "Pathways Courses",
-    "count": 595,
+    "count": 597,
     "section": "00002",
     "course": "PHYSICS",
     "code": "203-001-RE",
@@ -14155,7 +14152,7 @@
   },
   {
     "program": "Pathways Courses",
-    "count": 596,
+    "count": 598,
     "section": "00001",
     "course": "HUMANITIES",
     "code": "365-CEC-AB",
@@ -14175,7 +14172,7 @@
   },
   {
     "program": "English",
-    "count": 597,
+    "count": 599,
     "section": "00001",
     "course": "ENGLISH",
     "code": "603-003-50",
@@ -14195,7 +14192,7 @@
   },
   {
     "program": "English",
-    "count": 598,
+    "count": 600,
     "section": "00001",
     "course": "ENGLISH",
     "code": "603-101-CL",
@@ -14215,7 +14212,7 @@
   },
   {
     "program": "English",
-    "count": 599,
+    "count": 601,
     "section": "00002",
     "course": "ENGLISH",
     "code": "603-101-CL",
@@ -14235,7 +14232,7 @@
   },
   {
     "program": "English",
-    "count": 600,
+    "count": 602,
     "section": "00003",
     "course": "ENGLISH",
     "code": "603-101-CL",
@@ -14255,7 +14252,7 @@
   },
   {
     "program": "English",
-    "count": 601,
+    "count": 603,
     "section": "00004",
     "course": "ENGLISH",
     "code": "603-101-CL",
@@ -14275,7 +14272,7 @@
   },
   {
     "program": "English",
-    "count": 602,
+    "count": 604,
     "section": "00005",
     "course": "ENGLISH",
     "code": "603-101-CL",
@@ -14295,7 +14292,7 @@
   },
   {
     "program": "English",
-    "count": 603,
+    "count": 605,
     "section": "00006",
     "course": "ENGLISH",
     "code": "603-101-CL",
@@ -14315,7 +14312,7 @@
   },
   {
     "program": "English",
-    "count": 604,
+    "count": 606,
     "section": "00007",
     "course": "ENGLISH",
     "code": "603-101-CL",
@@ -14335,7 +14332,7 @@
   },
   {
     "program": "English",
-    "count": 605,
+    "count": 607,
     "section": "00008",
     "course": "ENGLISH",
     "code": "603-101-CL",
@@ -14355,7 +14352,7 @@
   },
   {
     "program": "English",
-    "count": 606,
+    "count": 608,
     "section": "00001",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14375,7 +14372,7 @@
   },
   {
     "program": "English",
-    "count": 607,
+    "count": 609,
     "section": "00002",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14395,7 +14392,7 @@
   },
   {
     "program": "English",
-    "count": 608,
+    "count": 610,
     "section": "00003",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14415,7 +14412,7 @@
   },
   {
     "program": "English",
-    "count": 609,
+    "count": 611,
     "section": "00004",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14435,7 +14432,7 @@
   },
   {
     "program": "English",
-    "count": 610,
+    "count": 612,
     "section": "00005",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14455,7 +14452,7 @@
   },
   {
     "program": "English",
-    "count": 611,
+    "count": 613,
     "section": "00006",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14475,7 +14472,7 @@
   },
   {
     "program": "English",
-    "count": 612,
+    "count": 614,
     "section": "00007",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14495,7 +14492,7 @@
   },
   {
     "program": "English",
-    "count": 613,
+    "count": 615,
     "section": "00008",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14515,7 +14512,7 @@
   },
   {
     "program": "English",
-    "count": 614,
+    "count": 616,
     "section": "00009",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14535,7 +14532,7 @@
   },
   {
     "program": "English",
-    "count": 615,
+    "count": 617,
     "section": "00010",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14555,7 +14552,7 @@
   },
   {
     "program": "English",
-    "count": 616,
+    "count": 618,
     "section": "00011",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14575,7 +14572,7 @@
   },
   {
     "program": "English",
-    "count": 617,
+    "count": 619,
     "section": "00012",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14595,7 +14592,7 @@
   },
   {
     "program": "English",
-    "count": 618,
+    "count": 620,
     "section": "00013",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14615,7 +14612,7 @@
   },
   {
     "program": "English",
-    "count": 619,
+    "count": 621,
     "section": "00014",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14635,7 +14632,7 @@
   },
   {
     "program": "English",
-    "count": 620,
+    "count": 622,
     "section": "00015",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14655,7 +14652,7 @@
   },
   {
     "program": "English",
-    "count": 621,
+    "count": 623,
     "section": "00016",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14675,7 +14672,7 @@
   },
   {
     "program": "English",
-    "count": 622,
+    "count": 624,
     "section": "00017",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14695,7 +14692,7 @@
   },
   {
     "program": "English",
-    "count": 623,
+    "count": 625,
     "section": "00018",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14715,7 +14712,7 @@
   },
   {
     "program": "English",
-    "count": 624,
+    "count": 626,
     "section": "00019",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14735,7 +14732,7 @@
   },
   {
     "program": "English",
-    "count": 625,
+    "count": 627,
     "section": "00020",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14755,7 +14752,7 @@
   },
   {
     "program": "English",
-    "count": 626,
+    "count": 628,
     "section": "00021",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14775,7 +14772,7 @@
   },
   {
     "program": "English",
-    "count": 627,
+    "count": 629,
     "section": "00023",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14795,7 +14792,7 @@
   },
   {
     "program": "English",
-    "count": 628,
+    "count": 630,
     "section": "00025",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14815,7 +14812,7 @@
   },
   {
     "program": "English",
-    "count": 629,
+    "count": 631,
     "section": "00026",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14835,7 +14832,7 @@
   },
   {
     "program": "English",
-    "count": 630,
+    "count": 632,
     "section": "00027",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14855,7 +14852,7 @@
   },
   {
     "program": "English",
-    "count": 631,
+    "count": 633,
     "section": "00028",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14875,7 +14872,7 @@
   },
   {
     "program": "English",
-    "count": 632,
+    "count": 634,
     "section": "00029",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14895,7 +14892,7 @@
   },
   {
     "program": "English",
-    "count": 633,
+    "count": 635,
     "section": "00030",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14915,7 +14912,7 @@
   },
   {
     "program": "English",
-    "count": 634,
+    "count": 636,
     "section": "00031",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14935,7 +14932,7 @@
   },
   {
     "program": "English",
-    "count": 635,
+    "count": 637,
     "section": "00032",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14955,7 +14952,7 @@
   },
   {
     "program": "English",
-    "count": 636,
+    "count": 638,
     "section": "00033",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14975,7 +14972,7 @@
   },
   {
     "program": "English",
-    "count": 637,
+    "count": 639,
     "section": "00034",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -14995,7 +14992,7 @@
   },
   {
     "program": "English",
-    "count": 638,
+    "count": 640,
     "section": "00035",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -15015,7 +15012,7 @@
   },
   {
     "program": "English",
-    "count": 639,
+    "count": 641,
     "section": "00036",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -15035,7 +15032,7 @@
   },
   {
     "program": "English",
-    "count": 640,
+    "count": 642,
     "section": "00037",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -15055,7 +15052,7 @@
   },
   {
     "program": "English",
-    "count": 641,
+    "count": 643,
     "section": "00038",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -15075,7 +15072,7 @@
   },
   {
     "program": "English",
-    "count": 642,
+    "count": 644,
     "section": "00039",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -15095,7 +15092,7 @@
   },
   {
     "program": "English",
-    "count": 643,
+    "count": 645,
     "section": "00040",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -15115,7 +15112,7 @@
   },
   {
     "program": "English",
-    "count": 644,
+    "count": 646,
     "section": "00041",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -15135,7 +15132,7 @@
   },
   {
     "program": "English",
-    "count": 645,
+    "count": 647,
     "section": "00042",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -15155,7 +15152,7 @@
   },
   {
     "program": "English",
-    "count": 646,
+    "count": 648,
     "section": "00043",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -15175,7 +15172,7 @@
   },
   {
     "program": "English",
-    "count": 647,
+    "count": 649,
     "section": "00044",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -15195,7 +15192,7 @@
   },
   {
     "program": "English",
-    "count": 648,
+    "count": 650,
     "section": "00045",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -15215,7 +15212,7 @@
   },
   {
     "program": "English",
-    "count": 649,
+    "count": 651,
     "section": "00046",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -15235,7 +15232,7 @@
   },
   {
     "program": "English",
-    "count": 650,
+    "count": 652,
     "section": "00047",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -15255,7 +15252,7 @@
   },
   {
     "program": "English",
-    "count": 651,
+    "count": 653,
     "section": "00048",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -15275,7 +15272,7 @@
   },
   {
     "program": "English",
-    "count": 652,
+    "count": 654,
     "section": "00049",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -15295,7 +15292,7 @@
   },
   {
     "program": "English",
-    "count": 653,
+    "count": 655,
     "section": "00050",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -15315,7 +15312,7 @@
   },
   {
     "program": "English",
-    "count": 654,
+    "count": 656,
     "section": "00051",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -15335,7 +15332,7 @@
   },
   {
     "program": "English",
-    "count": 655,
+    "count": 657,
     "section": "00052",
     "course": "ENGLISH",
     "code": "603-101-MQ",
@@ -15355,7 +15352,7 @@
   },
   {
     "program": "English",
-    "count": 656,
+    "count": 658,
     "section": "00001",
     "course": "ENGLISH",
     "code": "603-102-MQ",
@@ -15375,7 +15372,7 @@
   },
   {
     "program": "English",
-    "count": 657,
+    "count": 659,
     "section": "00002",
     "course": "ENGLISH",
     "code": "603-102-MQ",
@@ -15395,7 +15392,7 @@
   },
   {
     "program": "English",
-    "count": 658,
+    "count": 660,
     "section": "00003",
     "course": "ENGLISH",
     "code": "603-102-MQ",
@@ -15415,7 +15412,7 @@
   },
   {
     "program": "English",
-    "count": 659,
+    "count": 661,
     "section": "00004",
     "course": "ENGLISH",
     "code": "603-102-MQ",
@@ -15435,7 +15432,7 @@
   },
   {
     "program": "English",
-    "count": 660,
+    "count": 662,
     "section": "00005",
     "course": "ENGLISH",
     "code": "603-102-MQ",
@@ -15455,7 +15452,7 @@
   },
   {
     "program": "English",
-    "count": 661,
+    "count": 663,
     "section": "00006",
     "course": "ENGLISH",
     "code": "603-102-MQ",
@@ -15475,7 +15472,7 @@
   },
   {
     "program": "English",
-    "count": 662,
+    "count": 664,
     "section": "00007",
     "course": "ENGLISH",
     "code": "603-102-MQ",
@@ -15495,7 +15492,7 @@
   },
   {
     "program": "English",
-    "count": 663,
+    "count": 665,
     "section": "00008",
     "course": "ENGLISH",
     "code": "603-102-MQ",
@@ -15515,7 +15512,7 @@
   },
   {
     "program": "English",
-    "count": 664,
+    "count": 666,
     "section": "00009",
     "course": "ENGLISH",
     "code": "603-102-MQ",
@@ -15535,7 +15532,7 @@
   },
   {
     "program": "English",
-    "count": 665,
+    "count": 667,
     "section": "00010",
     "course": "ENGLISH",
     "code": "603-102-MQ",
@@ -15555,7 +15552,7 @@
   },
   {
     "program": "English",
-    "count": 666,
+    "count": 668,
     "section": "00011",
     "course": "ENGLISH",
     "code": "603-102-MQ",
@@ -15575,7 +15572,7 @@
   },
   {
     "program": "English",
-    "count": 667,
+    "count": 669,
     "section": "00012",
     "course": "ENGLISH",
     "code": "603-102-MQ",
@@ -15595,7 +15592,7 @@
   },
   {
     "program": "English",
-    "count": 668,
+    "count": 670,
     "section": "00013",
     "course": "ENGLISH",
     "code": "603-102-MQ",
@@ -15615,7 +15612,7 @@
   },
   {
     "program": "English",
-    "count": 669,
+    "count": 671,
     "section": "00014",
     "course": "ENGLISH",
     "code": "603-102-MQ",
@@ -15635,7 +15632,7 @@
   },
   {
     "program": "English",
-    "count": 670,
+    "count": 672,
     "section": "00015",
     "course": "ENGLISH",
     "code": "603-102-MQ",
@@ -15655,7 +15652,7 @@
   },
   {
     "program": "English",
-    "count": 671,
+    "count": 673,
     "section": "00016",
     "course": "ENGLISH",
     "code": "603-102-MQ",
@@ -15675,7 +15672,7 @@
   },
   {
     "program": "English",
-    "count": 672,
+    "count": 674,
     "section": "00017",
     "course": "ENGLISH",
     "code": "603-102-MQ",
@@ -15695,7 +15692,7 @@
   },
   {
     "program": "English",
-    "count": 673,
+    "count": 675,
     "section": "00018",
     "course": "ENGLISH",
     "code": "603-102-MQ",
@@ -15715,7 +15712,7 @@
   },
   {
     "program": "English",
-    "count": 674,
+    "count": 676,
     "section": "00019",
     "course": "ENGLISH",
     "code": "603-102-MQ",
@@ -15735,7 +15732,7 @@
   },
   {
     "program": "English",
-    "count": 675,
+    "count": 677,
     "section": "00020",
     "course": "ENGLISH",
     "code": "603-102-MQ",
@@ -15755,7 +15752,7 @@
   },
   {
     "program": "English",
-    "count": 676,
+    "count": 678,
     "section": "00060",
     "course": "ENGLISH",
     "code": "603-102-MQ",
@@ -15775,7 +15772,7 @@
   },
   {
     "program": "English",
-    "count": 677,
+    "count": 679,
     "section": "00061",
     "course": "ENGLISH",
     "code": "603-102-MQ",
@@ -15795,7 +15792,7 @@
   },
   {
     "program": "English",
-    "count": 678,
+    "count": 680,
     "section": "00001",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -15815,7 +15812,7 @@
   },
   {
     "program": "English",
-    "count": 679,
+    "count": 681,
     "section": "00002",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -15835,7 +15832,7 @@
   },
   {
     "program": "English",
-    "count": 680,
+    "count": 682,
     "section": "00003",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -15855,7 +15852,7 @@
   },
   {
     "program": "English",
-    "count": 681,
+    "count": 683,
     "section": "00004",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -15875,7 +15872,7 @@
   },
   {
     "program": "English",
-    "count": 682,
+    "count": 684,
     "section": "00005",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -15895,7 +15892,7 @@
   },
   {
     "program": "English",
-    "count": 683,
+    "count": 685,
     "section": "00006",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -15915,7 +15912,7 @@
   },
   {
     "program": "English",
-    "count": 684,
+    "count": 686,
     "section": "00007",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -15935,7 +15932,7 @@
   },
   {
     "program": "English",
-    "count": 685,
+    "count": 687,
     "section": "00008",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -15955,7 +15952,7 @@
   },
   {
     "program": "English",
-    "count": 686,
+    "count": 688,
     "section": "00009",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -15975,7 +15972,7 @@
   },
   {
     "program": "English",
-    "count": 687,
+    "count": 689,
     "section": "00010",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -15995,7 +15992,7 @@
   },
   {
     "program": "English",
-    "count": 688,
+    "count": 690,
     "section": "00011",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -16015,7 +16012,7 @@
   },
   {
     "program": "English",
-    "count": 689,
+    "count": 691,
     "section": "00012",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -16035,7 +16032,7 @@
   },
   {
     "program": "English",
-    "count": 690,
+    "count": 692,
     "section": "00013",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -16055,7 +16052,7 @@
   },
   {
     "program": "English",
-    "count": 691,
+    "count": 693,
     "section": "00015",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -16075,7 +16072,7 @@
   },
   {
     "program": "English",
-    "count": 692,
+    "count": 694,
     "section": "00016",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -16095,7 +16092,7 @@
   },
   {
     "program": "English",
-    "count": 693,
+    "count": 695,
     "section": "00017",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -16115,7 +16112,7 @@
   },
   {
     "program": "English",
-    "count": 694,
+    "count": 696,
     "section": "00018",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -16135,7 +16132,7 @@
   },
   {
     "program": "English",
-    "count": 695,
+    "count": 697,
     "section": "00019",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -16155,7 +16152,7 @@
   },
   {
     "program": "English",
-    "count": 696,
+    "count": 698,
     "section": "00020",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -16175,7 +16172,7 @@
   },
   {
     "program": "English",
-    "count": 697,
+    "count": 699,
     "section": "00021",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -16195,7 +16192,7 @@
   },
   {
     "program": "English",
-    "count": 698,
+    "count": 700,
     "section": "00022",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -16215,7 +16212,7 @@
   },
   {
     "program": "English",
-    "count": 699,
+    "count": 701,
     "section": "00023",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -16235,7 +16232,7 @@
   },
   {
     "program": "English",
-    "count": 700,
+    "count": 702,
     "section": "00024",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -16255,7 +16252,7 @@
   },
   {
     "program": "English",
-    "count": 701,
+    "count": 703,
     "section": "00025",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -16275,7 +16272,7 @@
   },
   {
     "program": "English",
-    "count": 702,
+    "count": 704,
     "section": "00027",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -16295,7 +16292,7 @@
   },
   {
     "program": "English",
-    "count": 703,
+    "count": 705,
     "section": "00050",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -16315,7 +16312,7 @@
   },
   {
     "program": "English",
-    "count": 704,
+    "count": 706,
     "section": "00051",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -16335,7 +16332,7 @@
   },
   {
     "program": "English",
-    "count": 707,
+    "count": 709,
     "section": "00001",
     "course": "ENGLISH",
     "code": "603-200-AB",
@@ -16355,7 +16352,7 @@
   },
   {
     "program": "English",
-    "count": 708,
+    "count": 710,
     "section": "00002",
     "course": "ENGLISH",
     "code": "603-200-AB",
@@ -16379,7 +16376,7 @@
   },
   {
     "program": "English",
-    "count": 709,
+    "count": 711,
     "section": "00003",
     "course": "ENGLISH",
     "code": "603-200-AB",
@@ -16400,7 +16397,7 @@
   },
   {
     "program": "English",
-    "count": 710,
+    "count": 712,
     "section": "00004",
     "course": "ENGLISH",
     "code": "603-200-AB",
@@ -16420,7 +16417,7 @@
   },
   {
     "program": "English",
-    "count": 711,
+    "count": 713,
     "section": "00005",
     "course": "ENGLISH",
     "code": "603-200-AB",
@@ -16440,7 +16437,7 @@
   },
   {
     "program": "English",
-    "count": 712,
+    "count": 714,
     "section": "00006",
     "course": "ENGLISH",
     "code": "603-200-AB",
@@ -16460,7 +16457,7 @@
   },
   {
     "program": "English",
-    "count": 713,
+    "count": 715,
     "section": "00007",
     "course": "ENGLISH",
     "code": "603-200-AB",
@@ -16480,7 +16477,7 @@
   },
   {
     "program": "English",
-    "count": 714,
+    "count": 716,
     "section": "00008",
     "course": "ENGLISH",
     "code": "603-200-AB",
@@ -16500,7 +16497,7 @@
   },
   {
     "program": "English",
-    "count": 715,
+    "count": 717,
     "section": "00009",
     "course": "ENGLISH",
     "code": "603-200-AB",
@@ -16520,9 +16517,9 @@
   },
   {
     "program": "English",
-    "count": 716,
+    "count": 718,
     "section": "00010",
-    "course": "SECTION      DISC        COURSE NUMBER         COURSE TITLE/TEACHER                                            DAY/TIMES",
+    "course": "ENGLISH",
     "code": "603-200-AB",
     "lecture": {
       "title": "Modern and Contemporary Drama: From Script to Performance to Screen (Blended)",
@@ -16540,9 +16537,9 @@
   },
   {
     "program": "English",
-    "count": 717,
+    "count": 719,
     "section": "00011",
-    "course": "SECTION      DISC        COURSE NUMBER         COURSE TITLE/TEACHER                                            DAY/TIMES",
+    "course": "ENGLISH",
     "code": "603-200-AB",
     "lecture": {
       "title": "The City in Literature (Blended)",
@@ -16560,9 +16557,9 @@
   },
   {
     "program": "English",
-    "count": 718,
+    "count": 720,
     "section": "00012",
-    "course": "SECTION      DISC        COURSE NUMBER         COURSE TITLE/TEACHER                                            DAY/TIMES",
+    "course": "ENGLISH",
     "code": "603-200-AB",
     "lecture": {
       "title": "The City in Literature (Blended)",
@@ -16580,9 +16577,9 @@
   },
   {
     "program": "English",
-    "count": 719,
+    "count": 721,
     "section": "00013",
-    "course": "SECTION      DISC        COURSE NUMBER         COURSE TITLE/TEACHER                                            DAY/TIMES",
+    "course": "ENGLISH",
     "code": "603-200-AB",
     "lecture": {
       "title": "Nature and the Human Condition",
@@ -16600,9 +16597,9 @@
   },
   {
     "program": "English",
-    "count": 720,
+    "count": 722,
     "section": "00014",
-    "course": "SECTION      DISC        COURSE NUMBER         COURSE TITLE/TEACHER                                            DAY/TIMES",
+    "course": "ENGLISH",
     "code": "603-200-AB",
     "lecture": {
       "title": "Hybrid Bodies",
@@ -16620,9 +16617,9 @@
   },
   {
     "program": "English",
-    "count": 721,
+    "count": 723,
     "section": "00015",
-    "course": "SECTION      DISC        COURSE NUMBER         COURSE TITLE/TEACHER                                            DAY/TIMES",
+    "course": "ENGLISH",
     "code": "603-200-AB",
     "lecture": {
       "title": "Forms of Discourse",
@@ -16640,9 +16637,9 @@
   },
   {
     "program": "English",
-    "count": 722,
+    "count": 724,
     "section": "00016",
-    "course": "SECTION      DISC        COURSE NUMBER         COURSE TITLE/TEACHER                                            DAY/TIMES",
+    "course": "ENGLISH",
     "code": "603-200-AB",
     "lecture": {
       "title": "Forms of Discourse",
@@ -16660,7 +16657,7 @@
   },
   {
     "program": "English",
-    "count": 723,
+    "count": 725,
     "section": "00017",
     "course": "ENGLISH",
     "code": "603-200-AB",
@@ -16680,7 +16677,7 @@
   },
   {
     "program": "French",
-    "count": 726,
+    "count": 728,
     "section": "00001",
     "course": "FRENCH",
     "code": "602-011-AB",
@@ -16700,7 +16697,7 @@
   },
   {
     "program": "French",
-    "count": 727,
+    "count": 729,
     "section": "00001",
     "course": "FRENCH",
     "code": "602-006-50",
@@ -16720,7 +16717,7 @@
   },
   {
     "program": "French",
-    "count": 728,
+    "count": 730,
     "section": "00001",
     "course": "FRENCH",
     "code": "602-009-AB",
@@ -16730,46 +16727,6 @@
       "time": {
         "MW": [
           "0800-1000"
-        ]
-      },
-      "rating": null
-    },
-    "lab": null,
-    "more": "",
-    "viewData": []
-  },
-  {
-    "program": "French",
-    "count": 729,
-    "section": "00002",
-    "course": "FRENCH",
-    "code": "602-009-AB",
-    "lecture": {
-      "title": "Renforcement en français, langue seconde",
-      "prof": "Tellier, Christine",
-      "time": {
-        "TR": [
-          "0800-1000"
-        ]
-      },
-      "rating": null
-    },
-    "lab": null,
-    "more": "",
-    "viewData": []
-  },
-  {
-    "program": "French",
-    "count": 730,
-    "section": "00003",
-    "course": "FRENCH",
-    "code": "602-009-AB",
-    "lecture": {
-      "title": "Renforcement en français, langue seconde",
-      "prof": "Tellier, Christine",
-      "time": {
-        "TR": [
-          "1030-1230"
         ]
       },
       "rating": null
@@ -16781,6 +16738,46 @@
   {
     "program": "French",
     "count": 731,
+    "section": "00002",
+    "course": "FRENCH",
+    "code": "602-009-AB",
+    "lecture": {
+      "title": "Renforcement en français, langue seconde",
+      "prof": "Tellier, Christine",
+      "time": {
+        "TR": [
+          "0800-1000"
+        ]
+      },
+      "rating": null
+    },
+    "lab": null,
+    "more": "",
+    "viewData": []
+  },
+  {
+    "program": "French",
+    "count": 732,
+    "section": "00003",
+    "course": "FRENCH",
+    "code": "602-009-AB",
+    "lecture": {
+      "title": "Renforcement en français, langue seconde",
+      "prof": "Tellier, Christine",
+      "time": {
+        "TR": [
+          "1030-1230"
+        ]
+      },
+      "rating": null
+    },
+    "lab": null,
+    "more": "",
+    "viewData": []
+  },
+  {
+    "program": "French",
+    "count": 733,
     "section": "00004",
     "course": "FRENCH",
     "code": "602-009-AB",
@@ -16800,7 +16797,7 @@
   },
   {
     "program": "French",
-    "count": 732,
+    "count": 734,
     "section": "00001",
     "course": "FRENCH",
     "code": "602-008-RE",
@@ -16820,7 +16817,7 @@
   },
   {
     "program": "French",
-    "count": 733,
+    "count": 735,
     "section": "00002",
     "course": "FRENCH",
     "code": "602-008-RE",
@@ -16840,7 +16837,7 @@
   },
   {
     "program": "French",
-    "count": 734,
+    "count": 736,
     "section": "00003",
     "course": "FRENCH",
     "code": "602-008-RE",
@@ -16860,7 +16857,7 @@
   },
   {
     "program": "French",
-    "count": 735,
+    "count": 737,
     "section": "00004",
     "course": "FRENCH",
     "code": "602-008-RE",
@@ -16880,7 +16877,7 @@
   },
   {
     "program": "French",
-    "count": 736,
+    "count": 738,
     "section": "00001",
     "course": "FRENCH",
     "code": "602-PR2-AB",
@@ -16900,7 +16897,7 @@
   },
   {
     "program": "French",
-    "count": 737,
+    "count": 739,
     "section": "00001",
     "course": "FRENCH",
     "code": "602-REN-AB",
@@ -16920,7 +16917,7 @@
   },
   {
     "program": "French",
-    "count": 738,
+    "count": 740,
     "section": "00002",
     "course": "FRENCH",
     "code": "602-REN-AB",
@@ -16940,7 +16937,7 @@
   },
   {
     "program": "French",
-    "count": 739,
+    "count": 741,
     "section": "00003",
     "course": "FRENCH",
     "code": "602-REN-AB",
@@ -16960,7 +16957,7 @@
   },
   {
     "program": "French",
-    "count": 740,
+    "count": 742,
     "section": "00004",
     "course": "FRENCH",
     "code": "602-REN-AB",
@@ -16980,7 +16977,7 @@
   },
   {
     "program": "French",
-    "count": 741,
+    "count": 743,
     "section": "00001",
     "course": "FRENCH",
     "code": "602-C01-MQ",
@@ -17000,7 +16997,7 @@
   },
   {
     "program": "French",
-    "count": 742,
+    "count": 744,
     "section": "00002",
     "course": "FRENCH",
     "code": "602-C01-MQ",
@@ -17020,7 +17017,7 @@
   },
   {
     "program": "French",
-    "count": 743,
+    "count": 745,
     "section": "00001",
     "course": "FRENCH",
     "code": "602-C02-MQ",
@@ -17040,7 +17037,7 @@
   },
   {
     "program": "French",
-    "count": 744,
+    "count": 746,
     "section": "00002",
     "course": "FRENCH",
     "code": "602-C02-MQ",
@@ -17060,7 +17057,7 @@
   },
   {
     "program": "French",
-    "count": 745,
+    "count": 747,
     "section": "00003",
     "course": "FRENCH",
     "code": "602-C02-MQ",
@@ -17080,7 +17077,7 @@
   },
   {
     "program": "French",
-    "count": 746,
+    "count": 748,
     "section": "00001",
     "course": "FRENCH",
     "code": "602-D01-MQ",
@@ -17100,7 +17097,7 @@
   },
   {
     "program": "French",
-    "count": 747,
+    "count": 749,
     "section": "00002",
     "course": "FRENCH",
     "code": "602-D02-MQ",
@@ -17120,7 +17117,7 @@
   },
   {
     "program": "French",
-    "count": 748,
+    "count": 750,
     "section": "00001",
     "course": "FRENCH",
     "code": "602-D02-MQ",
@@ -17140,7 +17137,7 @@
   },
   {
     "program": "French",
-    "count": 749,
+    "count": 751,
     "section": "00001",
     "course": "FRENCH",
     "code": "602-E01-MQ",
@@ -17160,7 +17157,7 @@
   },
   {
     "program": "French",
-    "count": 750,
+    "count": 752,
     "section": "00001",
     "course": "FRENCH",
     "code": "602-UF0-MQ",
@@ -17180,7 +17177,7 @@
   },
   {
     "program": "French",
-    "count": 751,
+    "count": 753,
     "section": "00002",
     "course": "FRENCH",
     "code": "602-UF0-MQ",
@@ -17200,7 +17197,7 @@
   },
   {
     "program": "French",
-    "count": 752,
+    "count": 754,
     "section": "00003",
     "course": "FRENCH",
     "code": "602-UF0-MQ",
@@ -17220,7 +17217,7 @@
   },
   {
     "program": "French",
-    "count": 753,
+    "count": 755,
     "section": "00004",
     "course": "FRENCH",
     "code": "602-UF0-MQ",
@@ -17240,7 +17237,7 @@
   },
   {
     "program": "French",
-    "count": 754,
+    "count": 756,
     "section": "00005",
     "course": "FRENCH",
     "code": "602-UF0-MQ",
@@ -17260,7 +17257,7 @@
   },
   {
     "program": "French",
-    "count": 755,
+    "count": 757,
     "section": "00006",
     "course": "FRENCH",
     "code": "602-UF0-MQ",
@@ -17280,7 +17277,7 @@
   },
   {
     "program": "French",
-    "count": 756,
+    "count": 758,
     "section": "00007",
     "course": "FRENCH",
     "code": "602-UF0-MQ",
@@ -17300,7 +17297,7 @@
   },
   {
     "program": "French",
-    "count": 757,
+    "count": 759,
     "section": "00008",
     "course": "FRENCH",
     "code": "602-UF0-MQ",
@@ -17320,7 +17317,7 @@
   },
   {
     "program": "French",
-    "count": 758,
+    "count": 760,
     "section": "00009",
     "course": "FRENCH",
     "code": "602-UF0-MQ",
@@ -17340,7 +17337,7 @@
   },
   {
     "program": "French",
-    "count": 759,
+    "count": 761,
     "section": "00010",
     "course": "FRENCH",
     "code": "602-UF0-MQ",
@@ -17349,7 +17346,7 @@
       "prof": "Bechara, Rosa Maria",
       "time": {
         "W": [
-          "0830-1130"
+          "1130-1430"
         ]
       },
       "rating": null
@@ -17360,7 +17357,7 @@
   },
   {
     "program": "French",
-    "count": 760,
+    "count": 762,
     "section": "00011",
     "course": "FRENCH",
     "code": "602-UF0-MQ",
@@ -17380,7 +17377,7 @@
   },
   {
     "program": "French",
-    "count": 761,
+    "count": 763,
     "section": "00012",
     "course": "FRENCH",
     "code": "602-UF0-MQ",
@@ -17400,7 +17397,7 @@
   },
   {
     "program": "French",
-    "count": 762,
+    "count": 764,
     "section": "00013",
     "course": "FRENCH",
     "code": "602-UF0-MQ",
@@ -17420,7 +17417,7 @@
   },
   {
     "program": "French",
-    "count": 763,
+    "count": 765,
     "section": "00014",
     "course": "FRENCH",
     "code": "602-UF0-MQ",
@@ -17440,7 +17437,7 @@
   },
   {
     "program": "French",
-    "count": 764,
+    "count": 766,
     "section": "00015",
     "course": "FRENCH",
     "code": "602-UF0-MQ",
@@ -17460,7 +17457,7 @@
   },
   {
     "program": "French",
-    "count": 765,
+    "count": 767,
     "section": "00016",
     "course": "FRENCH",
     "code": "602-UF0-MQ",
@@ -17480,7 +17477,7 @@
   },
   {
     "program": "French",
-    "count": 766,
+    "count": 768,
     "section": "00017",
     "course": "FRENCH",
     "code": "602-UF0-MQ",
@@ -17500,7 +17497,7 @@
   },
   {
     "program": "French",
-    "count": 767,
+    "count": 769,
     "section": "00001",
     "course": "FRENCH",
     "code": "602-UF1-MQ",
@@ -17520,7 +17517,7 @@
   },
   {
     "program": "French",
-    "count": 768,
+    "count": 770,
     "section": "00002",
     "course": "FRENCH",
     "code": "602-UF1-MQ",
@@ -17540,7 +17537,7 @@
   },
   {
     "program": "French",
-    "count": 769,
+    "count": 771,
     "section": "00003",
     "course": "FRENCH",
     "code": "602-UF1-MQ",
@@ -17560,7 +17557,7 @@
   },
   {
     "program": "French",
-    "count": 770,
+    "count": 772,
     "section": "00004",
     "course": "FRENCH",
     "code": "602-UF1-MQ",
@@ -17580,7 +17577,7 @@
   },
   {
     "program": "French",
-    "count": 771,
+    "count": 773,
     "section": "00005",
     "course": "FRENCH",
     "code": "602-UF1-MQ",
@@ -17600,7 +17597,7 @@
   },
   {
     "program": "French",
-    "count": 772,
+    "count": 774,
     "section": "00006",
     "course": "FRENCH",
     "code": "602-UF1-MQ",
@@ -17620,7 +17617,7 @@
   },
   {
     "program": "French",
-    "count": 773,
+    "count": 775,
     "section": "00007",
     "course": "FRENCH",
     "code": "602-UF1-MQ",
@@ -17640,7 +17637,7 @@
   },
   {
     "program": "French",
-    "count": 774,
+    "count": 776,
     "section": "00008",
     "course": "FRENCH",
     "code": "602-UF1-MQ",
@@ -17660,7 +17657,7 @@
   },
   {
     "program": "French",
-    "count": 775,
+    "count": 777,
     "section": "00009",
     "course": "FRENCH",
     "code": "602-UF1-MQ",
@@ -17680,7 +17677,7 @@
   },
   {
     "program": "French",
-    "count": 776,
+    "count": 778,
     "section": "00001",
     "course": "FRENCH",
     "code": "602-UF2-MQ",
@@ -17700,7 +17697,7 @@
   },
   {
     "program": "French",
-    "count": 777,
+    "count": 779,
     "section": "00002",
     "course": "FRENCH",
     "code": "602-UF2-MQ",
@@ -17720,7 +17717,7 @@
   },
   {
     "program": "French",
-    "count": 778,
+    "count": 780,
     "section": "00003",
     "course": "FRENCH",
     "code": "602-UF2-MQ",
@@ -17740,7 +17737,7 @@
   },
   {
     "program": "French",
-    "count": 779,
+    "count": 781,
     "section": "00004",
     "course": "FRENCH",
     "code": "602-UF2-MQ",
@@ -17760,7 +17757,7 @@
   },
   {
     "program": "French",
-    "count": 780,
+    "count": 782,
     "section": "00005",
     "course": "FRENCH",
     "code": "602-UF2-MQ",
@@ -17780,7 +17777,7 @@
   },
   {
     "program": "French",
-    "count": 781,
+    "count": 783,
     "section": "00006",
     "course": "FRENCH",
     "code": "602-UF2-MQ",
@@ -17800,7 +17797,7 @@
   },
   {
     "program": "French",
-    "count": 782,
+    "count": 784,
     "section": "00007",
     "course": "FRENCH",
     "code": "602-UF2-MQ",
@@ -17820,7 +17817,7 @@
   },
   {
     "program": "French",
-    "count": 783,
+    "count": 785,
     "section": "00008",
     "course": "FRENCH",
     "code": "602-UF2-MQ",
@@ -17840,7 +17837,7 @@
   },
   {
     "program": "French",
-    "count": 784,
+    "count": 786,
     "section": "00009",
     "course": "FRENCH",
     "code": "602-UF2-MQ",
@@ -17860,7 +17857,7 @@
   },
   {
     "program": "French",
-    "count": 785,
+    "count": 787,
     "section": "00010",
     "course": "FRENCH",
     "code": "602-UF2-MQ",
@@ -17880,7 +17877,7 @@
   },
   {
     "program": "French",
-    "count": 786,
+    "count": 788,
     "section": "00011",
     "course": "FRENCH",
     "code": "602-UF2-MQ",
@@ -17900,7 +17897,7 @@
   },
   {
     "program": "French",
-    "count": 787,
+    "count": 789,
     "section": "00012",
     "course": "FRENCH",
     "code": "602-UF2-MQ",
@@ -17920,7 +17917,7 @@
   },
   {
     "program": "French",
-    "count": 788,
+    "count": 790,
     "section": "00013",
     "course": "FRENCH",
     "code": "602-UF2-MQ",
@@ -17940,7 +17937,7 @@
   },
   {
     "program": "French",
-    "count": 789,
+    "count": 791,
     "section": "00001",
     "course": "FRENCH",
     "code": "602-100-MQ",
@@ -17960,7 +17957,7 @@
   },
   {
     "program": "French",
-    "count": 790,
+    "count": 792,
     "section": "00002",
     "course": "FRENCH",
     "code": "602-100-MQ",
@@ -17980,7 +17977,7 @@
   },
   {
     "program": "French",
-    "count": 791,
+    "count": 793,
     "section": "00003",
     "course": "FRENCH",
     "code": "602-100-MQ",
@@ -18000,7 +17997,7 @@
   },
   {
     "program": "French",
-    "count": 792,
+    "count": 794,
     "section": "00004",
     "course": "FRENCH",
     "code": "602-100-MQ",
@@ -18020,7 +18017,7 @@
   },
   {
     "program": "French",
-    "count": 793,
+    "count": 795,
     "section": "00005",
     "course": "FRENCH",
     "code": "602-100-MQ",
@@ -18040,7 +18037,7 @@
   },
   {
     "program": "French",
-    "count": 794,
+    "count": 796,
     "section": "00001",
     "course": "FRENCH",
     "code": "602-101-MQ",
@@ -18060,7 +18057,7 @@
   },
   {
     "program": "French",
-    "count": 795,
+    "count": 797,
     "section": "00002",
     "course": "FRENCH",
     "code": "602-101-MQ",
@@ -18080,7 +18077,7 @@
   },
   {
     "program": "French",
-    "count": 796,
+    "count": 798,
     "section": "00003",
     "course": "FRENCH",
     "code": "602-101-MQ",
@@ -18100,7 +18097,7 @@
   },
   {
     "program": "French",
-    "count": 797,
+    "count": 799,
     "section": "00004",
     "course": "FRENCH",
     "code": "602-101-MQ",
@@ -18120,7 +18117,7 @@
   },
   {
     "program": "French",
-    "count": 798,
+    "count": 800,
     "section": "00005",
     "course": "FRENCH",
     "code": "602-101-MQ",
@@ -18140,7 +18137,7 @@
   },
   {
     "program": "French",
-    "count": 799,
+    "count": 801,
     "section": "00006",
     "course": "FRENCH",
     "code": "602-101-MQ",
@@ -18160,7 +18157,7 @@
   },
   {
     "program": "French",
-    "count": 800,
+    "count": 802,
     "section": "00007",
     "course": "FRENCH",
     "code": "602-101-MQ",
@@ -18180,7 +18177,7 @@
   },
   {
     "program": "French",
-    "count": 801,
+    "count": 803,
     "section": "00008",
     "course": "FRENCH",
     "code": "602-101-MQ",
@@ -18200,7 +18197,7 @@
   },
   {
     "program": "French",
-    "count": 802,
+    "count": 804,
     "section": "00001",
     "course": "FRENCH",
     "code": "602-102-MQ",
@@ -18220,7 +18217,7 @@
   },
   {
     "program": "French",
-    "count": 803,
+    "count": 805,
     "section": "00002",
     "course": "FRENCH",
     "code": "602-102-MQ",
@@ -18240,7 +18237,7 @@
   },
   {
     "program": "French",
-    "count": 804,
+    "count": 806,
     "section": "00003",
     "course": "FRENCH",
     "code": "602-102-MQ",
@@ -18260,7 +18257,7 @@
   },
   {
     "program": "French",
-    "count": 805,
+    "count": 807,
     "section": "00004",
     "course": "FRENCH",
     "code": "602-102-MQ",
@@ -18280,7 +18277,7 @@
   },
   {
     "program": "French",
-    "count": 806,
+    "count": 808,
     "section": "00005",
     "course": "FRENCH",
     "code": "602-102-MQ",
@@ -18300,7 +18297,7 @@
   },
   {
     "program": "French",
-    "count": 807,
+    "count": 809,
     "section": "00006",
     "course": "FRENCH",
     "code": "602-102-MQ",
@@ -18320,7 +18317,7 @@
   },
   {
     "program": "French",
-    "count": 808,
+    "count": 810,
     "section": "00007",
     "course": "FRENCH",
     "code": "602-102-MQ",
@@ -18340,7 +18337,7 @@
   },
   {
     "program": "French",
-    "count": 809,
+    "count": 811,
     "section": "00001",
     "course": "FRENCH",
     "code": "602-103-MQ",
@@ -18360,7 +18357,7 @@
   },
   {
     "program": "French",
-    "count": 810,
+    "count": 812,
     "section": "00002",
     "course": "FRENCH",
     "code": "602-103-MQ",
@@ -18380,7 +18377,7 @@
   },
   {
     "program": "French",
-    "count": 811,
+    "count": 813,
     "section": "00003",
     "course": "FRENCH",
     "code": "602-103-MQ",
@@ -18400,7 +18397,7 @@
   },
   {
     "program": "French",
-    "count": 812,
+    "count": 814,
     "section": "00004",
     "course": "FRENCH",
     "code": "602-103-MQ",
@@ -18420,7 +18417,7 @@
   },
   {
     "program": "French",
-    "count": 813,
+    "count": 815,
     "section": "00005",
     "course": "FRENCH",
     "code": "602-103-MQ",
@@ -18440,7 +18437,7 @@
   },
   {
     "program": "French",
-    "count": 814,
+    "count": 816,
     "section": "00006",
     "course": "FRENCH",
     "code": "602-103-MQ",
@@ -18460,7 +18457,7 @@
   },
   {
     "program": "French",
-    "count": 815,
+    "count": 817,
     "section": "00001",
     "course": "FRENCH",
     "code": "602-200-AB",
@@ -18480,7 +18477,7 @@
   },
   {
     "program": "French",
-    "count": 816,
+    "count": 818,
     "section": "00002",
     "course": "FRENCH",
     "code": "602-200-AB",
@@ -18500,7 +18497,7 @@
   },
   {
     "program": "French",
-    "count": 817,
+    "count": 819,
     "section": "00003",
     "course": "FRENCH",
     "code": "602-200-AB",
@@ -18520,7 +18517,7 @@
   },
   {
     "program": "French",
-    "count": 818,
+    "count": 820,
     "section": "00001",
     "course": "FRENCH",
     "code": "602-201-AB",
@@ -18540,7 +18537,7 @@
   },
   {
     "program": "French",
-    "count": 819,
+    "count": 821,
     "section": "00002",
     "course": "FRENCH",
     "code": "602-201-AB",
@@ -18560,7 +18557,7 @@
   },
   {
     "program": "French",
-    "count": 820,
+    "count": 822,
     "section": "00003",
     "course": "FRENCH",
     "code": "602-201-AB",
@@ -18580,7 +18577,7 @@
   },
   {
     "program": "French",
-    "count": 821,
+    "count": 823,
     "section": "00004",
     "course": "FRENCH",
     "code": "602-201-AB",
@@ -18600,7 +18597,7 @@
   },
   {
     "program": "French",
-    "count": 822,
+    "count": 824,
     "section": "00001",
     "course": "FRENCH",
     "code": "602-202-AB",
@@ -18620,7 +18617,7 @@
   },
   {
     "program": "French",
-    "count": 823,
+    "count": 825,
     "section": "00002",
     "course": "FRENCH",
     "code": "602-202-AB",
@@ -18640,7 +18637,7 @@
   },
   {
     "program": "French",
-    "count": 824,
+    "count": 826,
     "section": "00003",
     "course": "FRENCH",
     "code": "602-202-AB",
@@ -18660,7 +18657,7 @@
   },
   {
     "program": "French",
-    "count": 825,
+    "count": 827,
     "section": "00004",
     "course": "FRENCH",
     "code": "602-202-AB",
@@ -18680,7 +18677,7 @@
   },
   {
     "program": "French",
-    "count": 826,
+    "count": 828,
     "section": "00005",
     "course": "FRENCH",
     "code": "602-202-AB",
@@ -18700,7 +18697,7 @@
   },
   {
     "program": "French",
-    "count": 827,
+    "count": 829,
     "section": "00001",
     "course": "FRENCH",
     "code": "602-203-AB",
@@ -18720,7 +18717,7 @@
   },
   {
     "program": "French",
-    "count": 828,
+    "count": 830,
     "section": "00002",
     "course": "FRENCH",
     "code": "602-203-AB",
@@ -18740,7 +18737,7 @@
   },
   {
     "program": "French",
-    "count": 829,
+    "count": 831,
     "section": "00003",
     "course": "FRENCH",
     "code": "602-203-AB",
@@ -18760,7 +18757,7 @@
   },
   {
     "program": "French",
-    "count": 830,
+    "count": 832,
     "section": "00004",
     "course": "FRENCH",
     "code": "602-203-AB",
@@ -18780,7 +18777,7 @@
   },
   {
     "program": "French",
-    "count": 831,
+    "count": 833,
     "section": "00005",
     "course": "FRENCH",
     "code": "602-203-AB",
@@ -18800,7 +18797,7 @@
   },
   {
     "program": "French",
-    "count": 832,
+    "count": 834,
     "section": "00006",
     "course": "FRENCH",
     "code": "602-203-AB",
@@ -18820,7 +18817,7 @@
   },
   {
     "program": "French",
-    "count": 833,
+    "count": 835,
     "section": "00007",
     "course": "FRENCH",
     "code": "602-203-AB",
@@ -18840,7 +18837,7 @@
   },
   {
     "program": "French",
-    "count": 834,
+    "count": 836,
     "section": "00008",
     "course": "FRENCH",
     "code": "602-203-AB",
@@ -18860,7 +18857,7 @@
   },
   {
     "program": "French",
-    "count": 835,
+    "count": 837,
     "section": "00009",
     "course": "FRENCH",
     "code": "602-203-AB",
@@ -18880,7 +18877,7 @@
   },
   {
     "program": "Humanities",
-    "count": 836,
+    "count": 838,
     "section": "00001",
     "course": "HUMANITIES",
     "code": "345-101-MQ",
@@ -18900,7 +18897,7 @@
   },
   {
     "program": "Humanities",
-    "count": 837,
+    "count": 839,
     "section": "00002",
     "course": "HUMANITIES",
     "code": "345-101-MQ",
@@ -18920,7 +18917,7 @@
   },
   {
     "program": "Humanities",
-    "count": 838,
+    "count": 840,
     "section": "00004",
     "course": "HUMANITIES",
     "code": "345-101-MQ",
@@ -18940,7 +18937,7 @@
   },
   {
     "program": "Humanities",
-    "count": 839,
+    "count": 841,
     "section": "00005",
     "course": "HUMANITIES",
     "code": "345-101-MQ",
@@ -18960,7 +18957,7 @@
   },
   {
     "program": "Humanities",
-    "count": 840,
+    "count": 842,
     "section": "00006",
     "course": "HUMANITIES",
     "code": "345-101-MQ",
@@ -18980,7 +18977,7 @@
   },
   {
     "program": "Humanities",
-    "count": 841,
+    "count": 843,
     "section": "00007",
     "course": "HUMANITIES",
     "code": "345-101-MQ",
@@ -19000,7 +18997,7 @@
   },
   {
     "program": "Humanities",
-    "count": 842,
+    "count": 844,
     "section": "00008",
     "course": "HUMANITIES",
     "code": "345-101-MQ",
@@ -19020,7 +19017,7 @@
   },
   {
     "program": "Humanities",
-    "count": 843,
+    "count": 845,
     "section": "00009",
     "course": "HUMANITIES",
     "code": "345-101-MQ",
@@ -19040,7 +19037,7 @@
   },
   {
     "program": "Humanities",
-    "count": 844,
+    "count": 846,
     "section": "00010",
     "course": "HUMANITIES",
     "code": "345-101-MQ",
@@ -19060,7 +19057,7 @@
   },
   {
     "program": "Humanities",
-    "count": 845,
+    "count": 847,
     "section": "00011",
     "course": "HUMANITIES",
     "code": "345-101-MQ",
@@ -19080,7 +19077,7 @@
   },
   {
     "program": "Humanities",
-    "count": 846,
+    "count": 848,
     "section": "00012",
     "course": "HUMANITIES",
     "code": "345-101-MQ",
@@ -19100,7 +19097,7 @@
   },
   {
     "program": "Humanities",
-    "count": 847,
+    "count": 849,
     "section": "00013",
     "course": "HUMANITIES",
     "code": "345-101-MQ",
@@ -19120,7 +19117,7 @@
   },
   {
     "program": "Humanities",
-    "count": 848,
+    "count": 850,
     "section": "00014",
     "course": "HUMANITIES",
     "code": "345-101-MQ",
@@ -19140,7 +19137,7 @@
   },
   {
     "program": "Humanities",
-    "count": 849,
+    "count": 851,
     "section": "00015",
     "course": "HUMANITIES",
     "code": "345-101-MQ",
@@ -19160,7 +19157,7 @@
   },
   {
     "program": "Humanities",
-    "count": 850,
+    "count": 852,
     "section": "00016",
     "course": "HUMANITIES",
     "code": "345-101-MQ",
@@ -19180,7 +19177,7 @@
   },
   {
     "program": "Humanities",
-    "count": 851,
+    "count": 853,
     "section": "00017",
     "course": "HUMANITIES",
     "code": "345-101-MQ",
@@ -19200,7 +19197,7 @@
   },
   {
     "program": "Humanities",
-    "count": 852,
+    "count": 854,
     "section": "00018",
     "course": "HUMANITIES",
     "code": "345-101-MQ",
@@ -19220,7 +19217,7 @@
   },
   {
     "program": "Humanities",
-    "count": 853,
+    "count": 855,
     "section": "00019",
     "course": "HUMANITIES",
     "code": "345-101-MQ",
@@ -19240,7 +19237,7 @@
   },
   {
     "program": "Humanities",
-    "count": 854,
+    "count": 856,
     "section": "00020",
     "course": "HUMANITIES",
     "code": "345-101-MQ",
@@ -19260,7 +19257,7 @@
   },
   {
     "program": "Humanities",
-    "count": 855,
+    "count": 857,
     "section": "00021",
     "course": "HUMANITIES",
     "code": "345-101-MQ",
@@ -19280,7 +19277,7 @@
   },
   {
     "program": "Humanities",
-    "count": 856,
+    "count": 858,
     "section": "00022",
     "course": "HUMANITIES",
     "code": "345-101-MQ",
@@ -19300,7 +19297,7 @@
   },
   {
     "program": "Humanities",
-    "count": 857,
+    "count": 859,
     "section": "00023",
     "course": "HUMANITIES",
     "code": "345-101-MQ",
@@ -19320,7 +19317,7 @@
   },
   {
     "program": "Humanities",
-    "count": 858,
+    "count": 860,
     "section": "00024",
     "course": "HUMANITIES",
     "code": "345-101-MQ",
@@ -19340,7 +19337,7 @@
   },
   {
     "program": "Humanities",
-    "count": 859,
+    "count": 861,
     "section": "00025",
     "course": "HUMANITIES",
     "code": "345-101-MQ",
@@ -19360,7 +19357,7 @@
   },
   {
     "program": "Humanities",
-    "count": 860,
+    "count": 862,
     "section": "00026",
     "course": "HUMANITIES",
     "code": "345-101-MQ",
@@ -19380,7 +19377,7 @@
   },
   {
     "program": "Humanities",
-    "count": 861,
+    "count": 863,
     "section": "00027",
     "course": "HUMANITIES",
     "code": "345-101-MQ",
@@ -19400,7 +19397,7 @@
   },
   {
     "program": "Humanities",
-    "count": 862,
+    "count": 864,
     "section": "00028",
     "course": "HUMANITIES",
     "code": "345-101-MQ",
@@ -19420,7 +19417,7 @@
   },
   {
     "program": "Humanities",
-    "count": 863,
+    "count": 865,
     "section": "00029",
     "course": "HUMANITIES",
     "code": "345-101-MQ",
@@ -19440,7 +19437,7 @@
   },
   {
     "program": "Humanities",
-    "count": 864,
+    "count": 866,
     "section": "00001",
     "course": "HUMANITIES",
     "code": "345-1F1-AB",
@@ -19460,7 +19457,7 @@
   },
   {
     "program": "Humanities",
-    "count": 865,
+    "count": 867,
     "section": "00001",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -19480,7 +19477,7 @@
   },
   {
     "program": "Humanities",
-    "count": 866,
+    "count": 868,
     "section": "00002",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -19500,7 +19497,7 @@
   },
   {
     "program": "Humanities",
-    "count": 867,
+    "count": 869,
     "section": "00003",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -19520,7 +19517,7 @@
   },
   {
     "program": "Humanities",
-    "count": 868,
+    "count": 870,
     "section": "00004",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -19540,7 +19537,7 @@
   },
   {
     "program": "Humanities",
-    "count": 869,
+    "count": 871,
     "section": "00005",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -19560,7 +19557,7 @@
   },
   {
     "program": "Humanities",
-    "count": 870,
+    "count": 872,
     "section": "00006",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -19580,7 +19577,7 @@
   },
   {
     "program": "Humanities",
-    "count": 871,
+    "count": 873,
     "section": "00007",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -19600,7 +19597,7 @@
   },
   {
     "program": "Humanities",
-    "count": 872,
+    "count": 874,
     "section": "00008",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -19620,7 +19617,7 @@
   },
   {
     "program": "Humanities",
-    "count": 873,
+    "count": 875,
     "section": "00009",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -19640,7 +19637,7 @@
   },
   {
     "program": "Humanities",
-    "count": 874,
+    "count": 876,
     "section": "00010",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -19660,7 +19657,7 @@
   },
   {
     "program": "Humanities",
-    "count": 875,
+    "count": 877,
     "section": "00011",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -19680,7 +19677,7 @@
   },
   {
     "program": "Humanities",
-    "count": 876,
+    "count": 878,
     "section": "00012",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -19700,7 +19697,7 @@
   },
   {
     "program": "Humanities",
-    "count": 877,
+    "count": 879,
     "section": "00013",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -19720,7 +19717,7 @@
   },
   {
     "program": "Humanities",
-    "count": 878,
+    "count": 880,
     "section": "00014",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -19740,7 +19737,7 @@
   },
   {
     "program": "Humanities",
-    "count": 879,
+    "count": 881,
     "section": "00015",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -19760,7 +19757,7 @@
   },
   {
     "program": "Humanities",
-    "count": 880,
+    "count": 882,
     "section": "00016",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -19780,7 +19777,7 @@
   },
   {
     "program": "Humanities",
-    "count": 881,
+    "count": 883,
     "section": "00017",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -19800,7 +19797,7 @@
   },
   {
     "program": "Humanities",
-    "count": 882,
+    "count": 884,
     "section": "00018",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -19820,7 +19817,7 @@
   },
   {
     "program": "Humanities",
-    "count": 883,
+    "count": 885,
     "section": "00019",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -19840,7 +19837,7 @@
   },
   {
     "program": "Humanities",
-    "count": 884,
+    "count": 886,
     "section": "00020",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -19860,7 +19857,7 @@
   },
   {
     "program": "Humanities",
-    "count": 885,
+    "count": 887,
     "section": "00021",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -19880,7 +19877,7 @@
   },
   {
     "program": "Humanities",
-    "count": 886,
+    "count": 888,
     "section": "00022",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -19900,7 +19897,7 @@
   },
   {
     "program": "Humanities",
-    "count": 887,
+    "count": 889,
     "section": "00023",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -19920,7 +19917,7 @@
   },
   {
     "program": "Humanities",
-    "count": 888,
+    "count": 890,
     "section": "00024",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -19940,7 +19937,7 @@
   },
   {
     "program": "Humanities",
-    "count": 889,
+    "count": 891,
     "section": "00025",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -19960,7 +19957,7 @@
   },
   {
     "program": "Humanities",
-    "count": 890,
+    "count": 892,
     "section": "00026",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -19980,7 +19977,7 @@
   },
   {
     "program": "Humanities",
-    "count": 891,
+    "count": 893,
     "section": "00027",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -20000,7 +19997,7 @@
   },
   {
     "program": "Humanities",
-    "count": 892,
+    "count": 894,
     "section": "00028",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -20020,7 +20017,7 @@
   },
   {
     "program": "Humanities",
-    "count": 893,
+    "count": 895,
     "section": "00029",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -20040,7 +20037,7 @@
   },
   {
     "program": "Humanities",
-    "count": 894,
+    "count": 896,
     "section": "00030",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -20060,7 +20057,7 @@
   },
   {
     "program": "Humanities",
-    "count": 895,
+    "count": 897,
     "section": "00031",
     "course": "HUMANITIES",
     "code": "345-102-MQ",
@@ -20080,7 +20077,7 @@
   },
   {
     "program": "Humanities",
-    "count": 896,
+    "count": 898,
     "section": "00001",
     "course": "HUMANITIES",
     "code": "345-1F2-AB",
@@ -20100,7 +20097,7 @@
   },
   {
     "program": "Humanities",
-    "count": 897,
+    "count": 899,
     "section": "00001",
     "course": "HUMANITIES",
     "code": "345-210-AB",
@@ -20120,7 +20117,7 @@
   },
   {
     "program": "Humanities",
-    "count": 898,
+    "count": 900,
     "section": "00002",
     "course": "HUMANITIES",
     "code": "345-210-AB",
@@ -20140,7 +20137,7 @@
   },
   {
     "program": "Humanities",
-    "count": 899,
+    "count": 901,
     "section": "00003",
     "course": "HUMANITIES",
     "code": "345-210-AB",
@@ -20160,7 +20157,7 @@
   },
   {
     "program": "Humanities",
-    "count": 900,
+    "count": 902,
     "section": "00001",
     "course": "HUMANITIES",
     "code": "345-212-AB",
@@ -20180,7 +20177,7 @@
   },
   {
     "program": "Humanities",
-    "count": 901,
+    "count": 903,
     "section": "00002",
     "course": "HUMANITIES",
     "code": "345-212-AB",
@@ -20200,7 +20197,7 @@
   },
   {
     "program": "Humanities",
-    "count": 902,
+    "count": 904,
     "section": "00003",
     "course": "HUMANITIES",
     "code": "345-212-AB",
@@ -20220,7 +20217,7 @@
   },
   {
     "program": "Humanities",
-    "count": 903,
+    "count": 905,
     "section": "00004",
     "course": "HUMANITIES",
     "code": "345-212-AB",
@@ -20240,7 +20237,7 @@
   },
   {
     "program": "Humanities",
-    "count": 904,
+    "count": 906,
     "section": "00005",
     "course": "HUMANITIES",
     "code": "345-212-AB",
@@ -20260,7 +20257,7 @@
   },
   {
     "program": "Humanities",
-    "count": 905,
+    "count": 907,
     "section": "00006",
     "course": "HUMANITIES",
     "code": "345-212-AB",
@@ -20280,7 +20277,7 @@
   },
   {
     "program": "Humanities",
-    "count": 906,
+    "count": 908,
     "section": "00007",
     "course": "HUMANITIES",
     "code": "345-212-AB",
@@ -20300,7 +20297,7 @@
   },
   {
     "program": "Humanities",
-    "count": 907,
+    "count": 909,
     "section": "00001",
     "course": "HUMANITIES",
     "code": "345-213-AB",
@@ -20320,7 +20317,7 @@
   },
   {
     "program": "Humanities",
-    "count": 908,
+    "count": 910,
     "section": "00002",
     "course": "HUMANITIES",
     "code": "345-213-AB",
@@ -20340,7 +20337,7 @@
   },
   {
     "program": "Humanities",
-    "count": 909,
+    "count": 911,
     "section": "00003",
     "course": "HUMANITIES",
     "code": "345-213-AB",
@@ -20360,7 +20357,7 @@
   },
   {
     "program": "Humanities",
-    "count": 910,
+    "count": 912,
     "section": "00004",
     "course": "HUMANITIES",
     "code": "345-213-AB",
@@ -20380,7 +20377,7 @@
   },
   {
     "program": "Humanities",
-    "count": 911,
+    "count": 913,
     "section": "00005",
     "course": "HUMANITIES",
     "code": "345-213-AB",
@@ -20400,7 +20397,7 @@
   },
   {
     "program": "Humanities",
-    "count": 912,
+    "count": 914,
     "section": "00006",
     "course": "HUMANITIES",
     "code": "345-213-AB",
@@ -20420,7 +20417,7 @@
   },
   {
     "program": "Humanities",
-    "count": 913,
+    "count": 915,
     "section": "00007",
     "course": "HUMANITIES",
     "code": "345-213-AB",
@@ -20440,7 +20437,7 @@
   },
   {
     "program": "Humanities",
-    "count": 914,
+    "count": 916,
     "section": "00008",
     "course": "HUMANITIES",
     "code": "345-213-AB",
@@ -20460,7 +20457,7 @@
   },
   {
     "program": "Humanities",
-    "count": 915,
+    "count": 917,
     "section": "00009",
     "course": "HUMANITIES",
     "code": "345-213-AB",
@@ -20480,7 +20477,7 @@
   },
   {
     "program": "Humanities",
-    "count": 916,
+    "count": 918,
     "section": "00010",
     "course": "HUMANITIES",
     "code": "345-213-AB",
@@ -20500,7 +20497,7 @@
   },
   {
     "program": "Humanities",
-    "count": 917,
+    "count": 919,
     "section": "00011",
     "course": "HUMANITIES",
     "code": "345-213-AB",
@@ -20520,7 +20517,7 @@
   },
   {
     "program": "Humanities",
-    "count": 918,
+    "count": 920,
     "section": "00012",
     "course": "HUMANITIES",
     "code": "345-213-AB",
@@ -20540,7 +20537,7 @@
   },
   {
     "program": "Humanities",
-    "count": 919,
+    "count": 921,
     "section": "00013",
     "course": "HUMANITIES",
     "code": "345-213-AB",
@@ -20560,7 +20557,7 @@
   },
   {
     "program": "Humanities",
-    "count": 920,
+    "count": 922,
     "section": "00014",
     "course": "HUMANITIES",
     "code": "345-213-AB",
@@ -20580,7 +20577,7 @@
   },
   {
     "program": "Humanities",
-    "count": 921,
+    "count": 923,
     "section": "00015",
     "course": "HUMANITIES",
     "code": "345-213-AB",
@@ -20600,7 +20597,7 @@
   },
   {
     "program": "Humanities",
-    "count": 922,
+    "count": 924,
     "section": "00016",
     "course": "HUMANITIES",
     "code": "345-213-AB",
@@ -20620,7 +20617,7 @@
   },
   {
     "program": "Humanities",
-    "count": 923,
+    "count": 925,
     "section": "00001",
     "course": "HUMANITIES",
     "code": "345-214-AB",
@@ -20640,7 +20637,7 @@
   },
   {
     "program": "Humanities",
-    "count": 924,
+    "count": 926,
     "section": "00002",
     "course": "HUMANITIES",
     "code": "345-214-AB",
@@ -20660,7 +20657,7 @@
   },
   {
     "program": "Humanities",
-    "count": 925,
+    "count": 927,
     "section": "00003",
     "course": "HUMANITIES",
     "code": "345-214-AB",
@@ -20680,7 +20677,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 926,
+    "count": 928,
     "section": "00001",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -20700,7 +20697,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 927,
+    "count": 929,
     "section": "00002",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -20720,7 +20717,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 928,
+    "count": 930,
     "section": "00003",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -20740,7 +20737,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 929,
+    "count": 931,
     "section": "00004",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -20760,7 +20757,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 930,
+    "count": 932,
     "section": "00005",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -20780,7 +20777,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 931,
+    "count": 933,
     "section": "00006",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -20800,7 +20797,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 932,
+    "count": 934,
     "section": "00007",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -20820,7 +20817,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 933,
+    "count": 935,
     "section": "00008",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -20840,7 +20837,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 934,
+    "count": 936,
     "section": "00009",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -20860,7 +20857,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 935,
+    "count": 937,
     "section": "00010",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -20880,7 +20877,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 936,
+    "count": 938,
     "section": "00011",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -20900,7 +20897,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 937,
+    "count": 939,
     "section": "00012",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -20920,7 +20917,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 938,
+    "count": 940,
     "section": "00013",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -20940,7 +20937,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 939,
+    "count": 941,
     "section": "00014",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -20960,7 +20957,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 940,
+    "count": 942,
     "section": "00015",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -20980,7 +20977,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 941,
+    "count": 943,
     "section": "00016",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21000,7 +20997,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 942,
+    "count": 944,
     "section": "00017",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21020,7 +21017,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 943,
+    "count": 945,
     "section": "00018",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21040,7 +21037,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 944,
+    "count": 946,
     "section": "00019",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21060,7 +21057,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 945,
+    "count": 947,
     "section": "00020",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21080,7 +21077,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 946,
+    "count": 948,
     "section": "00021",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21100,7 +21097,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 947,
+    "count": 949,
     "section": "00022",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21120,7 +21117,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 948,
+    "count": 950,
     "section": "00023",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21140,7 +21137,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 949,
+    "count": 951,
     "section": "00024",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21160,7 +21157,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 950,
+    "count": 952,
     "section": "00025",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21180,7 +21177,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 951,
+    "count": 953,
     "section": "00026",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21200,7 +21197,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 952,
+    "count": 954,
     "section": "00027",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21220,7 +21217,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 953,
+    "count": 955,
     "section": "00028",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21240,7 +21237,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 954,
+    "count": 956,
     "section": "00029",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21260,7 +21257,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 955,
+    "count": 957,
     "section": "00030",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21280,7 +21277,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 956,
+    "count": 958,
     "section": "00031",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21300,7 +21297,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 957,
+    "count": 959,
     "section": "00032",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21320,7 +21317,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 958,
+    "count": 960,
     "section": "00033",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21340,7 +21337,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 959,
+    "count": 961,
     "section": "00034",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21360,7 +21357,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 960,
+    "count": 962,
     "section": "00035",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21380,7 +21377,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 961,
+    "count": 963,
     "section": "00036",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21400,7 +21397,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 962,
+    "count": 964,
     "section": "00037",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21420,7 +21417,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 963,
+    "count": 965,
     "section": "00038",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21440,7 +21437,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 964,
+    "count": 966,
     "section": "00039",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21460,7 +21457,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 965,
+    "count": 967,
     "section": "00040",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21480,7 +21477,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 966,
+    "count": 968,
     "section": "00041",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21500,7 +21497,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 967,
+    "count": 969,
     "section": "00042",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21520,7 +21517,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 968,
+    "count": 970,
     "section": "00043",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21540,7 +21537,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 969,
+    "count": 971,
     "section": "00044",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21560,7 +21557,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 970,
+    "count": 972,
     "section": "00045",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21580,7 +21577,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 971,
+    "count": 973,
     "section": "00046",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21600,7 +21597,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 972,
+    "count": 974,
     "section": "00060",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-101-MQ",
@@ -21620,7 +21617,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 973,
+    "count": 975,
     "section": "00001",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -21640,7 +21637,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 974,
+    "count": 976,
     "section": "00002",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -21660,7 +21657,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 975,
+    "count": 977,
     "section": "00003",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -21675,12 +21672,12 @@
       "rating": null
     },
     "lab": null,
-    "more": "Intensive course: Includes 7 classes on campus and 1 weekend trip October 24-26 at  Fish Creek Pond in the Adirondacks USA. Must be comfortable in deep water and able to swim 50 meters.  Students must provide suitable outdoor clothing and equipment (available to rent from college -max. $15). Students must be eligible to enter the US ",
+    "more": "",
     "viewData": []
   },
   {
     "program": "Physical Education",
-    "count": 976,
+    "count": 978,
     "section": "00004",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -21700,7 +21697,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 977,
+    "count": 979,
     "section": "00005",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -21720,7 +21717,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 978,
+    "count": 980,
     "section": "00006",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -21740,7 +21737,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 979,
+    "count": 981,
     "section": "00007",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -21763,7 +21760,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 980,
+    "count": 982,
     "section": "00008",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -21783,7 +21780,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 981,
+    "count": 983,
     "section": "00009",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -21803,7 +21800,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 982,
+    "count": 984,
     "section": "00010",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -21823,7 +21820,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 983,
+    "count": 985,
     "section": "00011",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -21843,7 +21840,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 984,
+    "count": 986,
     "section": "00012",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -21863,7 +21860,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 985,
+    "count": 987,
     "section": "00013",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -21883,7 +21880,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 986,
+    "count": 988,
     "section": "00014",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -21903,7 +21900,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 987,
+    "count": 989,
     "section": "00015",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -21923,7 +21920,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 988,
+    "count": 990,
     "section": "00016",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -21932,7 +21929,7 @@
       "prof": "Marin, Noémie",
       "time": {
         "F": [
-          "1600-1800"
+          "1730-1930"
         ]
       },
       "rating": null
@@ -21943,7 +21940,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 989,
+    "count": 991,
     "section": "00017",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -21963,7 +21960,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 990,
+    "count": 992,
     "section": "00018",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -21983,7 +21980,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 991,
+    "count": 993,
     "section": "00019",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -22003,7 +22000,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 992,
+    "count": 994,
     "section": "00020",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -22023,7 +22020,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 993,
+    "count": 995,
     "section": "00021",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -22043,7 +22040,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 994,
+    "count": 996,
     "section": "00022",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -22063,7 +22060,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 995,
+    "count": 997,
     "section": "00023",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -22083,7 +22080,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 996,
+    "count": 998,
     "section": "00024",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -22103,7 +22100,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 997,
+    "count": 999,
     "section": "00025",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -22123,7 +22120,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 998,
+    "count": 1000,
     "section": "00026",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -22143,7 +22140,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 999,
+    "count": 1001,
     "section": "00027",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -22163,7 +22160,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1000,
+    "count": 1002,
     "section": "00028",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -22183,7 +22180,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1001,
+    "count": 1003,
     "section": "00029",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -22203,7 +22200,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1002,
+    "count": 1004,
     "section": "00030",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -22223,7 +22220,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1003,
+    "count": 1005,
     "section": "00031",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -22243,7 +22240,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1004,
+    "count": 1006,
     "section": "00032",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -22263,7 +22260,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1005,
+    "count": 1007,
     "section": "00033",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -22283,7 +22280,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1006,
+    "count": 1008,
     "section": "00034",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -22303,7 +22300,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1007,
+    "count": 1009,
     "section": "00035",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -22323,7 +22320,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1008,
+    "count": 1010,
     "section": "00036",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -22343,7 +22340,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1009,
+    "count": 1011,
     "section": "00037",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -22363,7 +22360,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1010,
+    "count": 1012,
     "section": "00060",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-102-MQ",
@@ -22383,7 +22380,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1011,
+    "count": 1013,
     "section": "00001",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-103-MQ",
@@ -22403,7 +22400,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1012,
+    "count": 1014,
     "section": "00002",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-103-MQ",
@@ -22423,7 +22420,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1013,
+    "count": 1015,
     "section": "00003",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-103-MQ",
@@ -22443,7 +22440,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1014,
+    "count": 1016,
     "section": "00004",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-103-MQ",
@@ -22463,7 +22460,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1015,
+    "count": 1017,
     "section": "00005",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-103-MQ",
@@ -22483,7 +22480,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1016,
+    "count": 1018,
     "section": "00006",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-103-MQ",
@@ -22503,7 +22500,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1017,
+    "count": 1019,
     "section": "00007",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-103-MQ",
@@ -22523,7 +22520,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1018,
+    "count": 1020,
     "section": "00008",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-103-MQ",
@@ -22543,7 +22540,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1019,
+    "count": 1021,
     "section": "00009",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-103-MQ",
@@ -22563,7 +22560,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1020,
+    "count": 1022,
     "section": "00010",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-103-MQ",
@@ -22583,7 +22580,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1021,
+    "count": 1023,
     "section": "00011",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-103-MQ",
@@ -22603,7 +22600,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1022,
+    "count": 1024,
     "section": "00012",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-103-MQ",
@@ -22623,12 +22620,12 @@
   },
   {
     "program": "Physical Education",
-    "count": 1023,
+    "count": 1025,
     "section": "00013",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-103-MQ",
     "lecture": {
-      "title": "Individual Fitness Program (Aug 13-20 10:00-15:30)",
+      "title": "Individual Fitness Program (Aug 13-20 10:00-15:00)",
       "prof": "Matthew, Valerie Anne",
       "time": {
         "F": [
@@ -22643,7 +22640,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1024,
+    "count": 1026,
     "section": "00014",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-103-MQ",
@@ -22663,7 +22660,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1025,
+    "count": 1027,
     "section": "00015",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-103-MQ",
@@ -22683,7 +22680,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1026,
+    "count": 1028,
     "section": "00016",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-103-MQ",
@@ -22703,7 +22700,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1027,
+    "count": 1029,
     "section": "00017",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-103-MQ",
@@ -22723,7 +22720,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1028,
+    "count": 1030,
     "section": "00018",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-103-MQ",
@@ -22743,7 +22740,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1029,
+    "count": 1031,
     "section": "00019",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-103-MQ",
@@ -22763,7 +22760,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1030,
+    "count": 1032,
     "section": "00020",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-103-MQ",
@@ -22783,7 +22780,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1031,
+    "count": 1033,
     "section": "00021",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-103-MQ",
@@ -22803,7 +22800,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1032,
+    "count": 1034,
     "section": "00022",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-103-MQ",
@@ -22823,7 +22820,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1033,
+    "count": 1035,
     "section": "00023",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-103-MQ",
@@ -22843,7 +22840,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1034,
+    "count": 1036,
     "section": "00024",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-103-MQ",
@@ -22863,7 +22860,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1035,
+    "count": 1037,
     "section": "00025",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-103-MQ",
@@ -22883,7 +22880,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1036,
+    "count": 1038,
     "section": "00026",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-103-MQ",
@@ -22903,7 +22900,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1037,
+    "count": 1039,
     "section": "00027",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-103-MQ",
@@ -22923,7 +22920,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1038,
+    "count": 1040,
     "section": "00028",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-103-MQ",
@@ -22943,7 +22940,7 @@
   },
   {
     "program": "Physical Education",
-    "count": 1039,
+    "count": 1041,
     "section": "00060",
     "course": "PHYSICAL EDUCATION  - PHYSICAL EDUCATION & NUTRITION",
     "code": "109-103-MQ",
@@ -22963,7 +22960,7 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1040,
+    "count": 1042,
     "section": "00001",
     "course": "",
     "code": "387-DFF-AB",
@@ -22983,7 +22980,7 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1041,
+    "count": 1044,
     "section": "00001",
     "course": "",
     "code": "203-DFB-AB",
@@ -23003,7 +23000,7 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1042,
+    "count": 1055,
     "section": "00001",
     "course": "",
     "code": "420-DFF-AB",
@@ -23023,7 +23020,7 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1043,
+    "count": 1059,
     "section": "00001",
     "course": "",
     "code": "570-DFA-AB",
@@ -23043,7 +23040,7 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1044,
+    "count": 1060,
     "section": "00002",
     "course": "",
     "code": "570-DFA-AB",
@@ -23063,7 +23060,7 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1045,
+    "count": 1049,
     "section": "00001",
     "course": "",
     "code": "340-DFD-AB",
@@ -23083,7 +23080,7 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1046,
+    "count": 1043,
     "section": "00001",
     "course": "",
     "code": "120-DAE-AB",
@@ -23103,7 +23100,7 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1047,
+    "count": 1045,
     "section": "00001",
     "course": "",
     "code": "101-DFA-AB",
@@ -23123,7 +23120,7 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1048,
+    "count": 1046,
     "section": "00001",
     "course": "",
     "code": "120-DFB-AB",
@@ -23143,7 +23140,7 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1049,
+    "count": 1047,
     "section": "00002",
     "course": "",
     "code": "120-DFB-AB",
@@ -23163,12 +23160,12 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1050,
+    "count": 1048,
     "section": "00001",
     "course": "",
-    "code": "244-DBB-AB",
+    "code": "244-DFB-AB",
     "lecture": {
-      "title": "It is Rocket Science",
+      "title": "Lancement des fusées",
       "prof": "Ewanchyna, Mark",
       "time": {
         "W": [
@@ -23186,7 +23183,7 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1051,
+    "count": 1052,
     "section": "00001",
     "course": "",
     "code": "330-DFB-AB",
@@ -23206,7 +23203,7 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1052,
+    "count": 1053,
     "section": "00001",
     "course": "",
     "code": "385-DFC-AB",
@@ -23226,7 +23223,7 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1054,
+    "count": 1056,
     "section": "00001",
     "course": "",
     "code": "530-DFA-AB",
@@ -23246,7 +23243,7 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1055,
+    "count": 1057,
     "section": "00001",
     "course": "",
     "code": "570-DFB-AB",
@@ -23266,7 +23263,7 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1056,
+    "count": 1058,
     "section": "00002",
     "course": "",
     "code": "570-DFB-AB",
@@ -23286,7 +23283,7 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1057,
+    "count": 1061,
     "section": "00001",
     "course": "",
     "code": "585-DBA-AB",
@@ -23306,7 +23303,7 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1058,
+    "count": 1062,
     "section": "00001",
     "course": "",
     "code": "585-DFA-AB",
@@ -23326,7 +23323,7 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1059,
+    "count": 1063,
     "section": "00001",
     "course": "",
     "code": "607-DAA-03",
@@ -23346,7 +23343,7 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1060,
+    "count": 1064,
     "section": "00002",
     "course": "",
     "code": "607-DAA-03",
@@ -23366,7 +23363,7 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1061,
+    "count": 1065,
     "section": "00001",
     "course": "",
     "code": "608-DAA-03",
@@ -23386,7 +23383,7 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1062,
+    "count": 1066,
     "section": "00002",
     "course": "",
     "code": "608-DAA-03",
@@ -23406,7 +23403,7 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1063,
+    "count": 1068,
     "section": "00001",
     "course": "",
     "code": "609-DAA-03",
@@ -23426,7 +23423,7 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1064,
+    "count": 1069,
     "section": "00001",
     "course": "",
     "code": "381-DFD-AB",
@@ -23446,7 +23443,7 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1065,
+    "count": 1070,
     "section": "00001",
     "course": "",
     "code": "401-DFC-AB",
@@ -23466,7 +23463,7 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1066,
+    "count": 1071,
     "section": "00001",
     "course": "",
     "code": "365-CSP-AB",
@@ -23486,7 +23483,7 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1067,
+    "count": 1072,
     "section": "00002",
     "course": "",
     "code": "365-CSP-AB",
@@ -23506,7 +23503,7 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1068,
+    "count": 1073,
     "section": "00001",
     "course": "",
     "code": "365-TSC-AB",
@@ -23526,7 +23523,7 @@
   },
   {
     "program": "Arts, Literature & Communication",
-    "count": 563,
+    "count": 565,
     "section": "00002",
     "course": "",
     "code": "608-T1A-AB",
@@ -23546,7 +23543,7 @@
   },
   {
     "program": "English",
-    "count": 705,
+    "count": 707,
     "section": "00060",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -23566,7 +23563,7 @@
   },
   {
     "program": "English",
-    "count": 706,
+    "count": 708,
     "section": "00061",
     "course": "ENGLISH",
     "code": "603-103-MQ",
@@ -23586,7 +23583,7 @@
   },
   {
     "program": "English",
-    "count": 724,
+    "count": 726,
     "section": "00060",
     "course": "ENGLISH",
     "code": "603-200-AB",
@@ -23606,7 +23603,7 @@
   },
   {
     "program": "English",
-    "count": 725,
+    "count": 727,
     "section": "00061",
     "course": "ENGLISH",
     "code": "603-200-AB",
@@ -23626,7 +23623,7 @@
   },
   {
     "program": "Complementary Courses",
-    "count": 1053,
+    "count": 1054,
     "section": "00001",
     "course": "",
     "code": "350-DFA-AB",
@@ -23643,6 +23640,103 @@
     "lab": null,
     "more": "",
     "viewData": []
+  },
+  {
+    "program": "Visual Arts Courses",
+    "count": 494,
+    "section": "00002",
+    "course": "HISTORY OF ART",
+    "code": "520-AH1-AB",
+    "lecture": {
+      "title": "Art History I - Ancient to Medieval",
+      "prof": "Fraser, Dorian Jesse",
+      "time": {
+        "T": [
+          "1300-1600"
+        ]
+      },
+      "rating": null
+    },
+    "lab": null,
+    "more": "",
+    "viewData": []
+  },
+  {
+    "program": "Complementary Courses",
+    "count": 1050,
+    "section": "00001",
+    "course": "",
+    "code": "165-3F2-AB",
+    "lecture": {
+      "title": "Technologies de l'information en pharmacie I",
+      "prof": "Abdel-Nour, Rita",
+      "time": {
+        "T": [
+          "0800-1000"
+        ]
+      },
+      "rating": null
+    },
+    "lab": {
+      "title": "Technologies de l'information en pharmacie I",
+      "prof": "Abdel-Nour, Rita",
+      "time": {
+        "T": [
+          "1000-1200"
+        ]
+      },
+      "rating": null
+    },
+    "more": "",
+    "viewData": []
+  },
+  {
+    "program": "Complementary Courses",
+    "count": 1051,
+    "section": "00002",
+    "course": "",
+    "code": "165-3F2-AB",
+    "lecture": {
+      "title": "Technologies de l'information en pharmacie I",
+      "prof": "Abdel-Nour, Rita",
+      "time": {
+        "T": [
+          "0800-1000"
+        ]
+      },
+      "rating": null
+    },
+    "lab": {
+      "title": "Technologies de l'information en pharmacie I",
+      "prof": "Abdel-Nour, Rita",
+      "time": {
+        "T": [
+          "1000-1200"
+        ]
+      },
+      "rating": null
+    },
+    "more": "",
+    "viewData": []
+  },
+  {
+    "program": "Complementary Courses",
+    "count": 1067,
+    "section": "00001",
+    "course": "",
+    "code": "609-CAF-AB",
+    "lecture": {
+      "title": "Introduction à la culture allemande : Feuille de route vers",
+      "prof": "",
+      "time": {
+        "TR": [
+          "1130-1300"
+        ]
+      },
+      "rating": null
+    },
+    "lab": null,
+    "more": "Not ALC students. ",
+    "viewData": []
   }
 ]
-
